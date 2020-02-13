@@ -1,0 +1,73 @@
+body {
+	background-color: #9999FF;
+}
+
+body, td, th {
+	color: #330033;
+}
+
+
+
+h1 {
+	color: #333333;
+}
+
+h2 {
+	color: #666699;
+}
+
+h3 {
+	color: #993399;
+}
+
+h6 {
+	color: #333366;
+}
+
+a:link{
+ color:#000000;
+}
+
+a:visited{
+ color:#000000;
+}
+
+
+.hidden{
+	display:none;
+}
+
+.visible{
+}
+
+.headerTitle{
+	font-size: 40px;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.bodyTitle{
+	font-size: 20px;
+	font-weight: bold;
+	font-style: italic;
+	text-align: center;
+}
+
+table caption {
+	font-size: 18px;
+	font-style: normal;
+	font-weight: bold;
+	font-variant: normal;
+}
+
+.errorMessage{
+	color: #FF0000;
+	text-decoration: underline blink;
+	font-size: 18px;
+}
+
+.listcount {
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+}

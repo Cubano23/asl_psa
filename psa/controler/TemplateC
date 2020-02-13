@@ -1,0 +1,902 @@
+<?php	
+	require_once("Template.php");
+	$defaultTemplateURL = "view/template/defaulttemplate.php";
+	
+	$templateMap = array( 
+
+	    // Visu RCVA
+		"view/cardiovasculaire/newlistedonnees.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Liste des données RCVA disponibles",
+												"bodyTitle"=>"Liste des données RCVA disponibles",
+												"body"=>"view/cardiovasculaire/newlistedonnees.php")),
+
+		"view/cardiovasculaire/viewlistedonnees.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Liste des données RCV disponibles dans les logiciels",
+												"bodyTitle"=>"Liste des données RCV disponibles dans les logiciels",
+												"body"=>"view/cardiovasculaire/viewlistedonnees.php")),
+
+		"view/cardiovasculaire/viewlistedonneesaftercreate.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Liste des données RCVA disponibles",
+												"bodyTitle"=>"Liste des données RCVA disponibles",
+												"body"=>"view/cardiovasculaire/viewlistedonneesaftercreate.php")),
+
+
+//--------------------------------------------------------------------------------------------------------
+//Images de Fond d'Oeil
+
+		"view/fondoeil/newfond.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Télécharger une image de fond d'oeil",
+												"bodyTitle"=>"Télécharger une image de fond d'oeil",
+												"body"=>"view/fondoeil/newfond.php")),
+
+		"view/fondoeil/viewfondaftercreate.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Télécharger une image de fond d'oeil",
+												"bodyTitle"=>"Télécharger une image de fond d'oeil",
+												"body"=>"view/fondoeil/viewfondaftercreate.php")),
+
+		"view/fondoeil/listfond.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Liste des fonds d'oeils réalisés",
+												"bodyTitle"=>"Liste des fonds d'oeils réalisés",
+												"body"=>"view/fondoeil/listfond.php")),
+
+
+
+//---------------------------------------------------------------------------------------------
+	    // FICHE CABINET
+		"view/fichecabinet/newfichecabinet.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Fiche cabinet",
+												"bodyTitle"=>"Fiche cabinet",
+												"body"=>"view/fichecabinet/newfichecabinet.php")),
+
+		"view/fichecabinet/viewfichecabinet.php"=>
+		new Template("view/template/templatesans_prec.php",array( "pageTitle"=>"Potentiel des cabinets",
+												"bodyTitle"=>"Potentiel des cabinets",
+												"body"=>"view/fichecabinet/viewfichecabinet.php")),
+
+		"view/fichecabinet/viewfichecabinetaftercreate.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Fiche cabinet",
+												"bodyTitle"=>"Fiche cabinet",
+												"body"=>"view/fichecabinet/viewfichecabinetaftercreate.php")),
+
+		//-----------------------------------------------------------------------------------------------
+	    // POSER UNE QUESTION
+		"view/poserquestion/newposerquestion.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Contacter le support Asalée",
+												"bodyTitle"=>"Contacter le support Asalée",
+												"body"=>"view/poserquestion/newposerquestion.php")),
+
+
+		"view/poserquestion/viewposerquestionaftercreate.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Contacter le support Asalée",
+												"bodyTitle"=>"Contacter le support Asalée",
+												"body"=>"view/poserquestion/viewposerquestionaftercreate.php")),
+
+		"view/poserquestion/viewposerquestion.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Visualiser la liste des questions",
+												"bodyTitle"=>"Visualiser la liste des questions",
+												"body"=>"view/poserquestion/viewposerquestion.php")),
+
+		//-----------------------------------------------------------------------------------------------
+		// QUESTIONNAIRE SATISFACTION PATIENT
+		"view/satisfactionpatient/newsatisfactionpatient.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Questionnaire de satisfaction patient",
+												"bodyTitle"=>"Questionnaire de satisfaction patient",
+												"body"=>"view/satisfactionpatient/newsatisfactionpatient.php")),
+
+		"view/satisfactionpatient/viewfichecabinet.php"=>
+		new Template("view/template/templatesans_prec.php",array( "pageTitle"=>"Potentiel des cabinets",
+												"bodyTitle"=>"Potentiel des cabinets",
+												"body"=>"view/fichecabinet/viewfichecabinet.php")),
+
+		"view/satisfactionpatient/viewsatisfactionpatientaftercreate.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Questionnaire de satisfaction patient",
+												"bodyTitle"=>"Questionnaire de satisfaction patient",
+												"body"=>"view/satisfactionpatient/viewsatisfactionpatientaftercreate.php")),
+
+
+		//-----------------------------------------------------------------------------------------------
+		// QUESTIONNAIRE MEDECIN
+		"view/questionnairemedecin/newquestionnairemedecin.php"=>
+		new Template("view/template/templatemedecin.php",array( "pageTitle"=>"Action expérimentation ASALEE",
+												"bodyTitle"=>"Action expérimentation ASALEE",
+												"body"=>"view/questionnairemedecin/newquestionnairemedecin.php")),
+
+		"view/satisfactionpatient/viewfichecabinet.php"=>
+		new Template("view/template/templatesans_prec.php",array( "pageTitle"=>"Potentiel des cabinets",
+												"bodyTitle"=>"Potentiel des cabinets",
+												"body"=>"view/fichecabinet/viewfichecabinet.php")),
+
+		"view/questionnairemedecin/viewquestionnairemedecinaftercreate.php"=>
+		new Template("view/template/templatemedecin.php",array( "pageTitle"=>"Questionnaire enquête interne ASALEE",
+												"bodyTitle"=>"Questionnaire enquête interne",
+												"body"=>"view/questionnairemedecin/viewquestionnairemedecinaftercreate.php")),
+
+		//-----------------------------------------------------------------------------------------------
+		// DEPISTAGE DU CANCER DU COLON
+		"view/cancercolon/managedepistagecolon.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Questionnaire de dépistage du cancer du colon",
+												"bodyTitle"=>"Questionnaire de dépistage du cancer du colon",
+												"body"=>"view/cancercolon/managedepistagecolon.php")),
+
+		"view/cancercolon/newdepistagecolon.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Fiche de dépistage du cancer du colon",
+												"bodyTitle"=>"Fiche de dépistage du cancer du colon",
+												"body"=>"view/cancercolon/newdepistagecolon.php")),
+
+		"view/cancercolon/viewdepistagecolon.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Fiche de dépistage du cancer du colon",
+												"bodyTitle"=>"Fiche de dépistage du cancer du colon",
+												"body"=>"view/cancercolon/viewdepistagecolon.php")),
+
+		"view/cancercolon/viewdepistagecolonaftercreate.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Questionnaire de dépistage du cancer du colon",
+												"bodyTitle"=>"Questionnaire de dépistage du cancer du colon",
+												"body"=>"view/cancercolon/viewdepistagecolonaftercreate.php")),
+
+
+		"view/cancercolon/listdepistagecolon.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Liste des dossiers de dépistage du cancer du colon",
+												"bodyTitle"=>"Liste des dossiers de dépistage du cancer du colon",
+												"body"=>"view/cancercolon/listdepistagecolon.php")),
+
+		"view/cancercolon/listdepistagecolonbydossier.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Liste des dépistages du cancer du colon d'un dossier",
+												"bodyTitle"=>"Liste des dépistages du cancer du colon d'un dossier",
+												"body"=>"view/cancercolon/listdepistagecolonbydossier.php")),
+
+		"view/cancercolon/managealertecancercolon.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Alertes du dépistage du cancer du colon",
+												"bodyTitle"=>"Alertes du dépistage du cancer du colon",
+												"body"=>"view/cancercolon/managealertecancercolon.php")),
+
+		"view/cancercolon/listcancercolonalerte.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Alertes du dépistage du cancer du colon",
+												"bodyTitle"=>"Alertes du dépistage du cancer du colon",
+												"body"=>"view/cancercolon/listcancercolonalerte.php")),
+
+
+		//-----------------------------------------------------------------------------------------------
+		// TEST D'HEMOCULT
+		"view/hemocult/managehemocult.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Questionnaire du test d'hémoccult",
+												"bodyTitle"=>"Questionnaire du test d'hémoccult",
+												"body"=>"view/hemocult/managehemocult.php")),
+
+		"view/hemocult/newhemocult.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Fiche de test d'hémoccult",
+												"bodyTitle"=>"Fiche de test d'hémoccult",
+												"body"=>"view/hemocult/newhemocult.php")),
+
+		"view/hemocult/viewhemocult.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Fiche de test d'hémoccult",
+												"bodyTitle"=>"Fiche de test d'hémoccult",
+												"body"=>"view/hemocult/viewhemocult.php")),
+
+		"view/hemocult/viewhemocultaftercreate.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Questionnaire du test d'hémoccult",
+												"bodyTitle"=>"Questionnaire du test d'hémoccult",
+												"body"=>"view/hemocult/viewhemocultaftercreate.php")),
+
+
+		"view/hemocult/listhemocult.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Liste des dossiers de test d'hémoccult",
+												"bodyTitle"=>"Liste des dossiers de test d'hémoccult",
+												"body"=>"view/hemocult/listhemocult.php")),
+
+		"view/hemocult/listhemocultbydossier.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Liste des test d'hémoccult",
+												"bodyTitle"=>"Liste des test d'hémoccult",
+												"body"=>"view/hemocult/listhemocultbydossier.php")),
+
+		"view/hemocult/managealertehemocult.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Alertes du test d'hémoccult",
+												"bodyTitle"=>"Alertes du test d'hémoccult",
+												"body"=>"view/hemocult/managealertehemocult.php")),
+
+		"view/hemocult/listhemocultalerte.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Alertes du test d'hémoccult",
+												"bodyTitle"=>"Alertes du test d'hémoccult",
+												"body"=>"view/hemocult/listhemocultalerte.php")),
+
+
+		//-----------------------------------------------------------------------------------------------
+		// HYPER TENSION ARTERIELLE
+		"view/hypertension/managehypertension.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Questionnaire de suivi de l'hypertension artérielle permanente",
+												"bodyTitle"=>"Questionnaire de suivi de l'hypertension artérielle permanente<br>
+																Document de travail - formulaire provisoire en test",
+												"body"=>"view/hypertension/managehypertension.php")),
+
+		"view/hypertension/newhypertension.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Fiche de suivi de l'hypertension artérielle permanente",
+												"bodyTitle"=>"Fiche de suivi de l'hypertension artérielle permanente<br>
+																Document de travail - formulaire provisoire en test",
+												"body"=>"view/hypertension/newhypertension.php")),
+
+		"view/hypertension/viewhypertension.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Fiche de suivi de l'hypertension artérielle permanente",
+												"bodyTitle"=>"Fiche de suivi de l'hypertension artérielle permanente",
+												"body"=>"view/hypertension/viewhypertension.php")),
+
+		"view/hypertension/viewhypertensionaftercreate.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Questionnaire de suivi de l'hypertension artérielle permanente",
+												"bodyTitle"=>"Questionnaire de suivi de l'hypertension artérielle permanente",
+												"body"=>"view/hypertension/viewhypertensionaftercreate.php")),
+
+
+		"view/hypertension/listhypertension.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Liste des dossiers de suivi de l'hypertension artérielle permanente",
+												"bodyTitle"=>"Liste des dossiers de suivi de l'hypertension artérielle permanente",
+												"body"=>"view/hypertension/listhypertension.php")),
+
+		"view/hypertension/listhypertensionbydossier.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Liste des suivis de l'hypertension artérielle permanente d'un dossier",
+												"bodyTitle"=>"Liste des suivis de l'hypertension artérielle permanente d'un dossier",
+												"body"=>"view/hypertension/listhypertensionbydossier.php")),
+
+		"view/hypertension/managealertehypertension.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Alertes du suivi de l'hypertension artérielle permanente",
+												"bodyTitle"=>"Alertes du suivi de l'hypertension artérielle permanente",
+												"body"=>"view/hypertension/managealertehypertension.php")),
+
+		"view/hypertension/listhypertensionalerte.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Alertes du suivi de l'hypertension artérielle permanente",
+												"bodyTitle"=>"Alertes du suivi de l'hypertension artérielle permanente",
+												"body"=>"view/hypertension/listhypertensionalerte.php")),
+
+
+		//-----------------------------------------------------------------------------------------------
+		// CARDIO-VASCULAIRE
+		"view/cardiovasculaire/managecardiovasculairedepart.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Formulaire collecte des données SANS alertes",
+												"bodyTitle"=>"Formulaire collecte des données SANS alertes",
+												"body"=>"view/cardiovasculaire/managecardiovasculairedepart.php")),
+
+		"view/cardiovasculaire/newcardiovasculairedepart.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Formulaire collecte des données SANS alertes",
+												"bodyTitle"=>"Formulaire collecte des données SANS alertes",
+												"body"=>"view/cardiovasculaire/newcardiovasculairedepart.php")),
+
+		"view/cardiovasculaire/newcardiovasculairedepartv2.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Formulaire collecte des données SANS alertes",
+												"bodyTitle"=>"Formulaire collecte des données SANS alertes",
+												"body"=>"view/cardiovasculaire/newcardiovasculairedepartv2.php")),
+
+		"view/cardiovasculaire/managecardiovasculairedepartcomplement.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Formulaire collecte des données AVEC alertes",
+												"bodyTitle"=>"Formulaire collecte des données AVEC alertes",
+												"body"=>"view/cardiovasculaire/managecardiovasculairedepart.php")),
+
+		"view/cardiovasculaire/newcardiovasculairedepartcomplement.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Formulaire collecte des données AVEC alertes",
+												"bodyTitle"=>"Formulaire collecte des données AVEC alertes",
+												"body"=>"view/cardiovasculaire/newcardiovasculairedepart.php")),
+
+												"view/cardiovasculaire/newcardiovasculairedepartcomplementv2.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Formulaire collecte des données AVEC alertes",
+												"bodyTitle"=>"Formulaire collecte des données AVEC alertes",
+												"body"=>"view/cardiovasculaire/newcardiovasculairedepartv2.php")),
+
+		"view/cardiovasculaire/managecardiovasculairedepartphoto.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Photo de départ RCVA",
+												"bodyTitle"=>"Photo de départ RCVA",
+												"body"=>"view/cardiovasculaire/managecardiovasculairedepartphoto.php")),
+
+		"view/cardiovasculaire/viewcardiovasculairedepartphoto.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Photo de départ RCVA",
+												"bodyTitle"=>"Photo de départ RCVA",
+												"body"=>"view/cardiovasculaire/viewcardiovasculairedepartphoto.php")),
+
+		"view/cardiovasculaire/viewcardiovasculairedepartaftercreate.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Formulaire collecte des données",
+												"bodyTitle"=>"Formulaire collecte des données",
+												"body"=>"view/cardiovasculaire/viewcardiovasculairedepartaftercreate.php")),
+
+		"view/cardiovasculaire/listcardiovasculairedepart.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Liste des dossiers ayant au moins un suivi RCVA",
+												"bodyTitle"=>"Liste des dossiers ayant au moins un suivi RCVA",
+												"body"=>"view/cardiovasculaire/listcardiovasculairedepart.php")),
+
+		"view/cardiovasculaire/listcardiovasculairedepartphoto.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Liste des dossiers ayant au moins un suivi RCVA",
+												"bodyTitle"=>"Liste des dossiers ayant au moins un suivi RCVA",
+												"body"=>"view/cardiovasculaire/listcardiovasculairedepart.php")),
+
+		"view/cardiovasculaire/listcardiovasculairedepartbydossier.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Liste des suivis RCVA d'un dossier",
+												"bodyTitle"=>"Liste des suivis RCVA d'un dossier",
+												"body"=>"view/cardiovasculaire/listcardiovasculairedepartbydossier.php")),
+
+
+		"view/cardiovasculaire/viewcardiovasculairedepart.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Fiche de suivi RCVA",
+												"bodyTitle"=>"Fiche de suivi RCVA",
+												"body"=>"view/cardiovasculaire/viewcardiovasculairedepart.php")),
+
+		"view/cardiovasculaire/premiereconsult/managepremiereconsult.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Première consultation RCVA",
+												"bodyTitle"=>"Première consultation RCVA",
+												"body"=>"view/cardiovasculaire/premiereconsult/managepremiereconsult.php")),
+
+		"view/cardiovasculaire/premiereconsult/newpremiereconsult.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Première consultation RCVA",
+												"bodyTitle"=>"Première consultation RCVA",
+												"body"=>"view/cardiovasculaire/premiereconsult/newpremiereconsult.php")),
+
+		"view/cardiovasculaire/premiereconsult/viewpremiereconsultcardioaftercreate.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Première consultation RCVA",
+												"bodyTitle"=>"Première consultation RCVA",
+												"body"=>"view/cardiovasculaire/premiereconsult/viewpremiereconsultcardioaftercreate.php")),
+
+		//--------------------------------------------------------------------------------------------
+		// DEPISTAGE DU CANCER DU SEIN
+		"view/cancersein/managedepistagesein.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Questionnaire de dépistage du cancer du sein",
+												"bodyTitle"=>"Questionnaire de dépistage du cancer du sein",
+												"body"=>"view/cancersein/managedepistagesein.php")),
+
+		"view/cancersein/newdepistagesein.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Fiche de dépistage du cancer du sein",
+												"bodyTitle"=>"Fiche de dépistage du cancer du sein",
+												"body"=>"view/cancersein/newdepistagesein.php")),
+
+		"view/cancersein/viewdepistagesein.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Fiche de dépistage du cancer du sein",
+												"bodyTitle"=>"Fiche de dépistage du cancer du sein",
+												"body"=>"view/cancersein/viewdepistagesein.php")),
+
+		"view/cancersein/viewdepistageseinaftercreate.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Fiche de dépistage du cancer du sein",
+												"bodyTitle"=>"Fiche de dépistage du cancer du sein",
+												"body"=>"view/cancersein/viewdepistageseinaftercreate.php")),
+
+		"view/cancersein/listdepistagesein.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Liste des dossiers de dépistage du cancer du sein",
+												"bodyTitle"=>"Liste des dossiers de dépistage du cancer du sein",
+												"body"=>"view/cancersein/listdepistagesein.php")),
+
+		"view/cancersein/listdepistageseinbydossier.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Liste des dépistages du cancer du sein d'un dossier",
+												"bodyTitle"=>"Liste des dépistages du cancer du sein d'un dossier",
+												"body"=>"view/cancersein/listdepistageseinbydossier.php")),
+
+
+		"view/cancersein/managealertecancersein.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Alertes du dépistage du cancer du sein",
+												"bodyTitle"=>"Alertes du dépistage du cancer du sein",
+												"body"=>"view/cancersein/managealertecancersein.php")),
+
+		"view/cancersein/listcancerseinalerte.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Alertes du dépistage du cancer du sein",
+												"bodyTitle"=>"Alertes du dépistage du cancer du sein",
+												"body"=>"view/cancersein/listcancerseinalerte.php")),
+
+
+		//--------------------------------------------------------------------------------------------
+		// DEPISTAGE DU CANCER DE L'UTERUS
+		"view/canceruterus/managedepistageuterus.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Questionnaire de dépistage du cancer du col de l'utérus",
+												"bodyTitle"=>"Questionnaire de dépistage du cancer du col de l'utérus",
+												"body"=>"view/canceruterus/managedepistageuterus.php")),
+
+		"view/canceruterus/newdepistageuterus.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Fiche de dépistage du cancer du col de l'utérus",
+												"bodyTitle"=>"Fiche de dépistage du cancer du col de l'utérus",
+												"body"=>"view/canceruterus/newdepistageuterus.php")),
+
+		"view/canceruterus/viewdepistageuterus.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Fiche de dépistage du cancer du col de l'utérus",
+												"bodyTitle"=>"Fiche de dépistage du cancer du col de l'utérus",
+												"body"=>"view/canceruterus/viewdepistageuterus.php")),
+
+		"view/canceruterus/viewdepistageuterusaftercreate.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Fiche de dépistage du cancer du col de l'utérus",
+												"bodyTitle"=>"Fiche de dépistage du cancer du col de l'utérus",
+												"body"=>"view/canceruterus/viewdepistageuterusaftercreate.php")),
+
+		"view/canceruterus/listdepistageuterus.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Liste des dossiers de dépistage du cancer du col de l'utérus",
+												"bodyTitle"=>"Liste des dossiers de dépistage du cancer du col de l'utérus",
+												"body"=>"view/canceruterus/listdepistageuterus.php")),
+
+		"view/canceruterus/listdepistageuterusbydossier.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Liste des dépistages du cancer du col de l'utérus d'un dossier",
+												"bodyTitle"=>"Liste des dépistages du cancer du col de l'utérus d'un dossier",
+												"body"=>"view/canceruterus/listdepistageuterusbydossier.php")),
+
+
+		"view/canceruterus/managealertecanceruterus.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Alertes du dépistage du cancer du col de l'utérus",
+												"bodyTitle"=>"Alertes du dépistage du cancer du col de l'utérus",
+												"body"=>"view/canceruterus/managealertecanceruterus.php")),
+
+		"view/canceruterus/listcanceruterusalerte.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Alertes du dépistage du cancer du col de l'utérus",
+												"bodyTitle"=>"Alertes du dépistage du cancer du col de l'utérus",
+												"body"=>"view/canceruterus/listcanceruterusalerte.php")),
+
+
+		//--------------------------------------------------------------------------------------------
+		// DEPISTAGE DU DIABETE
+		"view/diabete/depistage/managedepistagediabete.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Questionnaire de dépistage du diabète",
+												"bodyTitle"=>"Questionnaire de dépistage du diabète",
+												"body"=>"view/diabete/depistage/managedepistagediabete.php")),
+												
+		"view/diabete/depistage/newdepistagediabete.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Fiche de dépistage du diabète",
+												"bodyTitle"=>"Fiche de dépistage du diabète",
+												"body"=>"view/diabete/depistage/newdepistagediabete.php")),
+												
+		"view/diabete/depistage/viewdepistagediabete.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Fiche de dépistage du diabète",
+												"bodyTitle"=>"Fiche de dépistage du diabète",
+												"body"=>"view/diabete/depistage/viewdepistagediabete.php")),
+		
+		"view/diabete/depistage/viewdepistagediabieteaftercreate.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Questionnaire de dépistage du diabète",
+												"bodyTitle"=>"Questionnaire de dépistage du diabète",
+												"body"=>"view/diabete/depistage/viewdepistagediabeteaftercreate.php")),
+
+		"listdiabete"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Liste des dossiers de dépistage du diabète",
+												"bodyTitle"=>"Liste des dossiers de dépistage du diabète",
+												"body"=>"view/common/list.php")),
+
+		"listdiabetebydossier"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Liste des dossiers de dépistage du diabète",
+												"bodyTitle"=>"Liste des dossiers de dépistage du diabète",
+												"body"=>"view/common/listbydossier.php")),
+
+		"view/diabete/depistage/managealertedepistagediabete.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Alertes du dépistage du diabète",
+												"bodyTitle"=>"Alertes du dépistage du diabète",
+												"body"=>"view/diabete/depistage/managealertedepistagediabete.php")),
+
+		"view/diabete/depistage/listdepistagediabete.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Alertes du dépistage du diabète",
+												"bodyTitle"=>"Alertes du dépistage du diabète",
+												"body"=>"view/diabete/depistage/listdepistagediabetealerte.php")),
+
+		//--------------------------------------------------------------------------------------------
+		// Dossier
+		"view/dossier/managedossier.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Création/Maintenance de dossier",
+												"bodyTitle"=>"Création/Maintenance de dossier",
+												"body"=>"view/dossier/managedossier.php")),
+
+		"view/dossier/managelistexamdossier.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Visualisation des événements d'un dossier",
+												"bodyTitle"=>"Visualisation des événements d'un dossier",
+												"body"=>"view/dossier/managelistexamdossier.php")),
+												
+		"view/dossier/viewlistexamdossier.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Visualisation des événements d'un dossier",
+												"bodyTitle"=>"Visualisation des événements d'un dossier",
+												"body"=>"view/dossier/viewlistexamdossier.php")),
+
+
+		"view/dossier/newdossier.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Création d'un nouveau dossier",
+												"bodyTitle"=>"Création d'un nouveau dossier",
+												"body"=>"view/dossier/newdossier.php")),
+												
+		"view/dossier/viewdossieraftercreate.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Création d'un nouveau dossier",
+												"bodyTitle"=>"Création d'un nouveau dossier",
+												"body"=>"view/dossier/viewdossieraftercreate.php")),
+
+		"view/dossier/updatedossier.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Mise à jour de dossier",
+												"bodyTitle"=>"Mise à jour de dossier",
+												"body"=>"view/dossier/updatedossier.php")),
+												
+		"view/dossier/viewdossierafterupdate.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Mise à jour de dossier",
+												"bodyTitle"=>"Mise à jour de dossier",
+												"body"=>"view/dossier/viewdossieraftercreate.php")),
+
+		"view/dossier/listdossiers.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Liste des dossiers",
+												"bodyTitle"=>"Liste des dossiers",
+												"body"=>"view/dossier/listdossiers.php")),
+		"view/dossier/confirmupdate.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Confirmation de modification",
+												"bodyTitle"=>"Confirmation de modification",
+												"body"=>"view/dossier/confirmupdate.php")),
+												
+		"managedossiersta"=>
+		new Template("view/template/closebuttontemplate.php",array( "pageTitle"=>"Création/Maintenance de dossier",
+												"bodyTitle"=>"Création/Maintenance de dossier",
+												"body"=>"view/dossier/managedossier.php")),
+
+		"newdossiersta"=>
+		new Template("view/template/closebuttontemplate.php",array( "pageTitle"=>"Création d'un nouveau dossier",
+												"bodyTitle"=>"Création d'un nouveau dossier",
+												"body"=>"view/dossier/newdossier.php")),														
+												
+		"afterlistdossiersta"=>
+		new Template("view/template/closebuttontemplate.php",array( "pageTitle"=>"Liste des dossiers",
+												"bodyTitle"=>"Liste des dossiers",
+												"body"=>"view/dossier/listdossiers.php")),
+		"confirmdossiersta"=>
+		new Template("view/template/closebuttontemplate.php",array( "pageTitle"=>"Confirmation de modification",
+												"bodyTitle"=>"Confirmation de modification",
+												"body"=>"view/dossier/confirmupdate.php")),
+
+																																		
+		//--------------------------------------------------------------------------------------------				
+		// Evaluation Patient
+		
+		"manageevaluationpatient"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Evaluation par le patient",
+												"bodyTitle"=>"Evaluation par le patient",
+												"body"=>"view/evaluation/manageevaluation.php")),
+
+		"view/evaluation/newevaluationpatient.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Fiche d'évaluation par le patient",
+												"bodyTitle"=>"Fiche d'évaluation par le patient",
+												"body"=>"view/evaluation/newevaluationpatient.php")),
+												
+		"view/evaluation/viewevaluationpatient.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Fiche d'évaluation par le patient",
+												"bodyTitle"=>"Fiche d'évaluation par le patient",
+												"body"=>"view/evaluation/viewevaluationpatient.php")),
+												
+		"listevaluationpatient"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Liste des évaluations par le patient",
+												"bodyTitle"=>"Liste des évaluations par le patient",
+												"body"=>"view/common/list.php")),												
+		
+				
+		//--------------------------------------------------------------------------------------------	
+		// Evaluation Infirmière
+
+		"manageevaluationinfirmier"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Evaluation par l'Infirmière",
+												"bodyTitle"=>"Evaluation par l'Infirmière",
+												"body"=>"view/evaluation/manageevaluation.php")),
+
+		"view/evaluation/newevaluationinfirmier.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Fiche d'évaluation par l'Infirmière",
+												"bodyTitle"=>"Fiche d'évaluation par l'Infirmière",
+												"body"=>"view/evaluation/newevaluationinfirmier.php")),
+												
+		"view/evaluation/viewevaluationinfirmier.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Fiche d'évaluation par l'Infirmière",
+												"bodyTitle"=>"Fiche d'évaluation par l'Infirmière",
+												"body"=>"view/evaluation/viewevaluationinfirmier.php")),
+												
+		"listevaluationinfirmier"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Liste des évaluations par l'Infirmière",
+												"bodyTitle"=>"Liste des évaluations par l'Infirmière",
+												"body"=>"view/common/list.php"
+											/*	"body"=>"view/evaluation/listevaluationinfirmier.php"*/)),
+		
+		"listevaluationinfirmierbydossier"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Liste des évaluations par l'Infirmière",
+												"bodyTitle"=>"Liste des évaluations par l'Infirmière",
+												"body"=>"view/evaluation/listevaluationinfirmierbydossier.php")),
+
+		//--------------------------------------------------------------------------------------------
+		// Evaluation Medecin
+		
+		"manageevaluationmedecin"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Evaluation par le medecin",
+												"bodyTitle"=>"Evaluation par le medecin",
+												"body"=>"view/evaluation/manageevaluationmedecin.php")),
+
+		"view/evaluation/newevaluationmedecin.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Fiche d'évaluation par le medecin",
+												"bodyTitle"=>"Fiche d'évaluation par le medecin",
+												"body"=>"view/evaluation/newevaluationmdecin.php")),
+												
+		"view/evaluation/viewevaluationmedecin.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Fiche d'évaluation par le medecin",
+												"bodyTitle"=>"Fiche d'évaluation par le medecin",
+												"body"=>"view/evaluation/viewevaluationmedecin.php")),
+												
+		"listevaluationmedecin"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Liste des évaluations par le medecin",
+												"bodyTitle"=>"Liste des évaluations par le medecin",
+												"body"=>"view/common/list.php")),
+		
+
+		//--------------------------------------------------------------------------------------------
+		// Suivi Diabete
+
+		"view/diabete/suivi/managesuividiabeteincomplet.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Données complètes ou incomplètes dans un suivi diabète",
+												"bodyTitle"=>"Données complètes ou incomplètes dans un suivi diabète",
+												"body"=>"view/diabete/suivi/managesuividiabeteincomplet.php")),
+
+		"view/diabete/suivi/listsuividiabeteincompletsystematique.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Données incomplètes dans un suivi diabète",
+												"bodyTitle"=>"Données incomplètes dans un suivi diabète",
+												"body"=>"view/diabete/suivi/listsuividiabeteincompletsystematique.php")),
+
+		"view/diabete/suivi/listsuividiabete4moisincomplet.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Données incomplètes dans un suivi diabète",
+												"bodyTitle"=>"Données incomplètes dans un suivi diabète",
+												"body"=>"view/diabete/suivi/listsuividiabete4moisincomplet.php")),
+
+		"view/diabete/suivi/listsuividiabeteincompletsemestriel.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Données incomplètes dans un suivi diabète",
+												"bodyTitle"=>"Données incomplètes dans un suivi diabète",
+												"body"=>"view/diabete/suivi/listsuividiabeteincompletsemestriel.php")),
+
+		"view/diabete/suivi/listsuividiabeteincompletannuel.php"=>
+		new Template("view/template/templatetableaularge.php",array( "pageTitle"=>"Données incomplètes dans un suivi diabète",
+												"bodyTitle"=>"Données incomplètes dans un suivi diabète",
+												"body"=>"view/diabete/suivi/listsuividiabeteincompletannuel.php")),
+
+		"view/diabete/suivi/managesuividiabete.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Consultation de suivi de diabète",
+												"bodyTitle"=>"Consultation de suivi de diabète",
+												"body"=>"view/diabete/suivi/managesuividiabete.php")),
+
+		"view/diabete/suivi/listpatientsuividiabete.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Consultation de suivi de diabète",
+												"bodyTitle"=>"Consultation de suivi de diabète",
+												"body"=>"view/diabete/suivi/listpatientsuividiabete.php")),
+
+		"view/diabete/suivi/listsuividiabetebycabinet.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Consultation de suivi de diabète",
+												"bodyTitle"=>"Consultation de suivi de diabète",
+												"body"=>"view/diabete/suivi/listsuividiabetebycabinet.php")),
+
+		"view/diabete/suivi/viewsuividiabetesystematique.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Consultation de suivi de diabète",
+												"bodyTitle"=>"Consultation de suivi de diabète",
+												"body"=>"view/diabete/suivi/viewsuividiabetesystematique.php")),
+
+		"view/diabete/suivi/viewsuividiabete4mois.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Consultation de suivi de diabète",
+												"bodyTitle"=>"Consultation de suivi de diabète",
+												"body"=>"view/diabete/suivi/viewsuividiabete4mois.php")),
+
+		"view/diabete/suivi/viewsuividiabetesemestriel.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Consultation de suivi de diabète",
+												"bodyTitle"=>"Consultation de suivi de diabète",
+												"body"=>"view/diabete/suivi/viewsuividiabetesemestriel.php")),
+
+		"view/diabete/suivi/viewsuividiabeteannuel.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Consultation de suivi de diabète",
+												"bodyTitle"=>"Consultation de suivi de diabète",
+												"body"=>"view/diabete/suivi/viewsuividiabeteannuel.php")),
+
+		"view/diabete/suivi/managesuividiabeteprecreate.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Création de suivi de diabète",
+												"bodyTitle"=>"Création de suivi de diabète",
+												"body"=>"view/diabete/suivi/managesuividiabeteprecreate.php")),
+
+
+		"view/diabete/suivi/managesuividiabetecreate.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Création de suivi de diabète",
+												"bodyTitle"=>"Création de suivi de diabète",
+												"body"=>"view/diabete/suivi/managesuividiabetecreate.php")),
+
+		"view/diabete/suivi/newsuividiabete.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Création de suivi de diabète",
+												"bodyTitle"=>"Création de suivi de diabète",
+												"body"=>"view/diabete/suivi/newsuividiabete.php")),
+
+		"view/diabete/suivi/managealertesuividiabete.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Alertes du suivi de diabète",
+												"bodyTitle"=>"Alertes du suivi de diabète",
+												"body"=>"view/diabete/suivi/managealertesuividiabete.php")),
+
+		"view/diabete/suivi/listsuividiabetealerte.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Alertes du suivi de diabète",
+												"bodyTitle"=>"Alertes du suivi de diabète",
+												"body"=>"view/diabete/suivi/listsuividiabetealerte.php")),
+
+		"view/diabete/suivi/viewsuividiabeteaftercreate.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Création de suivi de diabète",
+												"bodyTitle"=>"Création de suivi de diabète",
+												"body"=>"view/diabete/suivi/viewsuividiabeteaftercreate.php")),
+
+
+		//--------------------------------------------------------------------------------------------
+		// Troubles cognitifs
+
+
+		"view/troublecognitif/managetroublecognitif.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Consultation dépistage de troubles cognitifs",
+												"bodyTitle"=>"Consultation dépistage de troubles cognitifs",
+												"body"=>"view/troublecognitif/managetroublecognitif.php")),
+
+		"view/troublecognitif/listtroublecognitif.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Consultation des dépistages des troubles cognitifs",
+												"bodyTitle"=>"Consultation des dépistages des troubles cognitifs",
+												"body"=>"view/troublecognitif/listtroublecognitif.php")),
+
+		"view/troublecognitif/listtroublecognitifbydossier.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Consultation des dépistages des troubles cognitifs",
+												"bodyTitle"=>"Consultation des dépistages des troubles cognitifs",
+												"body"=>"view/troublecognitif/listtroublecognitifbydossier.php")),
+
+		"view/troublecognitif/viewtroublecognitif.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Consultation des dépistages des troubles cognitifs",
+												"bodyTitle"=>"Consultation des dépistages des troubles cognitifs",
+												"body"=>"view/troublecognitif/viewtroublecognitif.php")),
+
+		"view/troublecognitif/managetroublecognitifprecreate.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Création dépistage de troubles cognitifs",
+												"bodyTitle"=>"Création dépistage de troubles cognitifs",
+												"body"=>"view/troublecognitif/managetroublecognitifprecreate.php")),
+
+
+		"view/troublecognitif/managetroublecognitifcreate.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Création dépistage de troubles cognitifs",
+												"bodyTitle"=>"Création dépistage de troubles cognitifs",
+												"body"=>"view/troublecognitif/managetroublecognitifcreate.php")),
+
+		"view/troublecognitif/newtroublecognitif.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Création dépistage de troubles cognitifs",
+												"bodyTitle"=>"Création dépistage de troubles cognitifs",
+												"body"=>"view/troublecognitif/newtroublecognitif.php")),
+
+		"view/troublecognitif/managealertetroublecognitif.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Alertes dépistage de troubles cognitifs",
+												"bodyTitle"=>"Alertes dépistage de troubles cognitifs",
+												"body"=>"view/troublecognitif/managealertetroublecognitif.php")),
+
+		"view/troublecognitif/listtroublecognitifalerte.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Alertes dépistage de troubles cognitifs",
+												"bodyTitle"=>"Alertes dépistage de troubles cognitifs",
+												"body"=>"view/troublecognitif/listtroublecognitifalerte.php")),
+
+		"view/troublecognitif/viewtroublecognitifaftercreate.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Création dépistage de troubles cognitifs",
+												"bodyTitle"=>"Création dépistage de troubles cognitifs",
+												"body"=>"view/troublecognitif/viewtroublecognitifaftercreate.php")),
+
+		//--------------------------------------------------------------------------------------------
+		// Suivi Hebdomadaire
+		
+		"view/evaluation/managesuivihebdomadaire.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Suivi Hebdomadaire",
+												"bodyTitle"=>"Suivi Hebdomadaire",
+												"body"=>"view/evaluation/managesuivihebdomadaire.php")),
+
+		"managesuivihebdomadaire"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Suivi Hebdomadaire",
+												"bodyTitle"=>"Suivi Hebdomadaire",
+												"body"=>"view/evaluation/manageevaluation.php")),
+
+		"view/evaluation/newsuivihebdomadaire.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Suivi Hebdomadaire",
+												"bodyTitle"=>"Suivi Hebdomadaire",
+												"body"=>"view/evaluation/newsuivihebdomadaire.php")),	
+												
+		"view/evaluation/editsuivihebdomadaire.php"=>
+		new Template($defaultTemplateURL, array( "pageTitle"=>"Suivi Hebdomadaire",
+												"bodyTitle"=>"Suivi Hebdomadaire",
+												"body"=>"view/evaluation/editsuivihebdomadaire.php")),
+		"view/evaluation/viewsuivihebdomadaire.php"=>
+		new Template($defaultTemplateURL, array( "pageTitle"=>"Suivi Hebdomadaire",
+												"bodyTitle"=>"Suivi Hebdomadaire",
+												"body"=>"view/evaluation/viewsuivihebdomadaire.php")),
+																
+		"listsuivihebdomadaire"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Liste des suivis hebdomadaires",
+												"bodyTitle"=>"Liste des suivis hebdomadaires",
+												"body"=>"view/evaluation/listsuivihebdomadaire.php")),
+												
+		//--------------------------------------------------------------------------------------------
+		// Suivi Hebdomadaire 2007
+
+		"view/suivihebdomadaire2007/managesuivihebdomadaire.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Suivi Hebdomadaire 2007",
+												"bodyTitle"=>"Suivi Hebdomadaire 2007",
+												"body"=>"view/suivihebdomadaire2007/managesuivihebdomadaire.php")),
+
+		"view/suivihebdomadaire2007/newsuivihebdomadaire.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Suivi Hebdomadaire 2007",
+												"bodyTitle"=>"Suivi Hebdomadaire 2007",
+												"body"=>"view/suivihebdomadaire2007/newsuivihebdomadaire.php")),
+
+		"view/suivihebdomadaire2007/editsuivihebdomadaire.php"=>
+		new Template($defaultTemplateURL, array( "pageTitle"=>"Suivi Hebdomadaire 2007",
+												"bodyTitle"=>"Suivi Hebdomadaire 2007",
+												"body"=>"view/suivihebdomadaire2007/editsuivihebdomadaire.php")),
+												
+		"view/suivihebdomadaire2007/viewsuivihebdomadaire.php"=>
+		new Template($defaultTemplateURL, array( "pageTitle"=>"Suivi Hebdomadaire 2007",
+												"bodyTitle"=>"Suivi Hebdomadaire 2007",
+												"body"=>"view/suivihebdomadaire2007/viewsuivihebdomadaire.php")),
+
+		"listsuivihebdomadaire2007"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Liste des suivis hebdomadaires 2007",
+												"bodyTitle"=>"Liste des suivis hebdomadaires 2007",
+												"body"=>"view/suivihebdomadaire2007/listsuivihebdomadaire.php")),
+
+		//--------------------------------------------------------------------------------------------
+		// Login
+		
+		"view/login/login.php"=>
+		new Template("view/template/logintemplate.php",array( "pageTitle"=>"Login",
+												"bodyTitle"=>"Login",
+												"body"=>"view/login/login.php")),		
+												
+		//--------------------------------------------------------------------------------------------
+		// Consultation des suivis
+		
+		"view/utilities/consultation.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Consultation de réponses à questionnaire asalée",
+												"bodyTitle"=>"Consultation de réponses à questionnaire asalée",
+												"body"=>"view/utilities/consultation.php")),																						
+												
+		//--------------------------------------------------------------------------------------------
+		// Graphs
+		
+		"view/diabete/graph/drawgraph1.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"HBA1 GRAPH",
+												"bodyTitle"=>"HBA1 GRAPH",
+												"body"=>"view/diabete/graph/drawgraph1.php")),	
+												
+		"view/diabete/graph/managegraph1.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"HBA1 GRAPH",
+												"bodyTitle"=>"HBA1 GRAPH",
+												"body"=>"view/diabete/graph/managegraph1.php")),													
+												
+		"view/diabete/graph/drawgraph2.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"HBA2 GRAPH",
+												"bodyTitle"=>"HBA2 GRAPH",
+												"body"=>"view/diabete/graph/drawgraph2.php")),				
+														
+		"view/diabete/graph/managegraph2.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"HBA2 GRAPH",
+												"bodyTitle"=>"HBA2 GRAPH",
+												"body"=>"view/diabete/graph/managegraph2.php")),
+												
+		//--------------------------------------------------------------------------------------------
+		// Main
+		
+		"view/main.php"=>
+		new Template("view/template/loginoktemplate.php",array( "pageTitle"=>"| PSA | Bienvenue",
+												"bodyTitle"=>"",
+												"body"=>"view/main.php")),			
+												
+													
+		//--------------------------------------------------------------------------------------------
+		// Tension Arterielle											
+							
+		// questionnaire d'automesure artérielle
+		"view/tensionarterielle/managetensionarterielle.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Questionnaire d'automesure tensionnelle",
+												"bodyTitle"=>"Questionnaire d'automesure tensionnelle",
+												"body"=>"view/tensionarterielle/managetensionarterielle.php")),
+							
+
+
+		"view/tensionarterielle/newtensionarterielle.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Tension artérielle",
+												"bodyTitle"=>"Tension artérielle",
+												"body"=>"view/tensionarterielle/newtensionarterielle.php")),
+
+		"view/tensionarterielle/tensionarteriellemoyenne.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Tension artérielle moyenne",
+												"bodyTitle"=>"Tension artérielle moyenne",
+												"body"=>"view/tensionarterielle/tensionarteriellemoyenne.php")),
+
+		"view/tensionarterielle/listtensionarterielle.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Liste des TA antérieurs",
+												"bodyTitle"=>"Tension artérielle moyenne",
+												"body"=>"view/tensionarterielle/listtensionarterielle.php")),
+
+		"view/tensionarterielle/viewtensionarterielle.php"=>
+		new Template($defaultTemplateURL,array( "pageTitle"=>"Mesures de tension artérielle",
+												"bodyTitle"=>"Mesures de tension artérielle",
+												"body"=>"view/tensionarterielle/viewtensionarterielle.php")),
+
+							);
+							
+	
+	function getTemplate($key){
+		global $templateMap;
+		if(!array_key_exists($key,$templateMap)) return false;
+		return $templateMap[$key];
+	}
+?>

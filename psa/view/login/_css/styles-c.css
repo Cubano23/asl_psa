@@ -1,0 +1,21 @@
+@charset "utf-8";
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	padding:0px; margin:0px;
+	background:#377eb8;
+}
+h1,h2,h3,h4, h5, h6, p,form,ul{margin:0px; padding:0px;}
+a{ text-decoration:none;}
+a:hover{ text-decoration:underline;}
+h1 {display:none;}
+.displaynone { display:none;}
+ul{list-style:none;}
+textarea{ font-family: Arial, Helvetica, sans-serif;}
+/** **/
+.clr{ clear:both; font-size:1px; height:1px; line-height:1px;}
+.clr2{ clear:both; font-size:1px; height:0px; line-height:0px; border-bottom:1px solid #0c3f85; width:221px;}
+
+/** **/
+#date{ float:right; font-size:0.7em; color:#a2c3de; margin:5px;}
+h3#titre{ color:#0c3f85; font-size:1em; padding:5px 5px 5px 5px;}
+/****/

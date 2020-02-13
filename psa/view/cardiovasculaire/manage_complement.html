@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta content="text/html; charset=ISO-8859-15" http-equiv="content-type">
+<link href='../css/main.css' rel="stylesheet" type="text/css">
+<title>Formulaire collecte des données pour "photo de départ"</title>
+</head>
+<body>
+
+<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <th height="49" scope="col">&nbsp;
+	</th>
+    <th scope="col" class="headerTitle">Portail Asal&eacute;e - Formulaire complément de données</th>
+    <th scope="col"><a href="javascript:window.close()"><img src="../images/close.gif"  border=0 alt="fermer" width=13 height=12 alt="Fermer la fenêtre"></a>
+<br>
+      &nbsp;&nbsp;<a href="../../controler/ActionControler.php?controlerparams:param:controler=PoserQuestionControler&controlerparams:param:action=AF&poserquestion:poserquestion:cabinet=<?php echo $_SESSION['nom']; ?>" target='_blank'><font size="-1">contacter le support</font></a></th>
+  </tr>
+</table>
+
+	<form action='complement.html'>
+  <table>
+  	<tr>
+	  	<td>Numéro de dossier</td>
+		  	<td><input type='text'></td>
+	</tr>
+  </table>
+  <br><br>
+  <input type='button' value='Valider' onclick='window.open("complement.html", "_top");'>
+  <input type='button' value='Créer ou modifier un dossier' onclick='alert("formulaire indisponible");'>
+</form> 

@@ -1,0 +1,2 @@
+ALTER TABLE `evaluation_infirmier` CHANGE `date` `date` DATE NOT NULL DEFAULT '1970-01-01';
+ALTER TABLE `evaluation_infirmier` ADD `id_utilisateur` INT(11) NOT NULL AFTER `date`, ADD `id_cabinet` INT(11) NOT NULL AFTER `id_utilisateur`;

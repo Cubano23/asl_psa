@@ -1,0 +1,506 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta content="text/html; charset=ISO-8859-15" http-equiv="content-type">
+<link href='../css/main.css' rel="stylesheet" type="text/css">
+<title>Première consultation risque cardio-vasculaire</title>
+</head>
+<body>
+<script language="javascript">
+
+	function computeCleanrance(sexe,age){
+		var clearance = document.getElementById("clearance");
+		var poids = document.getElementById("poids").value;
+		var creatininemie = document.getElementById("Creat").value;
+		var clearanceVal;
+		var objRegExp  =  /(^-?\d\d*\.\d*$)|(^-?\d\d*$)|(^-?\.\d\d*$)/
+
+		if(creatininemie == "0" || !objRegExp.test(creatininemie)){
+			clearanceVal = "";
+		}
+		else{
+			clearanceVal = (140-parseInt(age))*parseInt(poids)/(7.2*parseInt(creatininemie));
+			if(sexe == "F") clearanceVal *= 0.85;
+			if(isNaN(clearanceVal)) clearanceVal = "";
+		}
+
+		clearance.innerHTML = Math.round(clearanceVal) + " ml/mn";
+	}
+
+	function displayIMC(taille,poids){
+
+		if(taille == 0)
+			document.getElementById("IMC").innerHTML = "&nbsp;La taille est invalide IMC ne peut etre calculée";
+		else{
+			poidsValue = parseFloat(document.getElementById("poids").value);
+			if(isNaN(poidsValue) || poidsValue <30 || poidsValue >200){
+				document.getElementById("IMC").innerHTML = "IMC : ";
+				return;
+			}
+			var imc = Math.round(poidsValue/Math.pow(taille/100, 2));
+			obj = document.getElementById("IMC").innerHTML="IMC : "+imc;
+		}
+	}
+
+	function arret_tabac(){
+		var tabac_oui=document.getElementById("tabac_oui");
+		var tabac_non=document.getElementById("tabac_non");
+		var date_tabac=document.getElementById("date_tabac");
+		
+		if(date_tabac.value.length==10){
+			tab_tabac=date_tabac.value.split('/');
+			date_jour=new Date();
+
+			tab_tabac[2]=parseInt(tab_tabac[2])+3;
+			tab_tabac[1]=parseInt(tab_tabac[1])-1;
+
+			date_tabac3=new Date(tab_tabac[2], tab_tabac[1], tab_tabac[0]);
+
+			if(date_tabac3.getTime()>date_jour.getTime()){
+				tabac_oui.checked=true;
+			}
+			else{
+				tabac_non.checked=true;
+			}
+		}
+
+	}
+	
+	function display_hypertenseur(){
+		var tab_hypertenseur1=document.getElementById("tab_hypertenseur1");
+		var tab_hypertenseur2=document.getElementById("tab_hypertenseur2");
+		var hypertenseur_oui=document.getElementById("hypertenseur_oui");
+		var hypertenseur_non=document.getElementById("hypertenseur_non");
+		var automesure_oui=document.getElementById("automesure_oui");
+		var automesure_non=document.getElementById("automesure_non");
+		var diuretique_oui=document.getElementById("diuretique_oui");
+		var diuretique_non=document.getElementById("diuretique_non");
+
+		if(hypertenseur_oui.checked==true){
+			tab_hypertenseur1.style.display='';
+			tab_hypertenseur2.style.display='';
+		}
+		if(hypertenseur_non.checked==true){
+			tab_hypertenseur1.style.display='none';
+			tab_hypertenseur2.style.display='none';
+			automesure_oui.checked=false;
+			automesure_non.checked=false;
+			diuretique_oui.checked=false;
+			diuretique_non.checked=false;
+		}
+		
+	}
+	
+	function calcul_hta(){
+		var hta_oui=document.getElementById('hta_oui');
+		var hta_non=document.getElementById('hta_non');
+		var syst=document.getElementById("syst");
+		var dias=document.getElementById("dias");
+		
+		if((syst.value>140)||(dias.value>90)){
+			hta_oui.checked=true;
+		}
+		else{
+			hta_non.checked=true;
+		}
+		
+		display_complementhta(); 
+	}
+	
+	function display_complementhta(){
+		var hta_oui=document.getElementById("hta_oui");
+		var hta_non=document.getElementById("hta_non");
+		var info_complementaire=document.getElementById("info_complementaire");
+		
+		if(hta_oui.checked==true){
+			info_complementaire.style.display='';
+		}
+		if(hta_non.checked==true){
+			info_complementaire.style.display='none';
+		}
+	}
+	
+	function update_surcharge(){
+		var ventricule_oui=document.getElementById("ventricule_oui");
+		var ventricule_non=document.getElementById("ventricule_non");
+		var sokolov=document.getElementById("sokolov");
+		
+		if(sokolov.value>35){
+			ventricule_oui.checked=true;
+		}
+		else{
+			ventricule_non.checked=true;
+		}
+	} 
+</SCRIPT>
+
+<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <th height="49" scope="col">&nbsp;
+	</th>
+    <th scope="col" class="headerTitle">Portail Asal&eacute;e - Première consultation risque cardio-vasculaire</th>
+    <th scope="col"><a href="javascript:window.close()"><img src="../images/close.gif"  border=0 alt="fermer" width=13 height=12 alt="Fermer la fenêtre"></a>
+<br>
+      &nbsp;&nbsp;<a href="../../controler/ActionControler.php?controlerparams:param:controler=PoserQuestionControler&controlerparams:param:action=AF&poserquestion:poserquestion:cabinet=<?php echo $_SESSION['nom']; ?>" target='_blank'><font size="-1">contacter le support</font></a></th>
+  </tr>
+</table>
+
+	
+  <b>Dossier</b>
+  <table border='1'>
+  	<tr>
+	  	<td>Numéro de dossier</td>
+		  	<td width='50'>0</td>
+		  		<td width='10'></td>
+		<td>Nom</Td>
+			<td width='100'>GUILLON</Td>
+		  		<td width='10'></td>
+		<td>Prénom</td>
+			<td width='100'>Xavier</td>
+		  		<td width='10'></td>
+		<td>Age</td>
+			<td width='50'>27</td>
+		  		<td width='10'></td>
+		<td>Sexe</td>
+			<td width='50'>M</td>
+		  		<td width='10'></td>
+		<td>Date de naissance</td>
+			<td width='50'>20/01/1980</td>
+	</tr>
+  </Table>
+  <br>
+
+
+  <b>Facteurs de risque non modifiables</b>
+  <table border=1 width='670'>
+  	<tr>
+  		<td width='300'>Antécédents familiaux du premier degré (accident vasculaire avant 55 ans chez les hommes et 
+		  	65 ans chez les femmes)<img OnClick="javascript:window.open('def_cardio.html','','width=250,height=250,top=100,left=500,scrollbars=yes,resizable=yes')" alt='Définition accident cardio-vasculaire' border=0 height="31" src='../images/loupe.gif' width="31"></Td>
+		  	<td colspan='2'><input type='radio' name='atcd'>Oui &nbsp;&nbsp;<input type='radio' checked name='atcd'>Non</td>
+	</tr>
+  </table>
+  <br>
+  <b>Bilan lipidique</b>
+  <table border='1' width='670'>
+  	<tr>
+  		<td>Cholestérol total</td>
+  			<td colspan='2'><input type='text' value='2.3' size='4'>g/l &nbsp; le <input type='text' value='25/02/2007' size='10'>(jj/mm/aaaa)</td>
+  	</tr>
+  	<tr>
+  		<td>HDL Cholestérol</td>
+  			<td colspan='2'><input type='text' value='0.5' size='4'>g/l &nbsp; le <input type='text' value='25/02/2007' size='10'>(jj/mm/aaaa)</td>
+  	</tr>
+	<tr>
+		<td>LDL Cholestérol</Td>
+			<td><input type='text' value='1.8' size='4'>g/l &nbsp; le <input type='text' value='25/02/2007' size='10'>(jj/mm/aaaa)</td>
+	</tr>
+  	<tr>
+  		<td>Triglycérides</Td>
+  			<td colspan='2'><input type='text' value='1.7' size='4'>g/l &nbsp; le <input type='text' value='25/02/2007' size='10'>(jj/mm/aaaa)</td>
+  	</tr>
+	<tr>
+		<td>Traitement hypolipémiant médicamenteux</td>
+			<td colspan='2'>
+				<table border='0'>
+					<tr>
+						<td valign='top'>nom de molécule <br>
+										<select multiple size="8">
+											<option>Atorvastatine</option>
+											<option>Fluvastatine</option>
+											<option>Pravastatine</option>
+											<option>Rosuvastatine</option>
+											<option>Simvastatine</option>
+											<option>Simvastatine + ezetimibe</option>
+											<option>Ezetimibe</option>
+											<option>Bezafibrate</option>
+											<option>Ciprofibrate</option>
+											<option>Fenofibrate</option>
+											<option>Gemfibrozil</option>
+											<option>Cholestyramine</option>
+											<option>Colestipol</option>
+											<option>Tiadenol</option>
+											<option>Benfluorex</option>
+											<option>Atorvastatine, Ezetimibe</option>
+										</select><img OnClick="javascript:window.open('liste_traitement.html','','width=350,height=650,top=60,left=500,scrollbars=yes,resizable=yes')" alt='Correspondance médicament / molécule' border=0 height="31" src='../images/loupe.gif' width="31"></td>
+						
+										<td>dosage :<input type='text' size='10'></Td>
+					</tr>
+				</table>
+	
+			</td>
+	</Tr>
+  </table>
+  <br>
+  <b>Tension</b>
+  <table border='1' width='670'>
+  	<tr>
+  		<td width='300'>HTA (Dernier chiffres de tension)</Td>
+  			<td colspan='2'><input type='radio' onclick="display_complementhta();" id='hta_oui' checked name='hta'>Oui &nbsp;&nbsp;<input type='radio' id='hta_non' onclick="display_complementhta();" name='hta'>Non 
+  				(<input type='text' id='syst' onkeyup="calcul_hta();" value='145' size="4">/<input type='text' value='90' onkeyup="calcul_hta();" id='dias' size='4'>mmHg &nbsp;le <input type='text' value='27/03/2007' size='10'>(jj/mm/aaaa) )</td>
+  	</tr>
+	<tr>
+		<td>Trois Traitements hypertenseurs ou plus ?
+			<img OnClick="javascript:window.open('hta_resistante.html','','width=250,height=200,top=100,left=500,scrollbars=yes,resizable=yes')" alt='Définition HTA résistante' border=0 height="31" src='../images/loupe.gif' width="31">
+		
+		 <br>
+			<table border="0" cellpadding="0" cellspacing="0" id='tab_hypertenseur1' style="display:none">
+			<tr>
+				<td>Si oui (hta sévère) présence d'une automesure</td>
+			</tr>
+			<tr>
+				<td>et présence d'un diurétique</td>
+			</tr>
+			</table>
+			</td>
+			<td colspan='2'><input type='radio' id='hypertenseur_oui' onclick='display_hypertenseur()' name='hypertenseur'>Oui &nbsp;&nbsp;<input type='radio' onclick='display_hypertenseur()' id='hypertenseur_non' name='hypertenseur'>Non<br>
+			<table border="0" cellpadding="0" cellspacing="0" id='tab_hypertenseur2' style='display:none'>
+			<tr>
+				<td><input type='radio' id='automesure_oui' name='automesure'>Oui &nbsp;&nbsp;<input type='radio' id='automesure_non' name='automesure'>Non</td>
+			</tr>
+			<tr>
+				<td><input type='radio' id='diuretique_oui' name='diuretique'>Oui &nbsp;&nbsp;<input type='radio' id='diuretique_non' name='diuretique'>Non</td>
+			</table>
+			</td>
+	</tr>
+  	<tr>
+  		<td>Echocardiogramme Hypertrophie Ventriculaire Gauche</td>
+  			<td colspan='2'><input type='radio' name='ECG_HVG'>Oui &nbsp;&nbsp;<input type='radio' name='ECG_HVG'>Non</td>
+  	</tr>
+  	<tr>
+  		<td>A défaut Surcharge ventriculaire gauche</td>
+  			<td colspan='2'><input type='radio' id='ventricule_oui' name='ventricule'>Oui &nbsp;&nbsp;<input type='radio' id='ventricule_non' name='ventricule'>Non &nbsp;&nbsp;
+			  				Sokolov : <input type='text' id='sokolov' onkeyup='update_surcharge();' size='4'>mm &nbsp; le <input type='text' size='10'>(jj/mm/aaaa)</td>
+  	</tr>
+  </table>
+  <br>
+
+  <table border="1" width='670' style="display:none" id='info_complementaire'>
+  <tr>
+    <td width='300'>Créatinine</td>
+    <td><input type='text' size='3' id="Creat" onKeyUp ='computeCleanrance("M",27)'> mg<br>
+	<table border="0">
+	<tr>
+	    <td>Clearance calculée : </td>
+	    <td id='clearance'>&nbsp;ml/mn</td>
+	</tr>
+ </table>
+    <td><input type='text' size='10'>(jj/mm/aaaa)</td>
+  </tr>
+  <tr>
+    <td>Kaliémie</td>
+    <td><input type='text' size='3'>mmol/l</td>
+    <td><input type='text' size='10'>(jj/mm/aaaa)</td>
+  </tr>
+  <tr>
+    <td>Protéinurie</td>
+    <td><input type='checkBox' value="1">Positive
+		</td>
+    <td><input type='text' size='10'>(jj/mm/aaaa)</td>
+  </tr>
+  <tr>
+    <td>Hématurie</td>
+    <td><input type='checkBox' value="1">Positive
+
+		</td>
+    <td><input type='text' size='10'>(jj/mm/aaaa)</td>
+  </tr>
+  <tr>
+    <td>Fond d'&oelig;il</td>
+    <td><input type='text' size='10'>(jj/mm/aaaa)</td>
+  </tr>
+  <td>ECG</td>
+    <td><input type='text' size='10'>(jj/mm/aaaa)</td>
+  </tr>
+  </table>
+  
+  <br>
+  <b>Mode de vie</b>
+  <table border='1' width='670'>
+  	<tr>
+  		<td width='300'>Tabagisme<img OnClick="javascript:window.open('tabac.html','','width=350,height=200,top=100,left=500,scrollbars=yes,resizable=yes')" alt='Tabac' border=0 height="31" src='../images/loupe.gif' width="31"></Td>
+  			<td colspan='2'><input type='radio' id='tabac_oui' name='tabac'>Oui &nbsp;&nbsp;<input type='radio' checked id='tabac_non' name='tabac'> Non <br>
+			  Date d'arrêt (jj/mm/aaa) <input type='text' id='date_tabac' onkeyup='arret_tabac();' name='date_tabac' size='10' maxlength='10'></Td>
+  	</tr>
+  	<tr>
+  		<td>Poids</td>
+			<td><input type='text' size='4' id='poids' value='72' onkeyup="displayIMC('178','poids')">kg. &nbsp; le <input type='text' value='24/04/2007' size='10'>(jj/mm/aaaa)&nbsp;&nbsp; Taille : 178<br>
+				<table><tr><td id='imc'>IMC : 23 </td></tr></table> </Td>
+  	</tr>
+	<tr>
+		<td>Activité physique (heures par semaine)<img OnClick="javascript:window.open('activite.html','','width=250,height=200,top=100,left=500,scrollbars=yes,resizable=yes')" alt='Définition activité physique' border=0 height="31" src='../images/loupe.gif' width="31"></td>
+			<td colspan='2'><input type='text' size='4'>h</Td>
+	</Tr>
+	<tr>
+		<td>Fréquence cardiaque</td>
+			<td colspan='2'><input type='text' size='4'>/min &nbsp; le <input type='text' size='10'>(jj/mm/aaaa)</td>
+	</Tr>
+	</tr>
+	<tr>
+		<td>Alcool (>20g/j)<img OnClick="javascript:window.open('alcool.html','','width=350,height=200,top=100,left=500,scrollbars=yes,resizable=yes')" alt='Alcool' border=0 height="31" src='../images/loupe.gif' width="31"></td>
+			<td colspan='2'><input type='radio' name='alcool'>Oui &nbsp;&nbsp;<input type='radio' name='alcool'>Non</td>
+	</tr>
+	</table>
+	<br>
+
+  	<b>Facteurs associés à prendre en charge</b>
+  <table border='1' width='700'>
+	<tr>
+		<td width='400'>Glycémie</td>
+			<td><input type='text' size='4'>g/l &nbsp; le <input type='text' size='10'>(jj/mm/aaaa)</td>
+	</tr>
+	<tr>
+		<td>Examen cardio-vasculaire <img OnClick="javascript:window.open('def_examcardio.html','','width=250,height=250,top=100,left=500,scrollbars=yes,resizable=yes')" alt='Définition Examen cardio-vasculaire' border=0 height="31" src='../images/loupe.gif' width="31"></td>
+			<td><input type='text' size='10'>(jj/mm/aaaa)</td>
+	</tr>
+  </table>
+
+
+
+
+	<br>
+	<b>Indicateurs objectifs</b>
+	<table border='1'>
+	<tr>
+		<td><a href='calcul_rcva.html' target='_blank'>Calcul du RCVA</a></td>
+			<td>22.5%</td>
+	</tr>
+  	<tr>
+  		<td>LDL cible</td>
+  			<td>1.3 g/l</td>
+  				<td>LDL saisi : 1.8 g/l</td>
+  	</tr>
+
+	</table>
+	<br>
+	<table border='1'>
+	<tr>
+		<td width='300'><b>Objectifs retenus pour la 1ère consultation</b></td>
+			<td><b>Détail</b></td>
+	</tr>
+	<tr>
+		<td width='300'><input type='checkbox'>Poids <img OnClick="javascript:window.open('objectif_poids.html','','width=250,height=250,top=100,left=500,scrollbars=yes,resizable=yes')" alt="Détail de l'objectif" border=0 height="31" src='../images/loupe.gif' width="31"></Td>
+			<td><input type='text'></Td>
+	</tr>
+	<tr>
+		<td width='300'><input type='checkbox'>Alcool <img OnClick="javascript:window.open('objectif_alcool.html','','width=250,height=250,top=100,left=500,scrollbars=yes,resizable=yes')" alt="Détail de l'objectif" border=0 height="31" src='../images/loupe.gif' width="31">
+		</td>
+			<td><input type='text'></Td>
+	</Tr>
+	<tr>
+		<td width='300'><input type='checkbox'>Tabac <img OnClick="javascript:window.open('objectif_tabac.html','','width=250,height=250,top=100,left=500,scrollbars=yes,resizable=yes')" alt="Détail de l'objectif" border=0 height="31" src='../images/loupe.gif' width="31">
+		</Td>
+			<td><input type='text'></Td>
+	</Tr>
+	<tr>
+		<td width='300'><input type='checkbox'>Tension <img OnClick="javascript:window.open('objectif_tension.html','','width=250,height=250,top=100,left=500,scrollbars=yes,resizable=yes')" alt="Détail de l'objectif" border=0 height="31" src='../images/loupe.gif' width="31">
+		</td>
+			<td><input type='text'></Td>
+	</tr>
+	</table>
+	<br>
+	
+	<table border='1' bgcolor='orange'>
+	<tr>
+		<td><b>Conseils prodigués</b></td>
+			<td><b>Documents remis</b></Td>
+				<td><b>Commentaire</b></td>
+	</tr>
+	<tr>
+			<td width='300'><input type='checkbox'>Consommation de sel</td>
+			<td><input type='checkbox'>... <img alt="Impression personnalisée" border=0 height="15" src='../images/imprimer.gif' width="15"><br>
+				<input type='checkbox'>... <img alt="Impression personnalisée" border=0 height="15" src='../images/imprimer.gif' width="15">
+				</td>
+					<td><input type='text'></td>
+	</Tr>
+	<tr>
+			<td width='300'><input type='checkbox'>Consommation d'alcool < 2 verres/j pour une femme, 3 verres/j pour un homme</td>
+			<td><input type='checkbox'>Alcool : votre corps se souvient de tout <img OnClick="javascript:window.open('./docs/alcool2.pdf', '_blank');" alt="Impression personnalisée" border=0 height="15" src='../images/imprimer.gif' width="15"><br>
+				<input type='checkbox'>... <img alt="Impression personnalisée" border=0 height="15" src='../images/imprimer.gif' width="15">
+				</td>
+					<td><input type='text'></td>
+	</Tr>
+	<tr>
+			<td width='300'><input type='checkbox'>Activité physique (équivalent de 30 min de marche rapide, 3 fois dans la semaine)</td>
+			<td><input type='checkbox'>Brochure "Bouger c'est la santé" <img OnClick="javascript:window.open('./docs/ATT02695.pdf', '_blank');" alt="Impression personnalisée" border=0 height="15" src='../images/imprimer.gif' width="15"><br>
+				<input type='checkbox'>... <img alt="Impression personnalisée" border=0 height="15" src='../images/imprimer.gif' width="15">
+				</td>
+					<td><input type='text'></td>
+	</Tr>
+	<tr>
+			<td width='300'><input type='checkbox'>Sevrage tabagique</td>
+				<td><input type='checkbox'>La dépendance au tabac <img OnClick="window.open('./docs/ATT02697.pdf', '_blank');" alt="Impression personnalisée" border=0 height="15" src='../images/imprimer.gif' width="15"><br>
+					<input type='checkbox'>Les risques du tabagisme et les bénéfices de l'arrêt <img OnClick="window.open('./docs/risque_tabac.pdf', '_blank');" alt="Impression personnalisée" border=0 height="15" src='../images/imprimer.gif' width="15">
+					</td>
+					<td><input type='text'></td>
+	</Tr>
+	<tr>
+			<td width='300'><input type='checkbox'>Contrôle du poids</td>
+				<td><input type='checkbox'>Pense-bête nutrition <img OnClick="window.open('./docs/ATT02699.pdf', '_blank');" alt="Impression personnalisée" border=0 height="15" src='../images/imprimer.gif' width="15"><br>
+					<input type='checkbox'>... <img alt="Impression personnalisée" border=0 height="15" src='../images/imprimer.gif' width="15">
+					</td>
+					<td><input type='text'></td>
+	</Tr>
+	<tr>
+			<td width='300'><input type='checkbox'>Alimentation riche en fruits et légumes</td>
+				<td><input type='checkbox'>La santé vient en mangeant <img OnClick="window.open('./docs/ATT02701.pdf', '_blank');" alt="Impression personnalisée" border=0 height="15" src='../images/imprimer.gif' width="15"><br>
+					<input type='checkbox'>... <img alt="Impression personnalisée" border=0 height="15" src='../images/imprimer.gif' width="15">
+					</td>
+					<td><input type='text'></td>
+	</Tr>
+	<tr>
+			<td width='300'><input type='checkbox'>Diminution des excitants (café, thé, réglisse)</td>
+				<td><input type='checkbox'>... <img alt="Impression personnalisée" border=0 height="15" src='../images/imprimer.gif' width="15"><br>
+					<input type='checkbox'>... <img alt="Impression personnalisée" border=0 height="15" src='../images/imprimer.gif' width="15">
+					</td>
+					<td><input type='text'></td>
+	</Tr>
+	</table>
+	<br>
+	<b>Bilan de consultation</b>
+	<table width='850' border='1'>
+  	<tr>
+  		<td>Date de consultation</Td>
+  			<td><input type='text' size='10'></td>
+  	</tr>
+  	<tr>
+  		<td>Degré de satisfaction évalué par l'infirmière</Td>
+  			<td><SELECT>
+			  	<option></option>
+			  	<option>Très bon</option>
+			  	<option>Bon</option>
+			  	<option>Moyen</option>
+			  	<option>Mauvais</option>
+			  	<option>Très mauvais</option>
+			  	</select>
+				</td>
+  	</tr>
+  	<tr>
+  		<td>Durée de consultation</Td>
+  			<td><input type='text' size='10'></td>
+  	</tr>
+	<tr>
+			<td>Points positifs : 
+				<div style="font-size:9px">
+	Besoins du patient pris en compte<br>
+	Objectifs prévus atteints<br>
+	Objectifs  non  prévus atteints<br>
+	Outil(s), support (s), méthodes utilisés </div>
+			</td>
+				<td><textarea rows='3' cols='30'></textarea></td>
+	</Tr>
+	<tr>
+			<td>Points à améliorer :
+				<div style="font-size:9px">
+    Besoins du patient non pris en compte<br>
+	Objectifs prévus non  atteints<br>
+	Objectifs perçus à atteindre<br>
+	Méthodes envisagées prochaine séance</div>
+
+			</td>
+				<td><textarea rows='3' cols='30'></textarea></td>
+	</Tr>
+  </table>
+  <br><br>
+  <input type='button' value='Valider la saisie' onClick="alert('Validation inactive');">
+  <input type='reset' value='Recommencer'> 
+</form> 

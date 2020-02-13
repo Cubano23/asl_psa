@@ -1,0 +1,1684 @@
+Chol Total/HDL ;3.29;; 2.5 
+Triglycérides ;1.25;µg/L; 2.3 
+Triglycérides ;0.94;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;2.02;µg/L; 2.4 
+Triglycérides ;1.12;µg/L; 2.3 
+Triglycérides ;0.64;µg/L; 2.2 
+Triglycérides ;0.42;µg/L; 2.2 
+Triglycérides ;1.01;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;1.3;µg/L; 2.3 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;1.29;µg/L; 2.3 
+Triglycérides ;2.17;µg/L; 2.4 
+Triglycérides ;4.2;µg/L; 2.6 
+Chol Total/HDL ;2.87;; 2.4 
+Triglycérides ;1.01;µg/L; 2.3 
+Chol Total/HDL ;3.49;; 2.5 
+Triglycérides ;1.53;µg/L; 2.3 
+Triglycérides ;1.77;µg/L; 2.3 
+Chol Total/HDL ;5.46;; 2.7 
+Triglycérides ;0.97;µg/L; 2.3 
+Triglycérides ;1.19;µg/L; 2.3 
+Chol Total/HDL ;6.5;; 2.8 
+Triglycérides ;3.07;µg/L; 2.5 
+Triglycérides ;3.81;µg/L; 2.5 
+Chol Total/HDL ;3.88;; 2.5 
+Triglycérides ;1.92;µg/L; 2.4 
+Chol Total/HDL ;6.73;; 2.8 
+Chol Total/HDL ;6.73;; 2.8 
+Triglycérides ;5.33;µg/L; 2.7 
+Triglycérides ;5.33;µg/L; 2.7 
+Chol Total/HDL ;4.07;; 2.6 
+Chol Total/HDL ;3.29;; 2.5 
+Chol Total/HDL ;3.29;; 2.5 
+Triglycérides ;1.25;µg/L; 2.3 
+Triglycérides ;0.94;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;2.02;µg/L; 2.4 
+Triglycérides ;1.12;µg/L; 2.3 
+Triglycérides ;0.64;µg/L; 2.2 
+Triglycérides ;0.42;µg/L; 2.2 
+Triglycérides ;1.01;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;1.3;µg/L; 2.3 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;1.29;µg/L; 2.3 
+Triglycérides ;2.17;µg/L; 2.4 
+Triglycérides ;4.2;µg/L; 2.6 
+Chol Total/HDL ;2.87;; 2.4 
+Triglycérides ;1.01;µg/L; 2.3 
+Chol Total/HDL ;3.49;; 2.5 
+Triglycérides ;1.53;µg/L; 2.3 
+Triglycérides ;1.77;µg/L; 2.3 
+Chol Total/HDL ;5.46;; 2.7 
+Triglycérides ;0.97;µg/L; 2.3 
+Triglycérides ;1.19;µg/L; 2.3 
+Chol Total/HDL ;6.5;; 2.8 
+Triglycérides ;3.07;µg/L; 2.5 
+Triglycérides ;3.81;µg/L; 2.5 
+Chol Total/HDL ;3.88;; 2.5 
+Triglycérides ;1.92;µg/L; 2.4 
+Chol Total/HDL ;6.73;; 2.8 
+Chol Total/HDL ;6.73;; 2.8 
+Triglycérides ;5.33;µg/L; 2.7 
+Triglycérides ;5.33;µg/L; 2.7 
+Chol Total/HDL ;4.07;; 2.6 
+Chol Total/HDL ;3.29;; 2.5 
+Triglycérides ;1.25;µg/L; 2.3 
+Triglycérides ;0.94;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;2.02;µg/L; 2.4 
+Triglycérides ;1.12;µg/L; 2.3 
+Triglycérides ;0.64;µg/L; 2.2 
+Triglycérides ;0.42;µg/L; 2.2 
+Triglycérides ;1.01;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;1.3;µg/L; 2.3 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;1.29;µg/L; 2.3 
+Triglycérides ;2.17;µg/L; 2.4 
+Triglycérides ;4.2;µg/L; 2.6 
+Chol Total/HDL ;2.87;; 2.4 
+Triglycérides ;1.01;µg/L; 2.3 
+Chol Total/HDL ;3.49;; 2.5 
+Triglycérides ;1.53;µg/L; 2.3 
+Triglycérides ;1.77;µg/L; 2.3 
+Chol Total/HDL ;5.46;; 2.7 
+Triglycérides ;0.97;µg/L; 2.3 
+Triglycérides ;1.19;µg/L; 2.3 
+Chol Total/HDL ;6.5;; 2.8 
+Triglycérides ;3.07;µg/L; 2.5 
+Triglycérides ;3.81;µg/L; 2.5 
+Chol Total/HDL ;3.88;; 2.5 
+Triglycérides ;1.92;µg/L; 2.4 
+Chol Total/HDL ;6.73;; 2.8 
+Chol Total/HDL ;6.73;; 2.8 
+Triglycérides ;5.33;µg/L; 2.7 
+Triglycérides ;5.33;µg/L; 2.7 
+Chol Total/HDL ;4.07;; 2.6 
+Chol Total/HDL ;3.29;; 2.5 
+Triglycérides ;1.25;µg/L; 2.3 
+Triglycérides ;0.94;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;2.02;µg/L; 2.4 
+Triglycérides ;1.12;µg/L; 2.3 
+Triglycérides ;0.64;µg/L; 2.2 
+Triglycérides ;0.42;µg/L; 2.2 
+Triglycérides ;1.01;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;1.3;µg/L; 2.3 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;1.29;µg/L; 2.3 
+Triglycérides ;2.17;µg/L; 2.4 
+Triglycérides ;4.2;µg/L; 2.6 
+Chol Total/HDL ;2.87;; 2.4 
+Triglycérides ;1.01;µg/L; 2.3 
+Chol Total/HDL ;3.49;; 2.5 
+Triglycérides ;1.53;µg/L; 2.3 
+Triglycérides ;1.77;µg/L; 2.3 
+Chol Total/HDL ;5.46;; 2.7 
+Triglycérides ;0.97;µg/L; 2.3 
+Triglycérides ;1.19;µg/L; 2.3 
+Chol Total/HDL ;6.5;; 2.8 
+Triglycérides ;3.07;µg/L; 2.5 
+Triglycérides ;3.81;µg/L; 2.5 
+Chol Total/HDL ;3.88;; 2.5 
+Triglycérides ;1.92;µg/L; 2.4 
+Chol Total/HDL ;6.73;; 2.8 
+Chol Total/HDL ;6.73;; 2.8 
+Triglycérides ;5.33;µg/L; 2.7 
+Triglycérides ;5.33;µg/L; 2.7 
+Chol Total/HDL ;4.07;; 2.6 
+Chol Total/HDL ;3.29;; 2.5 
+Triglycérides ;1.25;µg/L; 2.3 
+Triglycérides ;0.94;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;2.02;µg/L; 2.4 
+Triglycérides ;1.12;µg/L; 2.3 
+Triglycérides ;0.64;µg/L; 2.2 
+Triglycérides ;0.42;µg/L; 2.2 
+Triglycérides ;1.01;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;1.3;µg/L; 2.3 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;1.29;µg/L; 2.3 
+Triglycérides ;2.17;µg/L; 2.4 
+Triglycérides ;4.2;µg/L; 2.6 
+Chol Total/HDL ;2.87;; 2.4 
+Triglycérides ;1.01;µg/L; 2.3 
+Chol Total/HDL ;3.49;; 2.5 
+Triglycérides ;1.53;µg/L; 2.3 
+Triglycérides ;1.77;µg/L; 2.3 
+Chol Total/HDL ;5.46;; 2.7 
+Triglycérides ;0.97;µg/L; 2.3 
+Triglycérides ;1.19;µg/L; 2.3 
+Chol Total/HDL ;6.5;; 2.8 
+Triglycérides ;3.07;µg/L; 2.5 
+Triglycérides ;3.81;µg/L; 2.5 
+Chol Total/HDL ;3.88;; 2.5 
+Triglycérides ;1.92;µg/L; 2.4 
+Chol Total/HDL ;6.73;; 2.8 
+Chol Total/HDL ;6.73;; 2.8 
+Triglycérides ;5.33;µg/L; 2.7 
+Triglycérides ;5.33;µg/L; 2.7 
+Chol Total/HDL ;4.07;; 2.6 
+Chol Total/HDL ;3.29;; 2.5 
+Triglycérides ;1.25;µg/L; 2.3 
+Triglycérides ;0.94;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;2.02;µg/L; 2.4 
+Triglycérides ;1.12;µg/L; 2.3 
+Triglycérides ;0.64;µg/L; 2.2 
+Triglycérides ;0.42;µg/L; 2.2 
+Triglycérides ;1.01;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;1.3;µg/L; 2.3 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;1.29;µg/L; 2.3 
+Triglycérides ;2.17;µg/L; 2.4 
+Triglycérides ;4.2;µg/L; 2.6 
+Chol Total/HDL ;2.87;; 2.4 
+Triglycérides ;1.01;µg/L; 2.3 
+Chol Total/HDL ;3.49;; 2.5 
+Triglycérides ;1.53;µg/L; 2.3 
+Triglycérides ;1.77;µg/L; 2.3 
+Chol Total/HDL ;5.46;; 2.7 
+Triglycérides ;0.97;µg/L; 2.3 
+Triglycérides ;1.19;µg/L; 2.3 
+Chol Total/HDL ;6.5;; 2.8 
+Triglycérides ;3.07;µg/L; 2.5 
+Triglycérides ;3.81;µg/L; 2.5 
+Chol Total/HDL ;3.88;; 2.5 
+Triglycérides ;1.92;µg/L; 2.4 
+Chol Total/HDL ;6.73;; 2.8 
+Chol Total/HDL ;6.73;; 2.8 
+Triglycérides ;5.33;µg/L; 2.7 
+Triglycérides ;5.33;µg/L; 2.7 
+Chol Total/HDL ;4.07;; 2.6 
+Chol Total/HDL ;3.29;; 2.5 
+Triglycérides ;1.25;µg/L; 2.3 
+Triglycérides ;0.94;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;2.02;µg/L; 2.4 
+Triglycérides ;1.12;µg/L; 2.3 
+Triglycérides ;0.64;µg/L; 2.2 
+Triglycérides ;0.42;µg/L; 2.2 
+Triglycérides ;1.01;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;1.3;µg/L; 2.3 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;1.29;µg/L; 2.3 
+Triglycérides ;2.17;µg/L; 2.4 
+Triglycérides ;4.2;µg/L; 2.6 
+Chol Total/HDL ;2.87;; 2.4 
+Triglycérides ;1.01;µg/L; 2.3 
+Chol Total/HDL ;3.49;; 2.5 
+Triglycérides ;1.53;µg/L; 2.3 
+Triglycérides ;1.77;µg/L; 2.3 
+Chol Total/HDL ;5.46;; 2.7 
+Triglycérides ;0.97;µg/L; 2.3 
+Triglycérides ;1.19;µg/L; 2.3 
+Chol Total/HDL ;6.5;; 2.8 
+Triglycérides ;3.07;µg/L; 2.5 
+Triglycérides ;3.81;µg/L; 2.5 
+Chol Total/HDL ;3.88;; 2.5 
+Triglycérides ;1.92;µg/L; 2.4 
+Chol Total/HDL ;6.73;; 2.8 
+Chol Total/HDL ;6.73;; 2.8 
+Triglycérides ;5.33;µg/L; 2.7 
+Triglycérides ;5.33;µg/L; 2.7 
+Chol Total/HDL ;4.07;; 2.6 
+Chol Total/HDL ;3.29;; 2.5 
+Triglycérides ;1.25;µg/L; 2.3 
+Triglycérides ;0.94;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;2.02;µg/L; 2.4 
+Triglycérides ;1.12;µg/L; 2.3 
+Triglycérides ;0.64;µg/L; 2.2 
+Triglycérides ;0.42;µg/L; 2.2 
+Triglycérides ;1.01;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;1.3;µg/L; 2.3 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;1.29;µg/L; 2.3 
+Triglycérides ;2.17;µg/L; 2.4 
+Triglycérides ;4.2;µg/L; 2.6 
+Chol Total/HDL ;2.87;; 2.4 
+Triglycérides ;1.01;µg/L; 2.3 
+Chol Total/HDL ;3.49;; 2.5 
+Triglycérides ;1.53;µg/L; 2.3 
+Triglycérides ;1.77;µg/L; 2.3 
+Chol Total/HDL ;5.46;; 2.7 
+Triglycérides ;0.97;µg/L; 2.3 
+Triglycérides ;1.19;µg/L; 2.3 
+Chol Total/HDL ;6.5;; 2.8 
+Triglycérides ;3.07;µg/L; 2.5 
+Triglycérides ;3.81;µg/L; 2.5 
+Chol Total/HDL ;3.88;; 2.5 
+Triglycérides ;1.92;µg/L; 2.4 
+Chol Total/HDL ;6.73;; 2.8 
+Chol Total/HDL ;6.73;; 2.8 
+Triglycérides ;5.33;µg/L; 2.7 
+Triglycérides ;5.33;µg/L; 2.7 
+Chol Total/HDL ;4.07;; 2.6 
+Chol Total/HDL ;3.29;; 2.5 
+Triglycérides ;1.25;µg/L; 2.3 
+Triglycérides ;0.94;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;2.02;µg/L; 2.4 
+Triglycérides ;1.12;µg/L; 2.3 
+Triglycérides ;0.64;µg/L; 2.2 
+Triglycérides ;0.42;µg/L; 2.2 
+Triglycérides ;1.01;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;1.3;µg/L; 2.3 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;1.29;µg/L; 2.3 
+Triglycérides ;2.17;µg/L; 2.4 
+Triglycérides ;4.2;µg/L; 2.6 
+Chol Total/HDL ;2.87;; 2.4 
+Triglycérides ;1.01;µg/L; 2.3 
+Chol Total/HDL ;3.49;; 2.5 
+Triglycérides ;1.53;µg/L; 2.3 
+Triglycérides ;1.77;µg/L; 2.3 
+Chol Total/HDL ;5.46;; 2.7 
+Triglycérides ;0.97;µg/L; 2.3 
+Triglycérides ;1.19;µg/L; 2.3 
+Chol Total/HDL ;6.5;; 2.8 
+Triglycérides ;3.07;µg/L; 2.5 
+Triglycérides ;3.81;µg/L; 2.5 
+Chol Total/HDL ;3.88;; 2.5 
+Triglycérides ;1.92;µg/L; 2.4 
+Chol Total/HDL ;6.73;; 2.8 
+Chol Total/HDL ;6.73;; 2.8 
+Triglycérides ;5.33;µg/L; 2.7 
+Triglycérides ;5.33;µg/L; 2.7 
+Chol Total/HDL ;4.07;; 2.6 
+Chol Total/HDL ;3.29;; 2.5 
+Triglycérides ;1.25;µg/L; 2.3 
+Triglycérides ;0.94;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;2.02;µg/L; 2.4 
+Triglycérides ;1.12;µg/L; 2.3 
+Triglycérides ;0.64;µg/L; 2.2 
+Triglycérides ;0.42;µg/L; 2.2 
+Triglycérides ;1.01;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;1.3;µg/L; 2.3 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;1.29;µg/L; 2.3 
+Triglycérides ;2.17;µg/L; 2.4 
+Triglycérides ;4.2;µg/L; 2.6 
+Chol Total/HDL ;2.87;; 2.4 
+Triglycérides ;1.01;µg/L; 2.3 
+Chol Total/HDL ;3.49;; 2.5 
+Triglycérides ;1.53;µg/L; 2.3 
+Triglycérides ;1.77;µg/L; 2.3 
+Chol Total/HDL ;5.46;; 2.7 
+Triglycérides ;0.97;µg/L; 2.3 
+Triglycérides ;1.19;µg/L; 2.3 
+Chol Total/HDL ;6.5;; 2.8 
+Triglycérides ;3.07;µg/L; 2.5 
+Triglycérides ;3.81;µg/L; 2.5 
+Chol Total/HDL ;3.88;; 2.5 
+Triglycérides ;1.92;µg/L; 2.4 
+Chol Total/HDL ;6.73;; 2.8 
+Chol Total/HDL ;6.73;; 2.8 
+Triglycérides ;5.33;µg/L; 2.7 
+Triglycérides ;5.33;µg/L; 2.7 
+Chol Total/HDL ;4.07;; 2.6 
+Chol Total/HDL ;3.29;; 2.5 
+Triglycérides ;1.25;µg/L; 2.3 
+Triglycérides ;0.94;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;2.02;µg/L; 2.4 
+Triglycérides ;1.12;µg/L; 2.3 
+Triglycérides ;0.64;µg/L; 2.2 
+Triglycérides ;0.42;µg/L; 2.2 
+Triglycérides ;1.01;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;1.3;µg/L; 2.3 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;1.29;µg/L; 2.3 
+Triglycérides ;2.17;µg/L; 2.4 
+Triglycérides ;4.2;µg/L; 2.6 
+Chol Total/HDL ;2.87;; 2.4 
+Triglycérides ;1.01;µg/L; 2.3 
+Chol Total/HDL ;3.49;; 2.5 
+Triglycérides ;1.53;µg/L; 2.3 
+Triglycérides ;1.77;µg/L; 2.3 
+Chol Total/HDL ;5.46;; 2.7 
+Triglycérides ;0.97;µg/L; 2.3 
+Triglycérides ;1.19;µg/L; 2.3 
+Chol Total/HDL ;6.5;; 2.8 
+Triglycérides ;3.07;µg/L; 2.5 
+Triglycérides ;3.81;µg/L; 2.5 
+Chol Total/HDL ;3.88;; 2.5 
+Triglycérides ;1.92;µg/L; 2.4 
+Chol Total/HDL ;6.73;; 2.8 
+Chol Total/HDL ;6.73;; 2.8 
+Triglycérides ;5.33;µg/L; 2.7 
+Triglycérides ;5.33;µg/L; 2.7 
+Chol Total/HDL ;4.07;; 2.6 
+Chol Total/HDL ;3.29;; 2.5 
+Triglycérides ;1.25;µg/L; 2.3 
+Triglycérides ;0.94;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;2.02;µg/L; 2.4 
+Triglycérides ;1.12;µg/L; 2.3 
+Triglycérides ;0.64;µg/L; 2.2 
+Triglycérides ;0.42;µg/L; 2.2 
+Triglycérides ;1.01;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;1.3;µg/L; 2.3 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;1.29;µg/L; 2.3 
+Triglycérides ;2.17;µg/L; 2.4 
+Triglycérides ;4.2;µg/L; 2.6 
+Chol Total/HDL ;2.87;; 2.4 
+Triglycérides ;1.01;µg/L; 2.3 
+Chol Total/HDL ;3.49;; 2.5 
+Triglycérides ;1.53;µg/L; 2.3 
+Triglycérides ;1.77;µg/L; 2.3 
+Chol Total/HDL ;5.46;; 2.7 
+Triglycérides ;0.97;µg/L; 2.3 
+Triglycérides ;1.19;µg/L; 2.3 
+Chol Total/HDL ;6.5;; 2.8 
+Triglycérides ;3.07;µg/L; 2.5 
+Triglycérides ;3.81;µg/L; 2.5 
+Chol Total/HDL ;3.88;; 2.5 
+Triglycérides ;1.92;µg/L; 2.4 
+Chol Total/HDL ;6.73;; 2.8 
+Chol Total/HDL ;6.73;; 2.8 
+Triglycérides ;5.33;µg/L; 2.7 
+Triglycérides ;5.33;µg/L; 2.7 
+Chol Total/HDL ;4.07;; 2.6 
+Chol Total/HDL ;3.29;; 2.5 
+Triglycérides ;1.25;µg/L; 2.3 
+Triglycérides ;0.94;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;2.02;µg/L; 2.4 
+Triglycérides ;1.12;µg/L; 2.3 
+Triglycérides ;0.64;µg/L; 2.2 
+Triglycérides ;0.42;µg/L; 2.2 
+Triglycérides ;1.01;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;1.3;µg/L; 2.3 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;1.29;µg/L; 2.3 
+Triglycérides ;2.17;µg/L; 2.4 
+Triglycérides ;4.2;µg/L; 2.6 
+Chol Total/HDL ;2.87;; 2.4 
+Triglycérides ;1.01;µg/L; 2.3 
+Chol Total/HDL ;3.49;; 2.5 
+Triglycérides ;1.53;µg/L; 2.3 
+Triglycérides ;1.77;µg/L; 2.3 
+Chol Total/HDL ;5.46;; 2.7 
+Triglycérides ;0.97;µg/L; 2.3 
+Triglycérides ;1.19;µg/L; 2.3 
+Chol Total/HDL ;6.5;; 2.8 
+Triglycérides ;3.07;µg/L; 2.5 
+Triglycérides ;3.81;µg/L; 2.5 
+Chol Total/HDL ;3.88;; 2.5 
+Triglycérides ;1.92;µg/L; 2.4 
+Chol Total/HDL ;6.73;; 2.8 
+Chol Total/HDL ;6.73;; 2.8 
+Triglycérides ;5.33;µg/L; 2.7 
+Triglycérides ;5.33;µg/L; 2.7 
+Chol Total/HDL ;4.07;; 2.6 
+Chol Total/HDL ;3.29;; 2.5 
+Triglycérides ;1.25;µg/L; 2.3 
+Triglycérides ;0.94;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;2.02;µg/L; 2.4 
+Triglycérides ;1.12;µg/L; 2.3 
+Triglycérides ;0.64;µg/L; 2.2 
+Triglycérides ;0.42;µg/L; 2.2 
+Triglycérides ;1.01;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;1.3;µg/L; 2.3 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;1.29;µg/L; 2.3 
+Triglycérides ;2.17;µg/L; 2.4 
+Triglycérides ;4.2;µg/L; 2.6 
+Chol Total/HDL ;2.87;; 2.4 
+Triglycérides ;1.01;µg/L; 2.3 
+Chol Total/HDL ;3.49;; 2.5 
+Triglycérides ;1.53;µg/L; 2.3 
+Triglycérides ;1.77;µg/L; 2.3 
+Chol Total/HDL ;5.46;; 2.7 
+Triglycérides ;0.97;µg/L; 2.3 
+Triglycérides ;1.19;µg/L; 2.3 
+Chol Total/HDL ;6.5;; 2.8 
+Triglycérides ;3.07;µg/L; 2.5 
+Triglycérides ;3.81;µg/L; 2.5 
+Chol Total/HDL ;3.88;; 2.5 
+Triglycérides ;1.92;µg/L; 2.4 
+Chol Total/HDL ;6.73;; 2.8 
+Chol Total/HDL ;6.73;; 2.8 
+Triglycérides ;5.33;µg/L; 2.7 
+Triglycérides ;5.33;µg/L; 2.7 
+Chol Total/HDL ;4.07;; 2.6 
+Chol Total/HDL ;3.29;; 2.5 
+Triglycérides ;1.25;µg/L; 2.3 
+Triglycérides ;0.94;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;2.02;µg/L; 2.4 
+Triglycérides ;1.12;µg/L; 2.3 
+Triglycérides ;0.64;µg/L; 2.2 
+Triglycérides ;0.42;µg/L; 2.2 
+Triglycérides ;1.01;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;1.3;µg/L; 2.3 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;1.29;µg/L; 2.3 
+Triglycérides ;2.17;µg/L; 2.4 
+Triglycérides ;4.2;µg/L; 2.6 
+Chol Total/HDL ;2.87;; 2.4 
+Triglycérides ;1.01;µg/L; 2.3 
+Chol Total/HDL ;3.49;; 2.5 
+Triglycérides ;1.53;µg/L; 2.3 
+Triglycérides ;1.77;µg/L; 2.3 
+Chol Total/HDL ;5.46;; 2.7 
+Triglycérides ;0.97;µg/L; 2.3 
+Triglycérides ;1.19;µg/L; 2.3 
+Chol Total/HDL ;6.5;; 2.8 
+Triglycérides ;3.07;µg/L; 2.5 
+Triglycérides ;3.81;µg/L; 2.5 
+Chol Total/HDL ;3.88;; 2.5 
+Triglycérides ;1.92;µg/L; 2.4 
+Chol Total/HDL ;6.73;; 2.8 
+Chol Total/HDL ;6.73;; 2.8 
+Triglycérides ;5.33;µg/L; 2.7 
+Triglycérides ;5.33;µg/L; 2.7 
+Chol Total/HDL ;4.07;; 2.6 
+Chol Total/HDL ;3.29;; 2.5 
+Triglycérides ;1.25;µg/L; 2.3 
+Triglycérides ;0.94;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;2.02;µg/L; 2.4 
+Triglycérides ;1.12;µg/L; 2.3 
+Triglycérides ;0.64;µg/L; 2.2 
+Triglycérides ;0.42;µg/L; 2.2 
+Triglycérides ;1.01;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;1.3;µg/L; 2.3 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;1.29;µg/L; 2.3 
+Triglycérides ;2.17;µg/L; 2.4 
+Triglycérides ;4.2;µg/L; 2.6 
+Chol Total/HDL ;2.87;; 2.4 
+Triglycérides ;1.01;µg/L; 2.3 
+Chol Total/HDL ;3.49;; 2.5 
+Triglycérides ;1.53;µg/L; 2.3 
+Triglycérides ;1.77;µg/L; 2.3 
+Chol Total/HDL ;5.46;; 2.7 
+Triglycérides ;0.97;µg/L; 2.3 
+Triglycérides ;1.19;µg/L; 2.3 
+Chol Total/HDL ;6.5;; 2.8 
+Triglycérides ;3.07;µg/L; 2.5 
+Triglycérides ;3.81;µg/L; 2.5 
+Chol Total/HDL ;3.88;; 2.5 
+Triglycérides ;1.92;µg/L; 2.4 
+Chol Total/HDL ;6.73;; 2.8 
+Chol Total/HDL ;6.73;; 2.8 
+Triglycérides ;5.33;µg/L; 2.7 
+Triglycérides ;5.33;µg/L; 2.7 
+Chol Total/HDL ;4.07;; 2.6 
+Chol Total/HDL ;3.29;; 2.5 
+Triglycérides ;1.25;µg/L; 2.3 
+Triglycérides ;0.94;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;2.02;µg/L; 2.4 
+Triglycérides ;1.12;µg/L; 2.3 
+Triglycérides ;0.64;µg/L; 2.2 
+Triglycérides ;0.42;µg/L; 2.2 
+Triglycérides ;1.01;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;1.3;µg/L; 2.3 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;1.29;µg/L; 2.3 
+Triglycérides ;2.17;µg/L; 2.4 
+Triglycérides ;4.2;µg/L; 2.6 
+Chol Total/HDL ;2.87;; 2.4 
+Triglycérides ;1.01;µg/L; 2.3 
+Chol Total/HDL ;3.49;; 2.5 
+Triglycérides ;1.53;µg/L; 2.3 
+Triglycérides ;1.77;µg/L; 2.3 
+Chol Total/HDL ;5.46;; 2.7 
+Triglycérides ;0.97;µg/L; 2.3 
+Triglycérides ;1.19;µg/L; 2.3 
+Chol Total/HDL ;6.5;; 2.8 
+Triglycérides ;3.07;µg/L; 2.5 
+Triglycérides ;3.81;µg/L; 2.5 
+Chol Total/HDL ;3.88;; 2.5 
+Triglycérides ;1.92;µg/L; 2.4 
+Chol Total/HDL ;6.73;; 2.8 
+Chol Total/HDL ;6.73;; 2.8 
+Triglycérides ;5.33;µg/L; 2.7 
+Triglycérides ;5.33;µg/L; 2.7 
+Chol Total/HDL ;4.07;; 2.6 
+Chol Total/HDL ;3.29;; 2.5 
+Triglycérides ;1.25;µg/L; 2.3 
+Triglycérides ;0.94;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;2.02;µg/L; 2.4 
+Triglycérides ;1.12;µg/L; 2.3 
+Triglycérides ;0.64;µg/L; 2.2 
+Triglycérides ;0.42;µg/L; 2.2 
+Triglycérides ;1.01;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;1.3;µg/L; 2.3 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;1.29;µg/L; 2.3 
+Triglycérides ;2.17;µg/L; 2.4 
+Triglycérides ;4.2;µg/L; 2.6 
+Chol Total/HDL ;2.87;; 2.4 
+Triglycérides ;1.01;µg/L; 2.3 
+Chol Total/HDL ;3.49;; 2.5 
+Triglycérides ;1.53;µg/L; 2.3 
+Triglycérides ;1.77;µg/L; 2.3 
+Chol Total/HDL ;5.46;; 2.7 
+Triglycérides ;0.97;µg/L; 2.3 
+Triglycérides ;1.19;µg/L; 2.3 
+Chol Total/HDL ;6.5;; 2.8 
+Triglycérides ;3.07;µg/L; 2.5 
+Triglycérides ;3.81;µg/L; 2.5 
+Chol Total/HDL ;3.88;; 2.5 
+Triglycérides ;1.92;µg/L; 2.4 
+Chol Total/HDL ;6.73;; 2.8 
+Chol Total/HDL ;6.73;; 2.8 
+Triglycérides ;5.33;µg/L; 2.7 
+Triglycérides ;5.33;µg/L; 2.7 
+Chol Total/HDL ;4.07;; 2.6 
+Chol Total/HDL ;3.29;; 2.5 
+Triglycérides ;1.25;µg/L; 2.3 
+Chol Total/HDL ;3.29;; 2.5 
+Triglycérides ;1.25;µg/L; 2.3 
+Triglycérides ;0.94;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;2.02;µg/L; 2.4 
+Triglycérides ;1.12;µg/L; 2.3 
+Triglycérides ;0.64;µg/L; 2.2 
+Triglycérides ;0.42;µg/L; 2.2 
+Triglycérides ;1.01;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;1.3;µg/L; 2.3 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;1.29;µg/L; 2.3 
+Triglycérides ;2.17;µg/L; 2.4 
+Triglycérides ;4.2;µg/L; 2.6 
+Chol Total/HDL ;2.87;; 2.4 
+Triglycérides ;1.01;µg/L; 2.3 
+Chol Total/HDL ;3.49;; 2.5 
+Triglycérides ;1.53;µg/L; 2.3 
+Triglycérides ;1.77;µg/L; 2.3 
+Chol Total/HDL ;5.46;; 2.7 
+Triglycérides ;0.97;µg/L; 2.3 
+Triglycérides ;1.19;µg/L; 2.3 
+Chol Total/HDL ;6.5;; 2.8 
+Triglycérides ;3.07;µg/L; 2.5 
+Triglycérides ;3.81;µg/L; 2.5 
+Chol Total/HDL ;3.88;; 2.5 
+Triglycérides ;1.92;µg/L; 2.4 
+Chol Total/HDL ;6.73;; 2.8 
+Chol Total/HDL ;6.73;; 2.8 
+Triglycérides ;5.33;µg/L; 2.7 
+Triglycérides ;5.33;µg/L; 2.7 
+Chol Total/HDL ;4.07;; 2.6 
+Chol Total/HDL ;3.29;; 2.5 
+Triglycérides ;1.25;µg/L; 2.3 
+Triglycérides ;0.94;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;2.02;µg/L; 2.4 
+Triglycérides ;1.12;µg/L; 2.3 
+Triglycérides ;0.64;µg/L; 2.2 
+Triglycérides ;0.42;µg/L; 2.2 
+Triglycérides ;1.01;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;1.3;µg/L; 2.3 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;1.29;µg/L; 2.3 
+Triglycérides ;2.17;µg/L; 2.4 
+Triglycérides ;4.2;µg/L; 2.6 
+Chol Total/HDL ;2.87;; 2.4 
+Triglycérides ;1.01;µg/L; 2.3 
+Chol Total/HDL ;3.49;; 2.5 
+Triglycérides ;1.53;µg/L; 2.3 
+Triglycérides ;1.77;µg/L; 2.3 
+Chol Total/HDL ;5.46;; 2.7 
+Triglycérides ;0.97;µg/L; 2.3 
+Triglycérides ;1.19;µg/L; 2.3 
+Chol Total/HDL ;6.5;; 2.8 
+Triglycérides ;3.07;µg/L; 2.5 
+Triglycérides ;3.81;µg/L; 2.5 
+Chol Total/HDL ;3.88;; 2.5 
+Triglycérides ;1.92;µg/L; 2.4 
+Chol Total/HDL ;6.73;; 2.8 
+Chol Total/HDL ;6.73;; 2.8 
+Triglycérides ;5.33;µg/L; 2.7 
+Triglycérides ;5.33;µg/L; 2.7 
+Chol Total/HDL ;4.07;; 2.6 
+Chol Total/HDL ;3.29;; 2.5 
+Triglycérides ;1.25;µg/L; 2.3 
+Triglycérides ;0.94;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;2.02;µg/L; 2.4 
+Triglycérides ;1.12;µg/L; 2.3 
+Triglycérides ;0.64;µg/L; 2.2 
+Triglycérides ;0.42;µg/L; 2.2 
+Triglycérides ;1.01;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;1.3;µg/L; 2.3 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;1.29;µg/L; 2.3 
+Triglycérides ;2.17;µg/L; 2.4 
+Triglycérides ;4.2;µg/L; 2.6 
+Chol Total/HDL ;2.87;; 2.4 
+Triglycérides ;1.01;µg/L; 2.3 
+Chol Total/HDL ;3.49;; 2.5 
+Triglycérides ;1.53;µg/L; 2.3 
+Triglycérides ;1.77;µg/L; 2.3 
+Chol Total/HDL ;5.46;; 2.7 
+Triglycérides ;0.97;µg/L; 2.3 
+Triglycérides ;1.19;µg/L; 2.3 
+Chol Total/HDL ;6.5;; 2.8 
+Triglycérides ;3.07;µg/L; 2.5 
+Triglycérides ;3.81;µg/L; 2.5 
+Chol Total/HDL ;3.88;; 2.5 
+Triglycérides ;1.92;µg/L; 2.4 
+Chol Total/HDL ;6.73;; 2.8 
+Chol Total/HDL ;6.73;; 2.8 
+Triglycérides ;5.33;µg/L; 2.7 
+Triglycérides ;5.33;µg/L; 2.7 
+Chol Total/HDL ;4.07;; 2.6 
+Chol Total/HDL ;3.29;; 2.5 
+Triglycérides ;1.25;µg/L; 2.3 
+Triglycérides ;0.94;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;2.02;µg/L; 2.4 
+Triglycérides ;1.12;µg/L; 2.3 
+Triglycérides ;0.64;µg/L; 2.2 
+Triglycérides ;0.42;µg/L; 2.2 
+Triglycérides ;1.01;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;1.3;µg/L; 2.3 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;1.29;µg/L; 2.3 
+Triglycérides ;2.17;µg/L; 2.4 
+Triglycérides ;4.2;µg/L; 2.6 
+Chol Total/HDL ;2.87;; 2.4 
+Triglycérides ;1.01;µg/L; 2.3 
+Chol Total/HDL ;3.49;; 2.5 
+Triglycérides ;1.53;µg/L; 2.3 
+Triglycérides ;1.77;µg/L; 2.3 
+Chol Total/HDL ;5.46;; 2.7 
+Triglycérides ;0.97;µg/L; 2.3 
+Triglycérides ;1.19;µg/L; 2.3 
+Chol Total/HDL ;6.5;; 2.8 
+Triglycérides ;3.07;µg/L; 2.5 
+Triglycérides ;3.81;µg/L; 2.5 
+Chol Total/HDL ;3.88;; 2.5 
+Triglycérides ;1.92;µg/L; 2.4 
+Chol Total/HDL ;6.73;; 2.8 
+Chol Total/HDL ;6.73;; 2.8 
+Triglycérides ;5.33;µg/L; 2.7 
+Triglycérides ;5.33;µg/L; 2.7 
+Chol Total/HDL ;4.07;; 2.6 
+Chol Total/HDL ;3.29;; 2.5 
+Triglycérides ;1.25;µg/L; 2.3 
+Triglycérides ;0.94;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;2.02;µg/L; 2.4 
+Triglycérides ;1.12;µg/L; 2.3 
+Triglycérides ;0.64;µg/L; 2.2 
+Triglycérides ;0.42;µg/L; 2.2 
+Triglycérides ;1.01;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;1.3;µg/L; 2.3 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;1.29;µg/L; 2.3 
+Triglycérides ;2.17;µg/L; 2.4 
+Triglycérides ;4.2;µg/L; 2.6 
+Chol Total/HDL ;2.87;; 2.4 
+Triglycérides ;1.01;µg/L; 2.3 
+Chol Total/HDL ;3.49;; 2.5 
+Triglycérides ;1.53;µg/L; 2.3 
+Triglycérides ;1.77;µg/L; 2.3 
+Chol Total/HDL ;5.46;; 2.7 
+Triglycérides ;0.97;µg/L; 2.3 
+Triglycérides ;1.19;µg/L; 2.3 
+Chol Total/HDL ;6.5;; 2.8 
+Triglycérides ;3.07;µg/L; 2.5 
+Triglycérides ;3.81;µg/L; 2.5 
+Chol Total/HDL ;3.88;; 2.5 
+Triglycérides ;1.92;µg/L; 2.4 
+Chol Total/HDL ;6.73;; 2.8 
+Chol Total/HDL ;6.73;; 2.8 
+Triglycérides ;5.33;µg/L; 2.7 
+Triglycérides ;5.33;µg/L; 2.7 
+Chol Total/HDL ;4.07;; 2.6 
+Chol Total/HDL ;3.29;; 2.5 
+Triglycérides ;1.25;µg/L; 2.3 
+Triglycérides ;0.94;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;2.02;µg/L; 2.4 
+Triglycérides ;1.12;µg/L; 2.3 
+Triglycérides ;0.64;µg/L; 2.2 
+Triglycérides ;0.42;µg/L; 2.2 
+Triglycérides ;1.01;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;1.3;µg/L; 2.3 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;1.29;µg/L; 2.3 
+Triglycérides ;2.17;µg/L; 2.4 
+Triglycérides ;4.2;µg/L; 2.6 
+Chol Total/HDL ;2.87;; 2.4 
+Triglycérides ;1.01;µg/L; 2.3 
+Chol Total/HDL ;3.49;; 2.5 
+Triglycérides ;1.53;µg/L; 2.3 
+Triglycérides ;1.77;µg/L; 2.3 
+Chol Total/HDL ;5.46;; 2.7 
+Triglycérides ;0.97;µg/L; 2.3 
+Triglycérides ;1.19;µg/L; 2.3 
+Chol Total/HDL ;6.5;; 2.8 
+Triglycérides ;3.07;µg/L; 2.5 
+Triglycérides ;3.81;µg/L; 2.5 
+Chol Total/HDL ;3.88;; 2.5 
+Triglycérides ;1.92;µg/L; 2.4 
+Chol Total/HDL ;6.73;; 2.8 
+Chol Total/HDL ;6.73;; 2.8 
+Triglycérides ;5.33;µg/L; 2.7 
+Triglycérides ;5.33;µg/L; 2.7 
+Chol Total/HDL ;4.07;; 2.6 
+Chol Total/HDL ;3.29;; 2.5 
+Triglycérides ;1.25;µg/L; 2.3 
+Triglycérides ;0.94;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;2.02;µg/L; 2.4 
+Triglycérides ;1.12;µg/L; 2.3 
+Triglycérides ;0.64;µg/L; 2.2 
+Triglycérides ;0.42;µg/L; 2.2 
+Triglycérides ;1.01;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;1.3;µg/L; 2.3 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;1.29;µg/L; 2.3 
+Triglycérides ;2.17;µg/L; 2.4 
+Triglycérides ;4.2;µg/L; 2.6 
+Chol Total/HDL ;2.87;; 2.4 
+Triglycérides ;1.01;µg/L; 2.3 
+Chol Total/HDL ;3.49;; 2.5 
+Triglycérides ;1.53;µg/L; 2.3 
+Triglycérides ;1.77;µg/L; 2.3 
+Chol Total/HDL ;5.46;; 2.7 
+Triglycérides ;0.97;µg/L; 2.3 
+Triglycérides ;1.19;µg/L; 2.3 
+Chol Total/HDL ;6.5;; 2.8 
+Triglycérides ;3.07;µg/L; 2.5 
+Triglycérides ;3.81;µg/L; 2.5 
+Chol Total/HDL ;3.88;; 2.5 
+Triglycérides ;1.92;µg/L; 2.4 
+Chol Total/HDL ;6.73;; 2.8 
+Chol Total/HDL ;6.73;; 2.8 
+Triglycérides ;5.33;µg/L; 2.7 
+Triglycérides ;5.33;µg/L; 2.7 
+Chol Total/HDL ;4.07;; 2.6 
+Chol Total/HDL ;3.29;; 2.5 
+Triglycérides ;1.25;µg/L; 2.3 
+Triglycérides ;0.94;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;2.02;µg/L; 2.4 
+Triglycérides ;1.12;µg/L; 2.3 
+Triglycérides ;0.64;µg/L; 2.2 
+Triglycérides ;0.42;µg/L; 2.2 
+Triglycérides ;1.01;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;1.3;µg/L; 2.3 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;1.29;µg/L; 2.3 
+Triglycérides ;2.17;µg/L; 2.4 
+Triglycérides ;4.2;µg/L; 2.6 
+Chol Total/HDL ;2.87;; 2.4 
+Triglycérides ;1.01;µg/L; 2.3 
+Chol Total/HDL ;3.49;; 2.5 
+Triglycérides ;1.53;µg/L; 2.3 
+Triglycérides ;1.77;µg/L; 2.3 
+Chol Total/HDL ;5.46;; 2.7 
+Triglycérides ;0.97;µg/L; 2.3 
+Triglycérides ;1.19;µg/L; 2.3 
+Chol Total/HDL ;6.5;; 2.8 
+Triglycérides ;3.07;µg/L; 2.5 
+Triglycérides ;3.81;µg/L; 2.5 
+Chol Total/HDL ;3.88;; 2.5 
+Triglycérides ;1.92;µg/L; 2.4 
+Chol Total/HDL ;6.73;; 2.8 
+Chol Total/HDL ;6.73;; 2.8 
+Triglycérides ;5.33;µg/L; 2.7 
+Triglycérides ;5.33;µg/L; 2.7 
+Chol Total/HDL ;4.07;; 2.6 
+Chol Total/HDL ;3.29;; 2.5 
+Triglycérides ;1.25;µg/L; 2.3 
+Triglycérides ;0.94;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;2.02;µg/L; 2.4 
+Triglycérides ;1.12;µg/L; 2.3 
+Triglycérides ;0.64;µg/L; 2.2 
+Triglycérides ;0.42;µg/L; 2.2 
+Triglycérides ;1.01;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;1.3;µg/L; 2.3 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;1.29;µg/L; 2.3 
+Triglycérides ;2.17;µg/L; 2.4 
+Triglycérides ;4.2;µg/L; 2.6 
+Chol Total/HDL ;2.87;; 2.4 
+Triglycérides ;1.01;µg/L; 2.3 
+Chol Total/HDL ;3.49;; 2.5 
+Triglycérides ;1.53;µg/L; 2.3 
+Triglycérides ;1.77;µg/L; 2.3 
+Chol Total/HDL ;5.46;; 2.7 
+Triglycérides ;0.97;µg/L; 2.3 
+Triglycérides ;1.19;µg/L; 2.3 
+Chol Total/HDL ;6.5;; 2.8 
+Triglycérides ;3.07;µg/L; 2.5 
+Triglycérides ;3.81;µg/L; 2.5 
+Chol Total/HDL ;3.88;; 2.5 
+Triglycérides ;1.92;µg/L; 2.4 
+Chol Total/HDL ;6.73;; 2.8 
+Chol Total/HDL ;6.73;; 2.8 
+Triglycérides ;5.33;µg/L; 2.7 
+Triglycérides ;5.33;µg/L; 2.7 
+Chol Total/HDL ;4.07;; 2.6 
+Chol Total/HDL ;3.29;; 2.5 
+Triglycérides ;1.25;µg/L; 2.3 
+Triglycérides ;0.94;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;2.02;µg/L; 2.4 
+Triglycérides ;1.12;µg/L; 2.3 
+Triglycérides ;0.64;µg/L; 2.2 
+Triglycérides ;0.42;µg/L; 2.2 
+Triglycérides ;1.01;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;1.3;µg/L; 2.3 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;1.29;µg/L; 2.3 
+Triglycérides ;2.17;µg/L; 2.4 
+Triglycérides ;4.2;µg/L; 2.6 
+Chol Total/HDL ;2.87;; 2.4 
+Triglycérides ;1.01;µg/L; 2.3 
+Chol Total/HDL ;3.49;; 2.5 
+Triglycérides ;1.53;µg/L; 2.3 
+Triglycérides ;1.77;µg/L; 2.3 
+Chol Total/HDL ;5.46;; 2.7 
+Triglycérides ;0.97;µg/L; 2.3 
+Triglycérides ;1.19;µg/L; 2.3 
+Chol Total/HDL ;6.5;; 2.8 
+Triglycérides ;3.07;µg/L; 2.5 
+Triglycérides ;3.81;µg/L; 2.5 
+Chol Total/HDL ;3.88;; 2.5 
+Triglycérides ;1.92;µg/L; 2.4 
+Chol Total/HDL ;6.73;; 2.8 
+Chol Total/HDL ;6.73;; 2.8 
+Triglycérides ;5.33;µg/L; 2.7 
+Triglycérides ;5.33;µg/L; 2.7 
+Chol Total/HDL ;4.07;; 2.6 
+Chol Total/HDL ;3.29;; 2.5 
+Triglycérides ;1.25;µg/L; 2.3 
+Triglycérides ;0.94;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;2.02;µg/L; 2.4 
+Triglycérides ;1.12;µg/L; 2.3 
+Triglycérides ;0.64;µg/L; 2.2 
+Triglycérides ;0.42;µg/L; 2.2 
+Triglycérides ;1.01;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;1.3;µg/L; 2.3 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;1.29;µg/L; 2.3 
+Triglycérides ;2.17;µg/L; 2.4 
+Triglycérides ;4.2;µg/L; 2.6 
+Chol Total/HDL ;2.87;; 2.4 
+Triglycérides ;1.01;µg/L; 2.3 
+Chol Total/HDL ;3.49;; 2.5 
+Triglycérides ;1.53;µg/L; 2.3 
+Triglycérides ;1.77;µg/L; 2.3 
+Chol Total/HDL ;5.46;; 2.7 
+Triglycérides ;0.97;µg/L; 2.3 
+Triglycérides ;1.19;µg/L; 2.3 
+Chol Total/HDL ;6.5;; 2.8 
+Triglycérides ;3.07;µg/L; 2.5 
+Triglycérides ;3.81;µg/L; 2.5 
+Chol Total/HDL ;3.88;; 2.5 
+Triglycérides ;1.92;µg/L; 2.4 
+Chol Total/HDL ;6.73;; 2.8 
+Chol Total/HDL ;6.73;; 2.8 
+Triglycérides ;5.33;µg/L; 2.7 
+Triglycérides ;5.33;µg/L; 2.7 
+Chol Total/HDL ;4.07;; 2.6 
+Chol Total/HDL ;3.29;; 2.5 
+Triglycérides ;1.25;µg/L; 2.3 
+Triglycérides ;0.94;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;2.02;µg/L; 2.4 
+Triglycérides ;1.12;µg/L; 2.3 
+Triglycérides ;0.64;µg/L; 2.2 
+Triglycérides ;0.42;µg/L; 2.2 
+Triglycérides ;1.01;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;1.3;µg/L; 2.3 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;1.29;µg/L; 2.3 
+Triglycérides ;2.17;µg/L; 2.4 
+Triglycérides ;4.2;µg/L; 2.6 
+Chol Total/HDL ;2.87;; 2.4 
+Triglycérides ;1.01;µg/L; 2.3 
+Chol Total/HDL ;3.49;; 2.5 
+Triglycérides ;1.53;µg/L; 2.3 
+Triglycérides ;1.77;µg/L; 2.3 
+Chol Total/HDL ;5.46;; 2.7 
+Triglycérides ;0.97;µg/L; 2.3 
+Triglycérides ;1.19;µg/L; 2.3 
+Chol Total/HDL ;6.5;; 2.8 
+Triglycérides ;3.07;µg/L; 2.5 
+Triglycérides ;3.81;µg/L; 2.5 
+Chol Total/HDL ;3.88;; 2.5 
+Triglycérides ;1.92;µg/L; 2.4 
+Chol Total/HDL ;6.73;; 2.8 
+Chol Total/HDL ;6.73;; 2.8 
+Triglycérides ;5.33;µg/L; 2.7 
+Triglycérides ;5.33;µg/L; 2.7 
+Chol Total/HDL ;4.07;; 2.6 
+Chol Total/HDL ;3.29;; 2.5 
+Triglycérides ;1.25;µg/L; 2.3 
+Triglycérides ;0.94;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;2.02;µg/L; 2.4 
+Triglycérides ;1.12;µg/L; 2.3 
+Triglycérides ;0.64;µg/L; 2.2 
+Triglycérides ;0.42;µg/L; 2.2 
+Triglycérides ;1.01;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;1.3;µg/L; 2.3 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;1.29;µg/L; 2.3 
+Triglycérides ;2.17;µg/L; 2.4 
+Triglycérides ;4.2;µg/L; 2.6 
+Chol Total/HDL ;2.87;; 2.4 
+Triglycérides ;1.01;µg/L; 2.3 
+Chol Total/HDL ;3.49;; 2.5 
+Triglycérides ;1.53;µg/L; 2.3 
+Triglycérides ;1.77;µg/L; 2.3 
+Chol Total/HDL ;5.46;; 2.7 
+Triglycérides ;0.97;µg/L; 2.3 
+Triglycérides ;1.19;µg/L; 2.3 
+Chol Total/HDL ;6.5;; 2.8 
+Triglycérides ;3.07;µg/L; 2.5 
+Triglycérides ;3.81;µg/L; 2.5 
+Chol Total/HDL ;3.88;; 2.5 
+Triglycérides ;1.92;µg/L; 2.4 
+Chol Total/HDL ;6.73;; 2.8 
+Chol Total/HDL ;6.73;; 2.8 
+Triglycérides ;5.33;µg/L; 2.7 
+Triglycérides ;5.33;µg/L; 2.7 
+Chol Total/HDL ;4.07;; 2.6 
+Chol Total/HDL ;3.29;; 2.5 
+Triglycérides ;1.25;µg/L; 2.3 
+Triglycérides ;0.94;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;2.02;µg/L; 2.4 
+Triglycérides ;1.12;µg/L; 2.3 
+Triglycérides ;0.64;µg/L; 2.2 
+Triglycérides ;0.42;µg/L; 2.2 
+Triglycérides ;1.01;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;1.3;µg/L; 2.3 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;1.29;µg/L; 2.3 
+Triglycérides ;2.17;µg/L; 2.4 
+Triglycérides ;4.2;µg/L; 2.6 
+Chol Total/HDL ;2.87;; 2.4 
+Triglycérides ;1.01;µg/L; 2.3 
+Chol Total/HDL ;3.49;; 2.5 
+Triglycérides ;1.53;µg/L; 2.3 
+Triglycérides ;1.77;µg/L; 2.3 
+Chol Total/HDL ;5.46;; 2.7 
+Triglycérides ;0.97;µg/L; 2.3 
+Triglycérides ;1.19;µg/L; 2.3 
+Chol Total/HDL ;6.5;; 2.8 
+Triglycérides ;3.07;µg/L; 2.5 
+Triglycérides ;3.81;µg/L; 2.5 
+Chol Total/HDL ;3.88;; 2.5 
+Triglycérides ;1.92;µg/L; 2.4 
+Chol Total/HDL ;6.73;; 2.8 
+Chol Total/HDL ;6.73;; 2.8 
+Triglycérides ;5.33;µg/L; 2.7 
+Triglycérides ;5.33;µg/L; 2.7 
+Chol Total/HDL ;4.07;; 2.6 
+Chol Total/HDL ;3.29;; 2.5 
+Triglycérides ;1.25;µg/L; 2.3 
+Triglycérides ;0.94;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;2.02;µg/L; 2.4 
+Triglycérides ;1.12;µg/L; 2.3 
+Triglycérides ;0.64;µg/L; 2.2 
+Triglycérides ;0.42;µg/L; 2.2 
+Triglycérides ;1.01;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;1.3;µg/L; 2.3 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;1.29;µg/L; 2.3 
+Triglycérides ;2.17;µg/L; 2.4 
+Triglycérides ;4.2;µg/L; 2.6 
+Chol Total/HDL ;2.87;; 2.4 
+Triglycérides ;1.01;µg/L; 2.3 
+Chol Total/HDL ;3.49;; 2.5 
+Triglycérides ;1.53;µg/L; 2.3 
+Triglycérides ;1.77;µg/L; 2.3 
+Chol Total/HDL ;5.46;; 2.7 
+Triglycérides ;0.97;µg/L; 2.3 
+Triglycérides ;1.19;µg/L; 2.3 
+Chol Total/HDL ;6.5;; 2.8 
+Triglycérides ;3.07;µg/L; 2.5 
+Triglycérides ;3.81;µg/L; 2.5 
+Chol Total/HDL ;3.88;; 2.5 
+Triglycérides ;1.92;µg/L; 2.4 
+Chol Total/HDL ;6.73;; 2.8 
+Chol Total/HDL ;6.73;; 2.8 
+Triglycérides ;5.33;µg/L; 2.7 
+Triglycérides ;5.33;µg/L; 2.7 
+Chol Total/HDL ;4.07;; 2.6 
+Chol Total/HDL ;3.29;; 2.5 
+Triglycérides ;1.25;µg/L; 2.3 
+Triglycérides ;0.94;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;2.02;µg/L; 2.4 
+Triglycérides ;1.12;µg/L; 2.3 
+Triglycérides ;0.64;µg/L; 2.2 
+Triglycérides ;0.42;µg/L; 2.2 
+Triglycérides ;1.01;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;1.3;µg/L; 2.3 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;1.29;µg/L; 2.3 
+Triglycérides ;2.17;µg/L; 2.4 
+Triglycérides ;4.2;µg/L; 2.6 
+Chol Total/HDL ;2.87;; 2.4 
+Triglycérides ;1.01;µg/L; 2.3 
+Chol Total/HDL ;3.49;; 2.5 
+Triglycérides ;1.53;µg/L; 2.3 
+Triglycérides ;1.77;µg/L; 2.3 
+Chol Total/HDL ;5.46;; 2.7 
+Triglycérides ;0.97;µg/L; 2.3 
+Triglycérides ;1.19;µg/L; 2.3 
+Chol Total/HDL ;6.5;; 2.8 
+Triglycérides ;3.07;µg/L; 2.5 
+Triglycérides ;3.81;µg/L; 2.5 
+Chol Total/HDL ;3.88;; 2.5 
+Triglycérides ;1.92;µg/L; 2.4 
+Chol Total/HDL ;6.73;; 2.8 
+Chol Total/HDL ;6.73;; 2.8 
+Triglycérides ;5.33;µg/L; 2.7 
+Triglycérides ;5.33;µg/L; 2.7 
+Chol Total/HDL ;4.07;; 2.6 
+Chol Total/HDL ;3.29;; 2.5 
+Triglycérides ;1.25;µg/L; 2.3 
+Triglycérides ;0.94;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;2.02;µg/L; 2.4 
+Triglycérides ;1.12;µg/L; 2.3 
+Triglycérides ;0.64;µg/L; 2.2 
+Triglycérides ;0.42;µg/L; 2.2 
+Triglycérides ;1.01;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;1.3;µg/L; 2.3 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;1.29;µg/L; 2.3 
+Triglycérides ;2.17;µg/L; 2.4 
+Triglycérides ;4.2;µg/L; 2.6 
+Chol Total/HDL ;2.87;; 2.4 
+Triglycérides ;1.01;µg/L; 2.3 
+Chol Total/HDL ;3.49;; 2.5 
+Triglycérides ;1.53;µg/L; 2.3 
+Triglycérides ;1.77;µg/L; 2.3 
+Chol Total/HDL ;5.46;; 2.7 
+Triglycérides ;0.97;µg/L; 2.3 
+Triglycérides ;1.19;µg/L; 2.3 
+Chol Total/HDL ;6.5;; 2.8 
+Triglycérides ;3.07;µg/L; 2.5 
+Triglycérides ;3.81;µg/L; 2.5 
+Chol Total/HDL ;3.88;; 2.5 
+Triglycérides ;1.92;µg/L; 2.4 
+Chol Total/HDL ;6.73;; 2.8 
+Chol Total/HDL ;6.73;; 2.8 
+Triglycérides ;5.33;µg/L; 2.7 
+Triglycérides ;5.33;µg/L; 2.7 
+Chol Total/HDL ;4.07;; 2.6 
+Chol Total/HDL ;3.29;; 2.5 
+Triglycérides ;1.25;µg/L; 2.3 
+Triglycérides ;0.94;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;2.02;µg/L; 2.4 
+Triglycérides ;1.12;µg/L; 2.3 
+Triglycérides ;0.64;µg/L; 2.2 
+Triglycérides ;0.42;µg/L; 2.2 
+Triglycérides ;1.01;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;1.3;µg/L; 2.3 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;1.29;µg/L; 2.3 
+Triglycérides ;2.17;µg/L; 2.4 
+Triglycérides ;4.2;µg/L; 2.6 
+Chol Total/HDL ;2.87;; 2.4 
+Triglycérides ;1.01;µg/L; 2.3 
+Chol Total/HDL ;3.49;; 2.5 
+Triglycérides ;1.53;µg/L; 2.3 
+Triglycérides ;1.77;µg/L; 2.3 
+Chol Total/HDL ;5.46;; 2.7 
+Triglycérides ;0.97;µg/L; 2.3 
+Triglycérides ;1.19;µg/L; 2.3 
+Chol Total/HDL ;6.5;; 2.8 
+Triglycérides ;3.07;µg/L; 2.5 
+Triglycérides ;3.81;µg/L; 2.5 
+Chol Total/HDL ;3.88;; 2.5 
+Triglycérides ;1.92;µg/L; 2.4 
+Chol Total/HDL ;6.73;; 2.8 
+Chol Total/HDL ;6.73;; 2.8 
+Triglycérides ;5.33;µg/L; 2.7 
+Triglycérides ;5.33;µg/L; 2.7 
+Chol Total/HDL ;4.07;; 2.6 
+Chol Total/HDL ;3.29;; 2.5 
+Triglycérides ;1.25;µg/L; 2.3 
+Triglycérides ;0.94;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;2.02;µg/L; 2.4 
+Triglycérides ;1.12;µg/L; 2.3 
+Triglycérides ;0.64;µg/L; 2.2 
+Triglycérides ;0.42;µg/L; 2.2 
+Triglycérides ;1.01;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;1.3;µg/L; 2.3 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;1.29;µg/L; 2.3 
+Triglycérides ;2.17;µg/L; 2.4 
+Triglycérides ;4.2;µg/L; 2.6 
+Chol Total/HDL ;2.87;; 2.4 
+Triglycérides ;1.01;µg/L; 2.3 
+Chol Total/HDL ;3.49;; 2.5 
+Triglycérides ;1.53;µg/L; 2.3 
+Triglycérides ;1.77;µg/L; 2.3 
+Chol Total/HDL ;5.46;; 2.7 
+Triglycérides ;0.97;µg/L; 2.3 
+Triglycérides ;1.19;µg/L; 2.3 
+Chol Total/HDL ;6.5;; 2.8 
+Triglycérides ;3.07;µg/L; 2.5 
+Triglycérides ;3.81;µg/L; 2.5 
+Chol Total/HDL ;3.88;; 2.5 
+Triglycérides ;1.92;µg/L; 2.4 
+Chol Total/HDL ;6.73;; 2.8 
+Chol Total/HDL ;6.73;; 2.8 
+Triglycérides ;5.33;µg/L; 2.7 
+Triglycérides ;5.33;µg/L; 2.7 
+Chol Total/HDL ;4.07;; 2.6 
+Chol Total/HDL ;3.29;; 2.5 
+Triglycérides ;1.25;µg/L; 2.3 
+Triglycérides ;0.94;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;2.02;µg/L; 2.4 
+Triglycérides ;1.12;µg/L; 2.3 
+Triglycérides ;0.64;µg/L; 2.2 
+Triglycérides ;0.42;µg/L; 2.2 
+Triglycérides ;1.01;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;1.3;µg/L; 2.3 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;1.29;µg/L; 2.3 
+Triglycérides ;2.17;µg/L; 2.4 
+Triglycérides ;4.2;µg/L; 2.6 
+Chol Total/HDL ;2.87;; 2.4 
+Triglycérides ;1.01;µg/L; 2.3 
+Chol Total/HDL ;3.49;; 2.5 
+Triglycérides ;1.53;µg/L; 2.3 
+Triglycérides ;1.77;µg/L; 2.3 
+Chol Total/HDL ;5.46;; 2.7 
+Triglycérides ;0.97;µg/L; 2.3 
+Triglycérides ;1.19;µg/L; 2.3 
+Chol Total/HDL ;6.5;; 2.8 
+Triglycérides ;3.07;µg/L; 2.5 
+Triglycérides ;3.81;µg/L; 2.5 
+Chol Total/HDL ;3.88;; 2.5 
+Triglycérides ;1.92;µg/L; 2.4 
+Chol Total/HDL ;6.73;; 2.8 
+Chol Total/HDL ;6.73;; 2.8 
+Triglycérides ;5.33;µg/L; 2.7 
+Triglycérides ;5.33;µg/L; 2.7 
+Chol Total/HDL ;4.07;; 2.6 
+Chol Total/HDL ;3.29;; 2.5 
+Triglycérides ;1.25;µg/L; 2.3 
+Triglycérides ;0.94;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;2.02;µg/L; 2.4 
+Triglycérides ;1.12;µg/L; 2.3 
+Triglycérides ;0.64;µg/L; 2.2 
+Triglycérides ;0.42;µg/L; 2.2 
+Triglycérides ;1.01;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;1.3;µg/L; 2.3 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;1.29;µg/L; 2.3 
+Triglycérides ;2.17;µg/L; 2.4 
+Triglycérides ;4.2;µg/L; 2.6 
+Chol Total/HDL ;2.87;; 2.4 
+Triglycérides ;1.01;µg/L; 2.3 
+Chol Total/HDL ;3.49;; 2.5 
+Triglycérides ;1.53;µg/L; 2.3 
+Triglycérides ;1.77;µg/L; 2.3 
+Chol Total/HDL ;5.46;; 2.7 
+Triglycérides ;0.97;µg/L; 2.3 
+Triglycérides ;1.19;µg/L; 2.3 
+Chol Total/HDL ;6.5;; 2.8 
+Triglycérides ;3.07;µg/L; 2.5 
+Triglycérides ;3.81;µg/L; 2.5 
+Chol Total/HDL ;3.88;; 2.5 
+Triglycérides ;1.92;µg/L; 2.4 
+Chol Total/HDL ;6.73;; 2.8 
+Chol Total/HDL ;6.73;; 2.8 
+Triglycérides ;5.33;µg/L; 2.7 
+Triglycérides ;5.33;µg/L; 2.7 
+Chol Total/HDL ;4.07;; 2.6 
+Chol Total/HDL ;3.29;; 2.5 
+Triglycérides ;1.25;µg/L; 2.3 
+Triglycérides ;0.94;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;2.02;µg/L; 2.4 
+Triglycérides ;1.12;µg/L; 2.3 
+Triglycérides ;0.64;µg/L; 2.2 
+Triglycérides ;0.42;µg/L; 2.2 
+Triglycérides ;1.01;µg/L; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Triglycérides ;1.3;µg/L; 2.3 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;1.29;µg/L; 2.3 
+Triglycérides ;2.17;µg/L; 2.4 
+Triglycérides ;4.2;µg/L; 2.6 
+Chol Total/HDL ;2.87;; 2.4 
+Triglycérides ;1.01;µg/L; 2.3 
+Chol Total/HDL ;3.49;; 2.5 
+Triglycérides ;1.53;µg/L; 2.3 
+Triglycérides ;1.77;µg/L; 2.3 
+Chol Total/HDL ;5.46;; 2.7 
+Triglycérides ;0.97;µg/L; 2.3 
+Triglycérides ;1.19;µg/L; 2.3 
+Chol Total/HDL ;6.5;; 2.8 
+Triglycérides ;3.07;µg/L; 2.5 
+Triglycérides ;3.81;µg/L; 2.5 
+Chol Total/HDL ;3.88;; 2.5 
+Triglycérides ;1.92;µg/L; 2.4 
+Chol Total/HDL ;6.73;; 2.8 
+Chol Total/HDL ;6.73;; 2.8 
+Triglycérides ;5.33;µg/L; 2.7 
+Triglycérides ;5.33;µg/L; 2.7 
+Chol Total/HDL ;4.07;; 2.6 
+Chol Total/HDL ;3.29;; 2.5 
+Chol Total/HDL ;2.87;; 2.4 
+Chol Total/HDL ;3.49;; 2.5 
+Chol Total/HDL ;5.46;; 2.7 
+Chol Total/HDL ;6.5;; 2.8 
+Chol Total/HDL ;3.88;; 2.5 
+Chol Total/HDL ;6.73;; 2.8 
+Chol Total/HDL ;6.73;; 2.8 
+Chol Total/HDL ;4.07;; 2.6 
+Glycémie ;1.08;g/l; 2.3 
+Glycémie ;0.93;g/l; 2.3 
+Glycémie ;1.16;g/l; 2.3 
+Glycémie ;1;g/l; 2.3 
+Glycémie ;0.96;g/l; 2.3 
+Glycémie ;2.93;g/l; 2.4 
+Glycémie ;1.25;g/l; 2.3 
+Glycémie ;0.96;g/l; 2.3 
+Glycémie ;1.25;g/l; 2.3 
+Chol Total/HDL ;3.29;; 2.5 
+Glycémie ;1.24;g/l; 2.3 
+Glycémie ;0.93;g/l; 2.3 
+Glycémie ;0.93;g/l; 2.3 
+Glycémie ;0.85;g/l; 2.3 
+Glycémie ;0.85;g/l; 2.3 
+Glycémie ;0.85;g/l; 2.3 
+Triglycérides ;1.25;µg/L; 2.3 
+Glycémie ;1.09;g/l; 2.3 
+Glycémie ;0.94;g/l; 2.3 
+Glycémie ;0.99;g/l; 2.3 
+Glycémie ;1.06;g/l; 2.3 
+Glycémie ;1.26;g/l; 2.3 
+Glycémie ;1.26;g/l; 2.3 
+Glycémie ;1.37;g/l; 2.3 
+Glycémie ;0.91;g/l; 2.3 
+Glycémie ;0.91;g/l; 2.3 
+Glycémie ;0.93;g/l; 2.3 
+Glycémie ;1.66;g/l; 2.3 
+Glycémie ;1.01;g/l; 2.3 
+Glycémie ;0.91;g/l; 2.3 
+Glycémie ;1.07;g/l; 2.3 
+Triglycérides ;0.94;µg/L; 2.3 
+Glycémie ;1.02;g/l; 2.3 
+Glycémie ;0.95;g/l; 2.3 
+Glycémie ;1.02;g/l; 2.3 
+Glycémie ;0.98;g/l; 2.3 
+Glycémie ;0.96;g/l; 2.3 
+Glycémie ;1.38;g/l; 2.3 
+Glycémie ;1.15;g/l; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Glycémie ;0.98;g/l; 2.3 
+Triglycérides ;2.02;µg/L; 2.4 
+Glycémie ;1.09;g/l; 2.3 
+Glycémie ;1.31;g/l; 2.3 
+Glycémie ;0.89;g/l; 2.3 
+Triglycérides ;1.12;µg/L; 2.3 
+Glycémie ;0.83;g/l; 2.3 
+Glycémie ;1.18;g/l; 2.3 
+Glycémie ;0.83;g/l; 2.3 
+Glycémie ;0.82;g/l; 2.3 
+Glycémie ;0.94;g/l; 2.3 
+Glycémie ;0.94;g/l; 2.3 
+Glycémie ;1.19;g/l; 2.3 
+Triglycérides ;0.64;µg/L; 2.2 
+Triglycérides ;0.42;µg/L; 2.2 
+Glycémie ;0.95;g/l; 2.3 
+Triglycérides ;1.01;µg/L; 2.3 
+Glycémie ;1.07;g/l; 2.3 
+Glycémie ;0.95;g/l; 2.3 
+Triglycérides ;0.93;µg/L; 2.3 
+Glycémie ;0.99;g/l; 2.3 
+Triglycérides ;1.3;µg/L; 2.3 
+Glycémie ;0.9;g/l; 2.3 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Triglycérides ;0.73;µg/L; 2.2 
+Glycémie ;1.24;g/l; 2.3 
+Glycémie ;1.24;g/l; 2.3 
+Glycémie ;1.24;g/l; 2.3 
+Triglycérides ;1.29;µg/L; 2.3 
+Glycémie ;0.99;g/l; 2.3 
+Glycémie ;1.06;g/l; 2.3 
+Glycémie ;1.16;g/l; 2.3 
+Triglycérides ;2.17;µg/L; 2.4 
+Triglycérides ;4.2;µg/L; 2.6 
+Chol Total/HDL ;2.87;; 2.4 
+Triglycérides ;1.01;µg/L; 2.3 
+Glycémie ;0.96;g/l; 2.3 
+Chol Total/HDL ;3.49;; 2.5 
+Glycémie ;1.11;g/l; 2.3 
+Triglycérides ;1.53;µg/L; 2.3 
+Triglycérides ;1.77;µg/L; 2.3 
+Glycémie ;0.98;g/l; 2.3 
+Glycémie ;1.07;g/l; 2.3 
+Glycémie ;1.01;g/l; 2.3 
+Glycémie ;1.07;g/l; 2.3 
+Glycémie ;1;g/l; 2.3 
+Chol Total/HDL ;5.46;; 2.7 
+Glycémie ;1.03;g/l; 2.3 
+Triglycérides ;0.97;µg/L; 2.3 
+Glycémie ;1.08;g/l; 2.3 
+Triglycérides ;1.19;µg/L; 2.3 
+Glycémie ;1.22;g/l; 2.3 
+Chol Total/HDL ;6.5;; 2.8 
+Triglycérides ;3.07;µg/L; 2.5 
+Glycémie ;1.09;g/l; 2.3 
+Glycémie ;0.94;g/l; 2.3 
+Triglycérides ;3.81;µg/L; 2.5 
+Glycémie ;1.09;g/l; 2.3 
+Glycémie ;0.99;g/l; 2.3 
+Glycémie ;1.01;g/l; 2.3 
+Glycémie ;0.84;g/l; 2.3 
+Glycémie ;1.23;g/l; 2.3 
+Glycémie ;1.1;g/l; 2.3 
+Chol Total/HDL ;3.88;; 2.5 
+Glycémie ;0.93;g/l; 2.3 
+Glycémie ;1.23;g/l; 2.3 
+Glycémie ;0.95;g/l; 2.3 
+Triglycérides ;1.92;µg/L; 2.4 
+Glycémie ;1.13;g/l; 2.3 
+Glycémie ;0.87;g/l; 2.3 
+Glycémie ;1.12;g/l; 2.3 
+Glycémie ;1.08;g/l; 2.3 
+Glycémie ;2.05;g/l; 2.4 
+Glycémie ;0.78;g/l; 2.3 
+Glycémie ;1.1;g/l; 2.3 
+Glycémie ;1.04;g/l; 2.3 
+Glycémie ;1;g/l; 2.3 
+Glycémie ;0.89;g/l; 2.3 
+Glycémie ;0.95;g/l; 2.3 
+Glycémie ;0.91;g/l; 2.3 
+Glycémie ;1.04;g/l; 2.3 
+Glycémie ;1.22;g/l; 2.3 
+Glycémie ;0.92;g/l; 2.3 
+Glycémie ;1.41;g/l; 2.3 
+Glycémie ;1.41;g/l; 2.3 
+Chol Total/HDL ;6.73;; 2.8 
+Chol Total/HDL ;6.73;; 2.8 
+Triglycérides ;5.33;µg/L; 2.7 
+Triglycérides ;5.33;µg/L; 2.7 
+Chol Total/HDL ;4.07;; 2.6 
+Glycémie ;1.01;g/l; 2.3 
+Glycémie ;0.92;g/l; 2.3 
+Glycémie ;0.87;g/l; 2.3 
+Glycémie ;0.81;g/l; 2.3 
+Glycémie ;0.81;g/l; 2.3 
+GlycÃ©mie ;1.08;g/l; 2.3 
+GlycÃ©mie ;0.93;g/l; 2.3 
+GlycÃ©mie ;1.16;g/l; 2.3 
+GlycÃ©mie ;1;g/l; 2.3 
+GlycÃ©mie ;0.96;g/l; 2.3 
+GlycÃ©mie ;2.93;g/l; 2.4 
+GlycÃ©mie ;1.25;g/l; 2.3 
+GlycÃ©mie ;0.96;g/l; 2.3 
+GlycÃ©mie ;1.25;g/l; 2.3 
+Chol Total/HDL ;3.29;; 2.5 
+GlycÃ©mie ;1.24;g/l; 2.3 
+GlycÃ©mie ;0.93;g/l; 2.3 
+GlycÃ©mie ;0.93;g/l; 2.3 
+GlycÃ©mie ;0.85;g/l; 2.3 
+GlycÃ©mie ;0.85;g/l; 2.3 
+GlycÃ©mie ;0.85;g/l; 2.3 
+TriglycÃ©rides ;1.25;Âµg/L; 2.3 
+GlycÃ©mie ;1.09;g/l; 2.3 
+GlycÃ©mie ;0.94;g/l; 2.3 
+GlycÃ©mie ;0.99;g/l; 2.3 
+GlycÃ©mie ;1.06;g/l; 2.3 
+GlycÃ©mie ;1.26;g/l; 2.3 
+GlycÃ©mie ;1.26;g/l; 2.3 
+GlycÃ©mie ;1.37;g/l; 2.3 
+GlycÃ©mie ;0.91;g/l; 2.3 
+GlycÃ©mie ;0.91;g/l; 2.3 
+GlycÃ©mie ;0.93;g/l; 2.3 
+GlycÃ©mie ;1.66;g/l; 2.3 
+GlycÃ©mie ;1.01;g/l; 2.3 
+GlycÃ©mie ;0.91;g/l; 2.3 
+GlycÃ©mie ;1.07;g/l; 2.3 
+TriglycÃ©rides ;0.94;Âµg/L; 2.3 
+GlycÃ©mie ;1.02;g/l; 2.3 
+GlycÃ©mie ;0.95;g/l; 2.3 
+GlycÃ©mie ;1.02;g/l; 2.3 
+GlycÃ©mie ;0.98;g/l; 2.3 
+GlycÃ©mie ;0.96;g/l; 2.3 
+GlycÃ©mie ;1.38;g/l; 2.3 
+GlycÃ©mie ;1.15;g/l; 2.3 
+TriglycÃ©rides ;0.93;Âµg/L; 2.3 
+GlycÃ©mie ;0.98;g/l; 2.3 
+TriglycÃ©rides ;2.02;Âµg/L; 2.4 
+GlycÃ©mie ;1.09;g/l; 2.3 
+GlycÃ©mie ;1.31;g/l; 2.3 
+GlycÃ©mie ;0.89;g/l; 2.3 
+TriglycÃ©rides ;1.12;Âµg/L; 2.3 
+GlycÃ©mie ;0.83;g/l; 2.3 
+GlycÃ©mie ;1.18;g/l; 2.3 
+GlycÃ©mie ;0.83;g/l; 2.3 
+GlycÃ©mie ;0.82;g/l; 2.3 
+GlycÃ©mie ;0.94;g/l; 2.3 
+GlycÃ©mie ;0.94;g/l; 2.3 
+GlycÃ©mie ;1.19;g/l; 2.3 
+TriglycÃ©rides ;0.64;Âµg/L; 2.2 
+TriglycÃ©rides ;0.42;Âµg/L; 2.2 
+GlycÃ©mie ;0.95;g/l; 2.3 
+TriglycÃ©rides ;1.01;Âµg/L; 2.3 
+GlycÃ©mie ;1.07;g/l; 2.3 
+GlycÃ©mie ;0.95;g/l; 2.3 
+TriglycÃ©rides ;0.93;Âµg/L; 2.3 
+GlycÃ©mie ;0.99;g/l; 2.3 
+TriglycÃ©rides ;1.3;Âµg/L; 2.3 
+GlycÃ©mie ;0.9;g/l; 2.3 
+TriglycÃ©rides ;0.73;Âµg/L; 2.2 
+TriglycÃ©rides ;0.73;Âµg/L; 2.2 
+TriglycÃ©rides ;0.73;Âµg/L; 2.2 
+GlycÃ©mie ;1.24;g/l; 2.3 
+GlycÃ©mie ;1.24;g/l; 2.3 
+GlycÃ©mie ;1.24;g/l; 2.3 
+TriglycÃ©rides ;1.29;Âµg/L; 2.3 
+GlycÃ©mie ;0.99;g/l; 2.3 
+GlycÃ©mie ;1.06;g/l; 2.3 
+GlycÃ©mie ;1.16;g/l; 2.3 
+TriglycÃ©rides ;2.17;Âµg/L; 2.4 
+TriglycÃ©rides ;4.2;Âµg/L; 2.6 
+Chol Total/HDL ;2.87;; 2.4 
+TriglycÃ©rides ;1.01;Âµg/L; 2.3 
+GlycÃ©mie ;0.96;g/l; 2.3 
+Chol Total/HDL ;3.49;; 2.5 
+GlycÃ©mie ;1.11;g/l; 2.3 
+TriglycÃ©rides ;1.53;Âµg/L; 2.3 
+TriglycÃ©rides ;1.77;Âµg/L; 2.3 
+GlycÃ©mie ;0.98;g/l; 2.3 
+GlycÃ©mie ;1.07;g/l; 2.3 
+GlycÃ©mie ;1.01;g/l; 2.3 
+GlycÃ©mie ;1.07;g/l; 2.3 
+GlycÃ©mie ;1;g/l; 2.3 
+Chol Total/HDL ;5.46;; 2.7 
+GlycÃ©mie ;1.03;g/l; 2.3 
+TriglycÃ©rides ;0.97;Âµg/L; 2.3 
+GlycÃ©mie ;1.08;g/l; 2.3 
+TriglycÃ©rides ;1.19;Âµg/L; 2.3 
+GlycÃ©mie ;1.22;g/l; 2.3 
+Chol Total/HDL ;6.5;; 2.8 
+TriglycÃ©rides ;3.07;Âµg/L; 2.5 
+GlycÃ©mie ;1.09;g/l; 2.3 
+GlycÃ©mie ;0.94;g/l; 2.3 
+TriglycÃ©rides ;3.81;Âµg/L; 2.5 
+GlycÃ©mie ;1.09;g/l; 2.3 
+GlycÃ©mie ;0.99;g/l; 2.3 
+GlycÃ©mie ;1.01;g/l; 2.3 
+GlycÃ©mie ;0.84;g/l; 2.3 
+GlycÃ©mie ;1.23;g/l; 2.3 
+GlycÃ©mie ;1.1;g/l; 2.3 
+Chol Total/HDL ;3.88;; 2.5 
+GlycÃ©mie ;0.93;g/l; 2.3 
+GlycÃ©mie ;1.23;g/l; 2.3 
+GlycÃ©mie ;0.95;g/l; 2.3 
+TriglycÃ©rides ;1.92;Âµg/L; 2.4 
+GlycÃ©mie ;1.13;g/l; 2.3 
+GlycÃ©mie ;0.87;g/l; 2.3 
+GlycÃ©mie ;1.12;g/l; 2.3 
+GlycÃ©mie ;1.08;g/l; 2.3 
+GlycÃ©mie ;2.05;g/l; 2.4 
+GlycÃ©mie ;0.78;g/l; 2.3 
+GlycÃ©mie ;1.1;g/l; 2.3 
+GlycÃ©mie ;1.04;g/l; 2.3 
+GlycÃ©mie ;1;g/l; 2.3 
+GlycÃ©mie ;0.89;g/l; 2.3 
+GlycÃ©mie ;0.95;g/l; 2.3 
+GlycÃ©mie ;0.91;g/l; 2.3 
+GlycÃ©mie ;1.04;g/l; 2.3 
+GlycÃ©mie ;1.22;g/l; 2.3 
+GlycÃ©mie ;0.92;g/l; 2.3 
+GlycÃ©mie ;1.41;g/l; 2.3 
+GlycÃ©mie ;1.41;g/l; 2.3 
+Chol Total/HDL ;6.73;; 2.8 
+Chol Total/HDL ;6.73;; 2.8 
+TriglycÃ©rides ;5.33;Âµg/L; 2.7 
+TriglycÃ©rides ;5.33;Âµg/L; 2.7 
+Chol Total/HDL ;4.07;; 2.6 
+GlycÃ©mie ;1.01;g/l; 2.3 
+GlycÃ©mie ;0.92;g/l; 2.3 
+GlycÃ©mie ;0.87;g/l; 2.3 
+GlycÃ©mie ;0.81;g/l; 2.3 
+GlycÃ©mie ;0.81;g/l; 2.3 

@@ -1,0 +1,10 @@
+Quelques librairies requises au bon fonctionnement de l'application :
+    - Pour PhpSpreadSheet :
+        * sudo apt update
+        * sudo apt install php5.6-zip php5.6-xml php5.6-gd
+        // Ensuite se placer sous /psa/lib/ComposerLibs
+        * composer require phpoffice/phpspreadsheet
+
+    - Pour PHPMailer :
+        // Se placer sous /psa/lib/ComposerLibs
+        * composer require phpmailer/phpmailer

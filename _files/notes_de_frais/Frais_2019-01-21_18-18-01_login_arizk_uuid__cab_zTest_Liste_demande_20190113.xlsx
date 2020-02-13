@@ -1,0 +1,76 @@
+ID,ID_DEMANDEUR,LOGIN_DEMANDEUR,DATE_FRAIS,NATURE,MOTIF,DISTANCE,TAUX_APPLIQUE,PUISSANCE,MONTANT,DERNIER_STATUS
+45288,510,arizk,2018-12-01,kilomètres,motif,111.00,0.543,5.00,60.27,Soumise
+45268,510,arizk,2018-12-20,kilomètres,frais,28.00,0.000,9.00,0.00,Soumise
+45235,510,arizk,2018-12-07,kilomètres,motif,444.00,0.410,3.00,182.04,Soumise
+45285,510,arizk,2018-12-21,teste frais,motif,0.00,0.000,3.00,0.00,Soumise
+45265,510,arizk,0000-00-00,kilomètres,frais,60.00,0.595,10.00,35.70,Soumise
+45232,510,arizk,2018-12-06,kilomètres,motif,120.00,0.410,3.00,49.20,Soumise
+45262,510,arizk,0000-00-00,kilomètres,frais,60.00,0.595,10.00,35.70,Soumise
+45229,510,arizk,2018-12-12,kilomètres,frais,33.00,0.595,10.00,19.64,Soumise
+45258,510,arizk,2018-12-20,kilomètres,motif,61.00,0.543,5.00,33.12,Soumise
+45226,510,arizk,2018-12-15,kilomètres,motif,60.00,0.595,10.00,35.70,Soumise
+45255,510,arizk,2018-12-20,kilomètres,frais,255.00,0.568,6.00,144.84,Soumise
+45223,510,arizk,2018-12-07,kilomètres,motif,45.00,0.595,10.00,26.77,Soumise
+45252,510,arizk,0000-00-00,,,0.00,0.000,3.00,0.00,Soumise
+45219,510,arizk,2018-12-14,teste frais,frais,0.00,0.000,3.00,66.00,Soumise
+45249,510,arizk,0000-00-00,,,0.00,0.000,3.00,0.00,Soumise
+45216,510,arizk,2018-12-06,teste frais,frais,0.00,0.000,3.00,888.00,Soumise
+45246,510,arizk,2018-12-07,kilomètres,frais,0.00,0.595,10.00,0.00,Soumise
+45213,510,arizk,2018-12-06,teste frais,frais,0.00,0.000,3.00,100.00,Soumise
+45276,510,arizk,2018-12-04,kilomètres,motif,60.00,0.000,10.00,0.00,Soumise
+45243,510,arizk,2018-12-19,kilomètres,motif,565.00,0.410,3.00,231.65,Soumise
+45240,510,arizk,2018-12-19,kilomètres,frais,0.00,0.595,10.00,0.00,Soumise
+45304,510,arizk,2019-01-11,kilomètres,mmm,120.00,0.543,5.00,65.16,Soumise
+45273,510,arizk,2018-12-05,kilomètres,motif,33.00,0.000,12.00,0.00,Soumise
+45293,510,arizk,2019-01-03,kilomètres,frais,60.00,0.595,10.00,35.70,Soumise
+45270,510,arizk,2018-12-10,kilomètres,motif,28.00,0.000,8.00,0.00,Soumise
+45237,510,arizk,2018-12-19,kilomètres,motif,666.00,0.410,3.00,273.06,Soumise
+45287,510,arizk,2018-12-18,autre,frais,0.00,0.000,3.00,100.00,Soumise
+45267,510,arizk,2018-12-12,,,0.00,0.000,3.00,0.00,Soumise
+45234,510,arizk,2018-12-06,kilomètres,motif,333.00,0.410,3.00,136.53,Soumise
+45284,510,arizk,2018-12-20,reh,fgg,0.00,0.000,3.00,0.00,Soumise
+45264,510,arizk,0000-00-00,kilomètres,frais,60.00,0.595,10.00,35.70,Soumise
+45231,510,arizk,2018-12-19,kilomètres,motif,101.00,0.410,3.00,41.41,Soumise
+45260,510,arizk,2018-12-12,kilomètres,frais,0.00,0.595,10.00,0.00,Soumise
+45228,510,arizk,2018-12-12,kilomètres,frais,60.00,0.595,10.00,35.70,Soumise
+45257,510,arizk,2018-12-20,kilomètres,motif,999.00,0.595,10.00,594.40,Soumise
+45225,510,arizk,2018-12-05,kilomètres,motif,60.00,0.595,2.00,35.70,Soumise
+45254,510,arizk,0000-00-00,kilomètres,motif,45.00,0.543,5.00,24.43,Soumise
+45222,510,arizk,2018-12-06,teste frais,frais,0.00,0.000,3.00,44.00,Soumise
+45251,510,arizk,0000-00-00,,,0.00,0.000,3.00,0.00,Soumise
+45218,510,arizk,2018-12-15,kilom?tres,motif,0.00,0.000,3.00,78.00,Soumise
+45248,510,arizk,2018-12-21,kilomètres,motif,0.00,0.595,1.00,0.00,Soumise
+45215,510,arizk,2018-12-14,teste frais,frais,0.00,0.000,3.00,100.00,Soumise
+45283,510,arizk,0000-00-00,,,0.00,0.000,3.00,0.00,Soumise
+45245,510,arizk,2018-12-12,kilomètres,frais,0.00,0.595,10.00,0.00,Soumise
+45212,510,arizk,2018-12-04,teste frais,frais,0.00,0.000,3.00,88.00,Soumise
+45275,510,arizk,2018-12-03,kilomètres,frais,65.00,0.000,10.00,0.00,Soumise
+45242,510,arizk,2018-12-05,kilomètres,motif,233.00,0.493,1.00,114.87,Soumise
+45302,510,arizk,2019-01-11,kilomètres,frais,5.00,0.410,3.00,2.05,Soumise
+45272,510,arizk,2018-12-04,kilomètres,motif,60.00,0.000,10.00,0.00,Soumise
+45239,510,arizk,2018-12-19,kilomètres,motif,60.00,0.595,10.00,35.70,Soumise
+45292,510,arizk,2019-01-03,kilomètres,frais,60.00,0.595,10.00,35.70,Soumise
+45269,510,arizk,2018-12-11,kilomètres,motif,29.00,0.000,8.00,0.00,Soumise
+45236,510,arizk,2018-12-12,kilomètres,frais,555.00,0.410,3.00,227.55,Soumise
+45286,510,arizk,2018-12-21,test date,motif date,0.00,0.000,3.00,200.00,Soumise
+45266,510,arizk,0000-00-00,teste frais,frais,0.00,0.000,3.00,100.00,Soumise
+45233,510,arizk,2018-12-06,kilomètres,motif,222.00,0.410,3.00,91.02,Soumise
+45263,510,arizk,0000-00-00,teste frais,frais,0.00,0.000,3.00,100.00,Soumise
+45230,510,arizk,2018-12-19,kilomètres,motif,0.00,0.595,10.00,0.00,Soumise
+45259,510,arizk,2018-12-12,kilomètres,motif,79.00,0.595,8.00,47.01,Soumise
+45227,510,arizk,2018-12-19,kilométres,motif,0.00,0.000,3.00,33.00,Soumise
+45256,510,arizk,2018-12-20,kilomètres,motif,656.00,0.543,5.00,356.21,Soumise
+45224,510,arizk,2018-12-07,teste frais,tester,0.00,0.000,3.00,157.00,Soumise
+45253,510,arizk,0000-00-00,,,0.00,0.000,3.00,0.00,Soumise
+45221,510,arizk,2018-12-06,teste frais,frais,0.00,0.000,3.00,44.00,Soumise
+45250,510,arizk,0000-00-00,,,0.00,0.000,3.00,0.00,Soumise
+45217,510,arizk,2018-12-15,teste frais,frais,0.00,0.000,3.00,77.00,Soumise
+45247,510,arizk,2018-12-07,kilomètres,frais,111.00,0.410,3.00,45.51,Soumise
+45214,510,arizk,2018-12-01,teste frais,motif,0.00,0.000,3.00,100.00,Soumise
+45282,510,arizk,2018-12-23,kilomètres,frais,60.00,0.595,10.00,35.70,Soumise
+45244,510,arizk,0000-00-00,kilomètres,frais,0.00,0.595,10.00,0.00,Soumise
+45241,510,arizk,2018-12-19,kilomètres,motif,0.00,0.595,10.00,0.00,Soumise
+45274,510,arizk,2018-12-01,kilomètres,motif,105.00,0.000,6.00,0.00,Soumise
+45301,510,arizk,2019-01-11,kilomètres,frais,10.00,0.410,3.00,4.10,Soumise
+45271,510,arizk,2018-12-13,kilomètres,motif,60.00,0.000,5.00,0.00,Soumise
+45238,510,arizk,2018-12-19,kilomètres,motif,128.00,0.543,5.00,69.50,Soumise

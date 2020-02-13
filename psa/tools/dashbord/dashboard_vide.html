@@ -1,0 +1,457 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=ISO-8859-15">
+  <title>Tableau de bord</title>
+</head>
+<body>
+<style>
+body, td{
+  font-family: Arial;
+  font-size: 11px;
+}
+.titre_table{
+  font-size: 12px;
+  color: #009900;
+  padding-top: 5px;
+  font-weight: bold;
+  font-size: 13px;
+}
+.head_table{
+  background-color: #8cadae;
+  color: #FFFFFF;
+}
+#label_print_month{
+  display: none;
+}
+.head_dashboard{
+  background: #eaf1dd;
+}
+#logo_print{
+  display: none;
+}
+
+td.right_align{
+  text-align: right;
+  padding-right: 7px;
+}
+
+</style>
+
+
+
+<table width="100%" border="0" cellpadding="5" cellspacing="0">
+  <!-- entête cabinet -->
+  <tr>
+    <td colspan="3">
+      <table width="100%">
+        <tr>
+          <td width="80" class="head_dashboard">Docteur(s) :</td>
+          <td>&nbsp;</td>
+          <td rowspan="4" width="180"><img id='' src="https://psaet.asalee.fr/psa/view/login/img/logos/LogoAsalee2013.png" width="170" /></td>
+        </tr>
+        <tr>
+          <td class="head_dashboard">Infirmi&egrave;r(es) :</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="head_dashboard">Localisation :</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="head_dashboard">Mois concern&eacute; :</td>
+          <td>&nbsp;</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <!-- fin entête cabinet -->
+</table>
+<table width="100%" border="0" cellpadding="5" cellspacing="0">
+  <!-- ligne 2 cols -->
+  <tr valign="top">
+    <td witdh="800">
+      <table width="100%" border="0" cellpadding="2" cellspacing="0">
+        <tr>
+          <td colspan="3" class="titre_table">R&eacute;partition de l'activit&eacute;</td>
+        </tr>
+        <tr>
+          <td class="head_table" width="60%">Temps pass&eacute;</td>
+          <td class="head_table right_align" width="20%">journ&eacute;e</td>
+          <td class="head_table right_align" width="20%">%</td>
+        </tr>
+        <tr bgcolor="#eaf1dd">
+          <td>consultation</td>
+          <td class="right_align"></td>
+          <td class="right_align"></td>
+        </tr>
+        <tr>
+          <td>gestion dossier</td>
+          <td class="right_align"></td>
+          <td class="right_align"></td>
+        </tr>
+        <tr bgcolor="#eaf1dd">
+          <td>concertation</td>
+          <td class="right_align"></td>
+          <td class="right_align"></td>
+        </tr>
+        <tr>
+          <td>formation</td>
+          <td class="right_align"></td>
+          <td class="right_align"></td>
+        </tr>
+        <tr bgcolor="#eaf1dd">
+          <td>contribution Asal&eacute;e</td>
+          <td class="right_align"></td>
+          <td class="right_align"></td>
+        </tr>
+        <tr>
+          <td>non attribu&eacute;</td>
+          <td class="right_align"></td>
+          <td class="right_align"></td>
+        </tr>
+        <tr>
+          <td>total</td>
+          <td class="right_align"></td>
+          <td class="right_align"</td>
+        </tr>
+        <tr>
+          <td colspan="3" class="titre_table">Actes d&eacute;rogatoires</td>
+        </tr>
+        <tr>
+          <td class="head_table" colspan="2">Total</td>
+          <td class="head_table right_align"></td>
+        </tr>
+        <tr bgcolor="#eaf1dd">
+          <td colspan="2">presc. et r&eacute;al. spirom&eacute;trie</td>
+          <td class="right_align"></td>
+        </tr>
+        <tr>
+          <td colspan="2">presc. et r&eacute;al. troubles cognitifs</td>
+          <td class="right_align"></td>
+        </tr>
+        <tr bgcolor="#eaf1dd">
+          <td colspan="2">presc. et r&eacute;al. ECG</td>
+          <td class="right_align"></td>
+        </tr>
+        <tr>
+          <td colspan="2">presc. et r&eacute;al. exam. du pied</td>
+          <td class="right_align"></td>
+        </tr>
+        <tr bgcolor="#eaf1dd">
+          <td colspan="2">presc. et r&eacute;al. exam. du pied monofilament</td>
+          <td class="right_align"></td>
+        </tr>
+        <tr>
+          <td colspan="2">presc. autres examens de suivi de diab&egrave;te</td>
+          <td class="right_align"></td>
+        </tr>
+        <tr>
+          <td colspan="3" class="titre_table">Nbre examens int&eacute;gr&eacute;s dans la p&eacute;riode</td>
+        </tr>
+        <tr bgcolor="#eaf1dd">
+          <td colspan="2">Nb examens saisis ou int&eacute;gr&eacute;s</td>
+          <td class="right_align"></td>
+        </tr>
+        <tr bgcolor="#eaf1dd">
+          <td colspan="2">Nombre d'examen de la p&eacute;riode</td>
+          <td class="right_align"></td>
+        </tr>
+      </table>
+    </td>
+    <td width="2">&nbsp;</td>
+    <td witdh="">
+      <table width="100%" border="0" cellpadding="2" cellspacing="0">
+        <tr>
+          <td colspan="2" class="titre_table">Analyse activit&eacute; consultation</td>
+        </tr>
+        <tr>
+          <td class="head_table">Jours d'activit&eacute; retenus :</td>
+          <td class="head_table right_align"></td>
+        </tr>
+        <tr>
+          <td colspan="2">(= consult + gest dossier + concert + non attribu&eacute;)</td>
+        </tr>
+        <tr>
+          <td class="head_table">Nombre de consultations :</td>
+          <td class="head_table right_align"></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="head_table">Consultations par jour :</td>
+          <td class="head_table right_align"></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="head_table">Rapport &agrave; l'objectif</td>
+          <td class="head_table right_align"></td>
+        </tr>
+        <tr>
+          <td colspan="2" class="titre_table">Patients vus par protocole</td>
+        </tr>
+        <tr>
+          <td class="head_table">Total</td>
+          <td class="head_table right_align"></td>
+        </tr>
+        <tr bgcolor="#eaf1dd">
+          <td>d&eacute;pistage diab&egrave;te</td>
+          <td class="right_align"></td>
+        </tr>
+        <tr>
+          <td>suivi diab&egrave;te</td>
+          <td class="right_align"></td>
+        </tr>
+        <tr bgcolor="#eaf1dd">
+          <td>rcva</td>
+          <td class="right_align"></td>
+        </tr>
+        <tr>
+          <td>troubles cognitifs</td>
+          <td class="right_align"></td>
+        </tr>
+        <tr bgcolor="#eaf1dd">
+          <td>rep&eacute;rage BPCO</td>
+          <td class="right_align"></td>
+        </tr>
+        <tr bgcolor="">
+          <td>Cancer</td>
+          <td class="right_align"></td>
+        </tr>
+        <tr bgcolor="#eaf1dd">
+          <td>autres types</td>
+          <td class="right_align"></td>
+        </tr>
+        <tr>
+          <td>dont patient mutiprotocoles</td>
+          <td class="right_align"></td>
+        </tr>
+        <tr>
+          <td colspan="2" class="titre_table">Nouveaux patients</td>
+        </tr>
+        <tr bgcolor="#eaf1dd">
+          <td>Nouveaux patients de la p&eacute;riode</td>
+          <td class="right_align"></td>
+        </tr>
+        <tr bgcolor="#eaf1dd">
+          <td>Proportion de nouveaux patients</td>
+          <td class="right_align"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <!-- fin ligne 2 cols -->
+  
+  <!-- Evolution HBA1C -->
+  <tr>
+    <td colspan="3">
+      <table width="100%">
+        <tr>
+          <td colspan="7" class="titre_table">Evolution HBA1c</td>
+        </tr>
+        <tr>
+          <td class="head_table" colspan="2" align="right">Nombre de consultations :</td>
+          <td class="head_table right_align">1&egrave;re</td>
+          <td class="head_table right_align">2&egrave;me</td>
+          <td class="head_table right_align">3&egrave;me</td>
+          <td class="head_table right_align">4&egrave;me</td>
+          <td class="head_table right_align">5&egrave;me</td>
+          <td class="head_table right_align">6&egrave;me</td>
+        </tr>
+        <tr bgcolor="#eaf1dd">
+          <td rowspan="3" width="250">Patients avec HBA1c > 7%<br />avant la 1&egrave;re consultation</td>
+          <td>HBA1c avant</td>
+          <td class="right_align"></td>
+          <td class="right_align"></td>
+          <td class="right_align"></td>
+          <td class="right_align"></td>
+          <td class="right_align"></td>
+          <td class="right_align"></td>
+        </tr>
+        <tr bgcolor="#eaf1dd">
+          <td>HBA1c apr&egrave;s</td>
+          <td class="right_align"></td>
+          <td class="right_align"></td>
+          <td class="right_align"></td>
+          <td class="right_align"></td>
+          <td class="right_align"></td>
+          <td class="right_align"></td>
+        </tr>
+        <tr>
+          <td>&eacute;volution</td>
+          <td class="right_align"></td>
+          <td class="right_align"></td>    
+          <td class="right_align"></td>
+          <td class="right_align"></td>  
+          <td class="right_align"></td>  
+          <td class="right_align"></td>  
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <!-- fin Evolution HBA1C -->
+
+  <!-- Evolution LDL -->
+  <tr>
+    <td colspan="3">
+      <table width="100%">
+        <tr>
+          <td colspan="4" class="titre_table">Evolution LDL</td>
+        </tr>
+        <tr>
+          <td class="head_table" colspan="2" align="right">Nombre de consultation :</td>
+          <td class="head_table right_align">1&egrave;re</td>
+          <td class="head_table right_align">2&egrave;me</td>
+          <td class="head_table right_align">3&egrave;me</td>
+        </tr>
+        <tr bgcolor="#eaf1dd">
+          <td rowspan="3">Patient avec LDL > 1,3<br />avant la 1&egrave;re consultation</td>
+          <td>LDL avant</td>
+          <!-- 1 ère consultation -->
+          <td class="right_align"></td>
+          <!-- 2em consultation -->
+          <td class="right_align"></td>
+          <!-- 3em consultation -->
+          <td class="right_align"></td>
+        </tr>
+        <tr bgcolor="#eaf1dd">
+          <td>LDL apr&egrave;s</td>
+          <!-- 1 ère consultation -->
+          <td class="right_align"></td>
+          <!-- 2em consultation -->
+          <td class="right_align"></td>
+          <!-- 3em consultation -->
+          <td class="right_align"></td>
+        </tr>
+        <tr>
+          <td>&eacute;volution</td>
+          <td class="right_align"></td>
+          <td class="right_align"></td>    
+          <td class="right_align"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <!-- fin Evolution LDL -->
+
+  <!-- Evolution tension -->
+  <tr>
+    <td colspan="3">
+      <table width="100%">
+        <tr>
+          <td colspan="3" class="titre_table">Evolution tension</td>
+        </tr>
+        
+          <tr>
+            <td colspan="2">Taux patient > 140/90 avant la 1&egrave;re consultation et < 140/90 apr&egrave;s 1 consultation</td>
+            <td class="right_align" width="100"></td>
+          </tr>
+          <tr bgcolor="#eaf1dd">
+            <td colspan="2">Taux patient > 140/90 avant la 1&egrave;re consultation et < 140/90 apr&egrave;s 2 consultations</td>
+            <td class="right_align" width="100"></td>
+          </tr>
+          <tr>
+            <td colspan="2">Taux patient > 140/90 avant la 1&egrave;re consultation et < 140/90 apr&egrave;s 3 consultations</td>
+            <td class="right_align" width="100"></td>
+          </tr>
+          <tr bgcolor="#eaf1dd">
+            <td colspan="2">Taux patient > 140/90 avant la 1&egrave;re consultation et < 140/90 apr&egrave;s 4 consultations</td>
+            <td class="right_align" width="100"></td>
+          </tr>
+        
+      </table>
+    </td>
+  </tr>
+  <!-- fin Evolution tension -->
+
+  <!-- EFR -->
+  <tr>
+    <td>
+      <!-- EFR -->
+      <table width="100%">
+        <tr>
+          <td colspan="2" class="titre_table">Exploration Fonctionnelle Respiratoire - EFR</td>
+        </tr>
+        <tr bgcolor="#eaf1dd">
+          <td class="">Nb de spirom&eacute;trie par patient unique</td>
+          <td class="right_align" width="60"></td>
+        </tr>
+        <tr>
+          <td>Taux de patients tabagiques ayant fait l'objet d'une Exploration Fonctionnelle Respiratoire</td>
+          <td class="right_align"></td>
+        </tr>
+      </table>
+      <!-- fin EFR -->
+    </td>
+    <td>&nbsp;</td>
+    <td>
+      <!-- troubles cogni -->
+      <table width="100%">
+        <tr>
+          <td colspan="2" class="titre_table">Rep&eacute;rage des troubles cognitifs</td>
+        </tr>
+
+        <tr bgcolor="#eaf1dd">
+          <td class="">Nb d&eacute;pistage troubles cognitifs par patient unique</td>
+          <td class="right_align" width="60"></td>
+        </tr>
+        <tr>
+          <td>Taux de patients &acirc;g&eacute;es auxquels a &eacute;t&eacute; administr&eacute; un test des troubles cognitifs</td>
+          <td class="right_align"></td>
+        </tr>
+      </table>
+      <!-- fin troubles cogni -->
+    </td>
+  </tr>
+
+
+  
+
+  <!-- Potentiel du site -->
+  <tr>
+    <td colspan="3">
+      <table width="100%">
+        <tr>
+          <td colspan="2" class="titre_table">Potentiel des sites</td>
+        </tr>
+        <tr bgcolor="#eaf1dd">
+          <td class="">Nombre total de patients dont un des m&eacute;decins du cabinet est m&eacute;decin traitant</td>
+          <td class="right_align" width="100"></td>
+        </tr>
+        <tr>
+          <td class="">Nombre de patients diab&eacute;tiques de type 2</td>
+          <td class="right_align"></td>
+        </tr>
+        <tr bgcolor="#eaf1dd">
+          <td class="">Nombre de patients &agrave; risque cardio-vasculaires</td>
+          <td class="right_align"></td>
+        </tr>
+        <tr>
+          <td class="">Nombre de patients &eacute;ligibles au protocole Bpco</td>
+          <td class="right_align"></td>
+        </tr>
+        <tr bgcolor="#eaf1dd">
+          <td class="">Nombre de patients &eacute;ligibles aux rep&eacute;rages troubles cognitifs</td>
+          <td class="right_align"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <!-- fin Potentiel du site -->
+</table>
+
+
+
+
+<?php 
+  //break;
+} // fin while boucle cabinet
+?>
+
+
+</body>

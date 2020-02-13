@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document 
+
+.pop1{ 
+    display:block;
+    position:absolute;
+    top:1em; left:-175px; z-index:25;
+    padding-top:60px;
+    background: url(../_img/top_pop3.gif) no-repeat 190px 0px; color:#000;
+    text-align: center}
+	
+.pop1 h4{ 
+    display:block;
+    background: url(../_img/bg_tabCarte.gif) no-repeat 0px 0px; width:413px; height:30px; color:#FFFFFF; font-size:12px; line-height:30px; text-align:left; padding-left:25px;}
+.pop1 td{ 
+text-align:left; padding:2px 2px; }
+.pop1 td, a.infoCarte .pop th{ font-size:11px;}
+.pop1 div.bgTabCentre{ border:1px solid #377eb8;*/

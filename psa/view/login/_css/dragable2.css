@@ -1,0 +1,69 @@
+	.article{		border:1px solid #377eb8; border-top:none; background:#FFFFFF;	padding:0px 0px 0px 0px;	}
+
+	.article{		width:321px;}
+
+	.articlebig{		border:1px solid #377eb8; border-top:none; background:#FFFFFF;	padding:0px 0px 0px 0px;	}
+
+	.articlebig{		width:100%;}
+
+	.fondMediaOff{ background:#FFFFFF; cursor:pointer;}
+
+	.fondMediaOn{ background:#fdf6cd; cursor:pointer;}
+
+	 div.medias{ background:url(../_img/bg_media.gif) no-repeat 0px 0px; font-size:0.75em; color:#FFFFFF; font-weight:normal; line-height:2em; width:293px; display:block;  padding-left:30px; padding-top:3px;}
+
+	 div.medias2{ background:url(../_img/bg_media2.gif) no-repeat 0px 0px; font-size:0.75em; color:#FFFFFF; font-weight:normal; line-height:2em; width:293px; display:block;  padding-left:30px; padding-top:3px;}
+
+	 div.pratique{ background:url(../_img/bg_pratique.gif) no-repeat 0px 0px; font-size:0.75em; color:#FFFFFF; font-weight:normal; line-height:2em; width:293px; display:block;  padding-left:30px; padding-top:3px;}
+
+	div.production{ background:url(../_img/bg_production.gif) no-repeat 0px 0px; font-size:0.75em; color:#FFFFFF; font-weight:normal; line-height:2em; width:293px; display:block;  padding-left:30px; padding-top:3px;}
+
+	div.carte{ background:url(../_img/bg_carte.gif) no-repeat 0px 0px; font-size:0.75em; color:#FFFFFF; font-weight:normal; line-height:2em; width:293px; display:block;  padding-left:30px; padding-top:3px;}
+
+	.clear{		clear:both;	}
+
+	h4{}
+
+	.handle{ display:block; width:262px; cursor:move; float:left; padding-bottom:0px;}
+
+	
+
+	/* END DEMO CSS */
+
+	
+
+	/* REQUIRED CSS */
+
+	.edition{ margin:0px;}
+
+	.botBloc{ background:#FFFFFF url(../_img/coin_bloc.gif) no-repeat 100% 100%;}
+
+	.botBloc2{ background:#87b1d4 url(../_img/coin_bloc2.gif) no-repeat 100% 100%;  color:#FFFFFF; font-size:0.75em; padding:2px; }
+
+	
+
+/* */
+
+ul.sortablelist {  list-style-image:none;  list-style-type:none;  margin-top:5px;  margin:0px;  padding:0px;}
+
+ul.sortabledemo li {  padding:0px;  margin:0px;  display:block;}
+
+/* */
+
+.groupWrapper{	width: 330px;	float: left;	margin-right: 1%;	min-height: 400px;}
+
+.serializer{	clear: both;}
+
+.groupItem{	margin-bottom: 20px;}
+
+.groupItem#actualite .itemHeader{ position: relative;}
+
+
+
+.groupItem .itemHeader a{}
+
+.sortHelper{	border: 2px dotted #ebebc0;	width: auto !important;}
+
+*html .sortHelper{	border: 2px dashed #ebebc0;	width: auto !important;}
+
+*+html .sortHelper{	border: 2px dashed #ebebc0;	width: auto !important;}

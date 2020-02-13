@@ -1,0 +1,226 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta content="text/html; charset=ISO-8859-15" http-equiv="content-type">
+<link href='../css/main.css' rel="stylesheet" type="text/css">
+<title>Consultations suivantes</title>
+</head>
+<body>
+<script language="javascript">
+
+	function displayIMC(taille,poids){
+
+		if(taille == 0)
+			document.getElementById("IMC").innerHTML = "&nbsp;La taille est invalide IMC ne peut etre calculée";
+		else{
+			poidsValue = parseFloat(document.getElementById("poids").value);
+			if(isNaN(poidsValue) || poidsValue <30 || poidsValue >200){
+				document.getElementById("IMC").innerHTML = "IMC : ";
+				return;
+			}
+			var imc = Math.round(poidsValue/Math.pow(taille/100, 2));
+			obj = document.getElementById("IMC").innerHTML="IMC : "+imc;
+		}
+	}
+</SCRIPT>
+
+<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <th height="49" scope="col">&nbsp;
+	</th>
+    <th scope="col" class="headerTitle">Portail Asal&eacute;e - Consultations suivantes</th>
+    <th scope="col"><a href="javascript:window.close()"><img src="../images/close.gif"  border=0 alt="fermer" width=13 height=12 alt="Fermer la fenêtre"></a>
+<br>
+      &nbsp;&nbsp;<a href="../../controler/ActionControler.php?controlerparams:param:controler=PoserQuestionControler&controlerparams:param:action=AF&poserquestion:poserquestion:cabinet=<?php echo $_SESSION['nom']; ?>" target='_blank'><font size="-1">contacter le support</font></a></th>
+  </tr>
+</table>
+
+	
+  <b>Dossier</b>
+  <table border='1'>
+  	<tr>
+	  	<td>Numéro de dossier</td>
+		  	<td width='50'>0</td>
+		  		<td width='10'></td>
+		<td>Nom</Td>
+			<td width='100'>GUILLON</Td>
+		  		<td width='10'></td>
+		<td>Prénom</td>
+			<td width='100'>Xavier</td>
+		  		<td width='10'></td>
+		<td>Age</td>
+			<td width='50'>27</td>
+		  		<td width='10'></td>
+		<td>Sexe</td>
+			<td width='50'>M</td>
+		  		<td width='10'></td>
+		<td>Date de naissance</td>
+			<td width='50'>20/01/1980</td>
+	</tr>
+  </Table>
+  	<br>
+  	<table border='1'>
+	<tr>
+		<td><b>Objectifs</b></td>
+			<td><b>1ère consultation (27/03/2007)</b></td>
+				<td><b>Progrès/difficultés</b></td>
+					<td><b>Nouveaux objectifs</b></Td>
+	</tr>
+	<tr>
+		<td>Poids <img OnClick="javascript:window.open('objectif_poids.html','','width=250,height=250,top=100,left=500,scrollbars=yes,resizable=yes')" alt="Détail de l'objectif" border=0 height="31" src='../images/loupe.gif' width="31"></td>
+			<td>atteindre poids=90kg<br>
+				Nouveau poids : <input type='text' size='3'> &nbsp; le <input type='text' size='10'></td>
+				<td><textarea></textarea></td>
+					<td><input type='text'></td>
+	</tr>
+	<tr>
+		<td>Alcool <img OnClick="javascript:window.open('objectif_alcool.html','','width=250,height=250,top=100,left=500,scrollbars=yes,resizable=yes')" alt="Détail de l'objectif" border=0 height="31" src='../images/loupe.gif' width="31"></td>
+			<td>Non retenu</td>
+				<td><textarea></textarea></td>
+					<td><input type='text'></td>
+	</Tr>
+	<tr>
+		<td>Tabac <img OnClick="javascript:window.open('objectif_tabac.html','','width=250,height=250,top=100,left=500,scrollbars=yes,resizable=yes')" alt="Détail de l'objectif" border=0 height="31" src='../images/loupe.gif' width="31"></Td>
+			<td>fumer moins 1paquet/jour</Td>
+				<td><textarea></textarea></td>
+					<td><input type='text'></td>
+	</Tr>
+	<tr>
+		<td>Tension <img OnClick="javascript:window.open('objectif_tension.html','','width=250,height=250,top=100,left=500,scrollbars=yes,resizable=yes')" alt="Détail de l'objectif" border=0 height="31" src='../images/loupe.gif' width="31"></td>
+			<td>Non retenu<br>
+				Nouvelle valeur : <input type='text' size='3'>/<input type='text' size='3'>mmHg &nbsp; le <input type='text' size='10'></Td>
+				<td><textarea></textarea></td>
+					<td><input type='text'></td>
+	</tr>
+	</table>
+	<br>
+	<table border='1'>
+	<tr>
+		<td><b>Conseils prodigués</b></td>
+			<td><b>Consultations précédentes</b></td>
+				<td><b>Documents remis</b></Td>
+					<td><b>Commentaire</b></td>
+	</tr>
+	<tr>
+		<td width='300'>Consommation de sel</td>
+			<td>Le 10/03/07 : remis brochure "cuisiner à la vapeur"</td>
+			<td><input type='checkbox'>Cuisiner à la vapeur <img alt="Impression personnalisée" border=0 height="15" src='../images/imprimer.gif' width="15"><br>
+				<input type='checkbox'>Le sel caché <img alt="Impression personnalisée" border=0 height="15" src='../images/imprimer.gif' width="15">
+				</td>
+				<td><input type='text'></td>
+	</Tr>
+	<tr>
+		<td width='300'>Consommation d'alcool < 2 verres/j pour une femme, 3 verres/j pour un homme</td>
+			<td>Ne souhaite pas diminuer sa consommation</td>
+			<td><input type='checkbox'>Les dangers de l'alcool <img alt="Impression personnalisée" border=0 height="15" src='../images/imprimer.gif' width="15"><br>
+				<input type='checkbox'>Brochure sécurité routière <img alt="Impression personnalisée" border=0 height="15" src='../images/imprimer.gif' width="15">
+				</td>
+				<td><input type='text'></td>
+	</Tr>
+	<tr>
+		<td width='300'>Activité physique (équivalent de 30 min de marche rapide, 3 fois dans la semaine)</td>
+			<td></td>
+			<td><input type='checkbox'>Les randonnées en Gâtine <img alt="Impression personnalisée" border=0 height="15" src='../images/imprimer.gif' width="15"><br>
+				<input type='checkbox'>Les bienfaits du sport <img alt="Impression personnalisée" border=0 height="15" src='../images/imprimer.gif' width="15">
+				</td>
+				<td><input type='text'></td>
+	</Tr>
+	<tr>
+		<td width='300'>Sevrage tabagique</td>
+			<td></td>
+				<td><input type='checkbox'>10 conseils pour arrêter <img alt="Impression personnalisée" border=0 height="15" src='../images/imprimer.gif' width="15"><br>
+					<input type='checkbox'>Brochure "lutte anti-tabac" <img alt="Impression personnalisée" border=0 height="15" src='../images/imprimer.gif' width="15">
+					</td>
+					<td><input type='text'></td>
+	</Tr>
+	<tr>
+		<td width='300'>Contrôle du poids</td>
+			<td></td>
+				<td><input type='checkbox'>Maigrir en mangeant <img alt="Impression personnalisée" border=0 height="15" src='../images/imprimer.gif' width="15"><br>
+					<input type='checkbox'>Eviter le sucre <img alt="Impression personnalisée" border=0 height="15" src='../images/imprimer.gif' width="15">
+					</td>
+					<td><input type='text'></td>
+	</Tr>
+	<tr>
+		<td width='300'>Alimentation riche en fruits et légumes
+				<!--, pauvres en graisses saturées, favorisant les graisses insaturées, les féculents, diminuant les sucres rapides--></td>
+			<td></td>
+				<td><input type='checkbox'>Brochure 10 fruits et légumes <img alt="Impression personnalisée" border=0 height="15" src='../images/imprimer.gif' width="15"><br>
+					<input type='checkbox'>Consommer des fruits frais <img alt="Impression personnalisée" border=0 height="15" src='../images/imprimer.gif' width="15">
+					</td>
+					<td><input type='text'></td>
+	</Tr>
+	<tr>
+		<td width='300'>Diminution des excitants (café, thé, réglisse)</td>
+			<td></td>
+				<td><input type='checkbox'>Risques du café <img alt="Impression personnalisée" border=0 height="15" src='../images/imprimer.gif' width="15"><br>
+					<input type='checkbox'>Influence café/tension <img alt="Impression personnalisée" border=0 height="15" src='../images/imprimer.gif' width="15">
+					</td>
+					<td><input type='text'></td>
+	</Tr>
+	</table>
+	<br>
+	<b>Indicateurs d'observance des traitements médicamenteux</b>
+	<table border='1'>
+	  <tr>
+	  	<td>Problèmes rencontrés</td>
+	  		<td>Commentaire</td>
+	  </tr>
+	  <tr>
+	    <td><input type='checkbox'>Qualité de vie par rapport au traitement</td><td>
+			<input type='text'>
+		</td>
+	   </tr>
+	   <tr>
+	    <td><input type='checkbox'>Effets secondaires</td><td>
+			<input type='text'>
+		</td>
+	   </tr>
+	   <tr>
+	    <td><input type='checkbox'>Délivrance des traitements</td><td>
+			<input type='text'>
+		</td>
+	   </tr>
+	   <tr>
+	    <td><input type='checkbox'>Régularité des prises</td><td>
+			<input type='text'>
+		</td>
+	   </tr>
+	</table>
+  <br>
+
+  <table border=1>
+  	<tr>
+  		<td>Date de consultation</td>
+  			<td colspan='2'><input type='text' size='10'></td>
+  	</tr>
+  	<tr>
+  		<td>Degré de satisfaction</Td>
+  			<td colspan='2'><SELECT>
+			  	<option></option>
+			  	<option>Très bon</option>
+			  	<option>Bon</option>
+			  	<option>Moyen</option>
+			  	<option>Mauvais</option>
+			  	<option>Très mauvais</option>
+			  	</select>
+				</td>
+  	</tr>
+  	<tr>
+  		<td>Durée de consultation</td>
+  			<td colspan='2'><input type='text' size='10'></td>
+  	</tr>
+	<tr>
+			<td>Points positifs</td>
+				<td><textarea rows='3' cols='30'></textarea></td>
+	</Tr>
+	<tr>
+			<td>Points négatifs</td>
+				<td><textarea rows='3' cols='30'></textarea></td>
+	</Tr>
+  	</table>
+
+  <br><br>
+  <input type='button' value='Valider la saisie' onClick="alert('Validation inactive');">
+  <input type='reset' value='Recommencer'> 
+</form> 

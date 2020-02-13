@@ -1,0 +1,1368 @@
+# (version informed79.fr)
+
+# choisir la base de données de infornew 
+use informed3;
+
+# table dossier
+truncate table dossier;
+insert into dossier(cabinet, numero, dnaiss, sexe, taille, dmaj)
+SELECT cabinet, dossier, dnaiss, sexe, taille, dmaj
+FROM informed.inf79_patient;
+
+# table dépistage colon
+truncate table depistage_colon;
+INSERT  INTO depistage_colon(id, date, dmaj)
+SELECT d.id, r.date_reponse, r.dmaj
+FROM informed.inf79_reponses AS r
+INNER  JOIN dossier AS d ON 
+r.cabinet = d.cabinet AND 
+r.dossier = d.numero
+WHERE doc =  'depistage_colon';
+
+UPDATE depistage_colon as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.id and
+r.date_reponse = dc.date 
+INNER  JOIN informed.inf79_reponses as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero 
+SET 
+dc.ant_pere_type =  'aucun',
+dc.dmaj = dc.dmaj 
+WHERE 
+doc =  'depistage_colon' AND 
+reponses LIKE  '%antec_pere = "aucun"%';
+
+UPDATE depistage_colon as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.id and
+r.date_reponse = dc.date 
+INNER  JOIN informed.inf79_reponses as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero 
+SET 
+dc.ant_pere_type =  'polypes',
+dc.dmaj = dc.dmaj 
+WHERE doc =  'depistage_colon' AND 
+reponses LIKE  '%antec_pere = "polypes"%';
+
+UPDATE depistage_colon as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.id and
+r.date_reponse = dc.date 
+INNER  JOIN informed.inf79_reponses as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero 
+SET 
+dc.ant_pere_type =  'cancer',
+dc.dmaj = dc.dmaj 
+WHERE doc =  'depistage_colon' AND 
+reponses LIKE  '%antec_pere = "cancer%';
+
+UPDATE depistage_colon as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.id and
+r.date_reponse = dc.date 
+INNER  JOIN informed.inf79_reponses as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero 
+SET 
+dc.ant_mere_type =  'aucun',
+dc.dmaj = dc.dmaj 
+WHERE 
+doc =  'depistage_colon' AND 
+reponses LIKE  '%antec_mere = "aucun"%';
+
+UPDATE depistage_colon as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.id and
+r.date_reponse = dc.date 
+INNER  JOIN informed.inf79_reponses as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero 
+SET 
+dc.ant_mere_type =  'polypes',
+dc.dmaj = dc.dmaj 
+WHERE doc =  'depistage_colon' AND 
+reponses LIKE  '%antec_mere = "polypes"%';
+
+UPDATE depistage_colon as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.id and
+r.date_reponse = dc.date 
+INNER  JOIN informed.inf79_reponses as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero 
+SET 
+dc.ant_mere_type =  'cancer',
+dc.dmaj = dc.dmaj 
+WHERE doc =  'depistage_colon' AND 
+reponses LIKE  '%antec_mere = "cancer%';
+
+UPDATE depistage_colon as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.id and
+r.date_reponse = dc.date 
+INNER  JOIN informed.inf79_reponses as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero 
+SET 
+dc.ant_fratrie_type =  'aucun',
+dc.dmaj = dc.dmaj 
+WHERE 
+doc =  'depistage_colon' AND 
+reponses LIKE  '%antec_fratrie = "aucun"%';
+
+UPDATE depistage_colon as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.id and
+r.date_reponse = dc.date 
+INNER  JOIN informed.inf79_reponses as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero 
+SET 
+dc.ant_fratrie_type =  'polypes',
+dc.dmaj = dc.dmaj 
+WHERE doc =  'depistage_colon' AND 
+reponses LIKE  '%antec_fratrie = "polypes"%';
+
+UPDATE depistage_colon as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.id and
+r.date_reponse = dc.date 
+INNER  JOIN informed.inf79_reponses as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero 
+SET 
+dc.ant_fratrie_type =  'cancer',
+dc.dmaj = dc.dmaj 
+WHERE doc =  'depistage_colon' AND 
+reponses LIKE  '%antec_fratrie = "cancer%';
+
+UPDATE depistage_colon as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.id and
+r.date_reponse = dc.date 
+INNER  JOIN informed.inf79_reponses as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero 
+SET 
+dc.ant_collat_type =  'aucun',
+dc.dmaj = dc.dmaj 
+WHERE 
+doc =  'depistage_colon' AND 
+reponses LIKE  '%antec_collat = "aucun"%';
+
+UPDATE depistage_colon as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.id and
+r.date_reponse = dc.date 
+INNER  JOIN informed.inf79_reponses as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero 
+SET 
+dc.ant_collat_type =  'polypes',
+dc.dmaj = dc.dmaj 
+WHERE doc =  'depistage_colon' AND 
+reponses LIKE  '%antec_collat = "polypes"%';
+
+UPDATE depistage_colon as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.id and
+r.date_reponse = dc.date 
+INNER  JOIN informed.inf79_reponses as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero 
+SET 
+dc.ant_collat_type =  'cancer',
+dc.dmaj = dc.dmaj 
+WHERE doc =  'depistage_colon' AND 
+reponses LIKE  '%antec_collat = "cancer%';
+
+UPDATE depistage_colon as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.id and
+r.date_reponse = dc.date 
+INNER  JOIN informed.inf79_reponses as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero 
+SET 
+dc.ant_enfants_type =  'aucun',
+dc.dmaj = dc.dmaj 
+WHERE 
+doc =  'depistage_colon' AND 
+reponses LIKE  '%antec_enfant = "aucun"%';
+
+UPDATE depistage_colon as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.id and
+r.date_reponse = dc.date 
+INNER  JOIN informed.inf79_reponses as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero 
+SET 
+dc.ant_enfants_type =  'polypes',
+dc.dmaj = dc.dmaj 
+WHERE doc =  'depistage_colon' AND 
+reponses LIKE  '%antec_enfant = "polypes"%';
+
+UPDATE depistage_colon as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.id and
+r.date_reponse = dc.date 
+INNER  JOIN informed.inf79_reponses as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero 
+SET 
+dc.ant_enfants_type =  'cancer',
+dc.dmaj = dc.dmaj 
+WHERE doc =  'depistage_colon' AND 
+reponses LIKE  '%antec_enfant = "cancer%';
+
+UPDATE depistage_colon as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.id and
+r.date_reponse = dc.date 
+INNER  JOIN informed.inf79_reponses as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero 
+SET 
+dc.ant_pere_age  =  substring( reponses, LOCATE(  'a_antec_pere = "', reponses )  + 16, 2  ) ,
+dc.dmaj = dc.dmaj 
+WHERE doc =  'depistage_colon' AND 
+reponses REGEXP  'a_antec_pere = "[0-9]+"';
+
+UPDATE depistage_colon as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.id and
+r.date_reponse = dc.date 
+INNER  JOIN informed.inf79_reponses as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero 
+SET 
+dc.ant_mere_age  =  substring( reponses, LOCATE(  'a_antec_mere = "', reponses )  + 16, 2  ) ,
+dc.dmaj = dc.dmaj 
+WHERE doc =  'depistage_colon' AND 
+reponses REGEXP  'a_antec_mere = "[0-9]+"';
+
+UPDATE depistage_colon as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.id and
+r.date_reponse = dc.date 
+INNER  JOIN informed.inf79_reponses as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero 
+SET 
+dc.ant_fratrie_age  =  substring( reponses, LOCATE(  'a_antec_fratrie = "', reponses )  + 19, 2  ) ,
+dc.dmaj = dc.dmaj 
+WHERE doc =  'depistage_colon' AND 
+reponses REGEXP  'a_antec_fratrie = "[0-9]+"';
+
+UPDATE depistage_colon as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.id and
+r.date_reponse = dc.date 
+INNER  JOIN informed.inf79_reponses as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero 
+SET 
+dc.ant_collat_age  =  substring( reponses, LOCATE(  'a_antec_collat = "', reponses )  + 18, 2  ) ,
+dc.dmaj = dc.dmaj 
+WHERE doc =  'depistage_colon' AND 
+reponses REGEXP  'a_antec_collat = "[0-9]+"';
+
+UPDATE depistage_colon as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.id and
+r.date_reponse = dc.date 
+INNER  JOIN informed.inf79_reponses as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero 
+SET 
+dc.just_ant_fam   =  1 ,
+dc.dmaj = dc.dmaj 
+WHERE doc =  'depistage_colon' AND 
+reponses regexp 'justif_antec = "oui"';
+
+UPDATE depistage_colon as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.id and
+r.date_reponse = dc.date 
+INNER  JOIN informed.inf79_reponses as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero 
+SET 
+dc.just_ant_polype   =  1 ,
+dc.dmaj = dc.dmaj 
+WHERE doc =  'depistage_colon' AND 
+reponses regexp 'justif_polype = "oui"';
+
+UPDATE depistage_colon as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.id and
+r.date_reponse = dc.date 
+INNER  JOIN informed.inf79_reponses as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero 
+SET 
+dc.just_ant_cr_colique   =  1 ,
+dc.dmaj = dc.dmaj 
+WHERE doc =  'depistage_colon' AND 
+reponses regexp 'justif_colique = "oui"';
+
+UPDATE depistage_colon as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.id and
+r.date_reponse = dc.date 
+INNER  JOIN informed.inf79_reponses as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero 
+SET 
+dc.just_ant_sg_selles   =  1 ,
+dc.dmaj = dc.dmaj 
+WHERE doc =  'depistage_colon' AND 
+reponses regexp 'justif_selles = "oui"';
+
+UPDATE depistage_colon as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.id and
+r.date_reponse = dc.date 
+INNER  JOIN informed.inf79_reponses as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero 
+SET 
+dc.colos_date  =  
+concat(substring( reponses, locate(  'DateColo = "', reponses )  + 18, 4 ),
+substring( reponses, locate(  'DateColo = "', reponses )  + 15, 2 ),
+substring( reponses, locate(  'DateColo = "', reponses )  + 12, 2 )),
+dc.dmaj = dc.dmaj 
+WHERE doc =  'depistage_colon' AND 
+reponses REGEXP  'DateColo = "[/0-9]{10}"';
+
+UPDATE depistage_colon as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.id and
+r.date_reponse = dc.date 
+INNER  JOIN informed.inf79_reponses as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero 
+SET 
+dc.colos_polypes   =  1 ,
+dc.dmaj = dc.dmaj 
+WHERE doc =  'depistage_colon' AND 
+reponses REGEXP  'Polype = "oui"';
+
+UPDATE depistage_colon as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.id and
+r.date_reponse = dc.date 
+INNER  JOIN informed.inf79_reponses as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero 
+SET 
+dc.colos_dysplasie   =  "aucun" ,
+dc.dmaj = dc.dmaj 
+WHERE doc =  'depistage_colon' AND 
+reponses REGEXP  'Dysplasie = "non"';
+
+UPDATE depistage_colon as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.id and
+r.date_reponse = dc.date 
+INNER  JOIN informed.inf79_reponses as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero 
+SET 
+dc.colos_dysplasie   =  "haut" ,
+dc.dmaj = dc.dmaj 
+WHERE doc =  'depistage_colon' AND 
+reponses REGEXP  'Dysplasie = "hautgrade"';
+
+UPDATE depistage_colon as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.id and
+r.date_reponse = dc.date 
+INNER  JOIN informed.inf79_reponses as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero 
+SET 
+dc.colos_dysplasie   =  "cancer" ,
+dc.dmaj = dc.dmaj 
+WHERE doc =  'depistage_colon' AND 
+reponses REGEXP  'Dysplasie = "cancer"';
+
+UPDATE depistage_colon as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.id and
+r.date_reponse = dc.date 
+INNER  JOIN informed.inf79_reponses as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero 
+SET 
+dc.rappel_colos_period   = substring( reponses, locate( 'Rappel', reponses ) + 10, 1 )  ,
+dc.dmaj = dc.dmaj 
+WHERE doc =  'depistage_colon' AND 
+reponses REGEXP  'Rappel = "[0-9]{1}"';
+
+UPDATE depistage_colon as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.id and
+r.date_reponse = dc.date 
+INNER  JOIN informed.inf79_reponses as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero 
+SET 
+dc.rappel_colos_period   = substring( reponses, locate(  'RapAutre', reponses )  + 12, 1  )  ,
+dc.dmaj = dc.dmaj 
+WHERE doc =  'depistage_colon' AND 
+reponses REGEXP 'RapAutre = "[0-9]{1}';
+
+
+# table dépistage sein
+truncate table depistage_sein;
+INSERT  INTO depistage_sein(id, date, dmaj)
+SELECT d.id, r.date_reponse, r.dmaj
+FROM informed.inf79_reponses AS r
+INNER  JOIN dossier AS d ON 
+r.cabinet = d.cabinet AND 
+r.dossier = d.numero
+WHERE doc =  'depistage_sein';
+
+UPDATE depistage_sein as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.id and
+r.date_reponse = dc.date 
+INNER  JOIN informed.inf79_reponses as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero 
+SET 
+dc.ant_fam_mere  = 1,
+dc.dmaj = dc.dmaj 
+WHERE doc =  'depistage_sein' AND 
+reponses REGEXP 'Antecedent = "array [^)]+ \'mere';
+
+UPDATE depistage_sein as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.id and
+r.date_reponse = dc.date 
+INNER  JOIN informed.inf79_reponses as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero 
+SET 
+dc.ant_fam_grandmere  = 1,
+dc.dmaj = dc.dmaj 
+WHERE doc =  'depistage_sein' AND 
+reponses REGEXP 'Antecedent = "array [^)]+ \'grandmere';
+
+UPDATE depistage_sein as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.id and
+r.date_reponse = dc.date 
+INNER  JOIN informed.inf79_reponses as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero 
+SET 
+dc.ant_fam_tante  = 1,
+dc.dmaj = dc.dmaj 
+WHERE doc =  'depistage_sein' AND 
+reponses REGEXP 'Antecedent = "array [^)]+ \'tante';
+
+UPDATE depistage_sein as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.id and
+r.date_reponse = dc.date 
+INNER  JOIN informed.inf79_reponses as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero 
+SET 
+dc.ant_fam_soeur = 1,
+dc.dmaj = dc.dmaj 
+WHERE doc =  'depistage_sein' AND 
+reponses REGEXP 'Antecedent = "array [^)]+ \'soeur';
+
+UPDATE depistage_sein as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.id and
+r.date_reponse = dc.date 
+INNER  JOIN informed.inf79_reponses as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero 
+SET 
+dc.dep_type = 'indiv',
+dc.dmaj = dc.dmaj 
+WHERE doc =  'depistage_sein' AND 
+reponses REGEXP 'Depistage = "indiv';
+
+UPDATE depistage_sein as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.id and
+r.date_reponse = dc.date 
+INNER  JOIN informed.inf79_reponses as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero 
+SET 
+dc.dep_type = 'coll',
+dc.dmaj = dc.dmaj 
+WHERE doc =  'depistage_sein' AND 
+reponses REGEXP 'Depistage = "coll';
+
+UPDATE depistage_sein as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.id and
+r.date_reponse = dc.date 
+INNER  JOIN informed.inf79_reponses as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero 
+SET 
+dc.mamograph_date = concat( 
+substring( reponses, locate('dMammo = "', reponses )  + 16, 4  ) , 
+substring( reponses, locate('dMammo = "', reponses )  + 13, 2  ) , 
+substring( reponses, locate('dMammo = "', reponses )  + 10, 2  )  
+),
+dc.dmaj = dc.dmaj 
+WHERE doc =  'depistage_sein' AND 
+reponses REGEXP 'dMammo = "[0-9/]{10}"';
+
+# table dépistage diabète
+truncate table depistage_diabete;
+INSERT  INTO depistage_diabete(id, date, dmaj)
+SELECT d.id, r.date_reponse, r.dmaj
+FROM informed.inf79_reponses AS r
+INNER  JOIN dossier AS d ON 
+r.cabinet = d.cabinet AND 
+r.dossier = d.numero
+WHERE doc =  'depistage_diabete';
+
+UPDATE depistage_diabete as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.id and
+r.date_reponse = dc.date 
+INNER  JOIN informed.inf79_reponses as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero 
+SET 
+dc.poids = substring( reponses, locate(  'poids', reponses )  + 9, 2  ) ,
+dc.dmaj = dc.dmaj 
+WHERE doc =  'depistage_diabete' AND 
+reponses REGEXP  'poids = "[0-9]{2}"';
+
+UPDATE depistage_diabete as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.id and
+r.date_reponse = dc.date 
+INNER  JOIN informed.inf79_reponses as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero 
+SET 
+dc.poids = substring( reponses, locate(  'poids', reponses )  + 9, 3  ) ,
+dc.dmaj = dc.dmaj 
+WHERE doc =  'depistage_diabete' AND 
+reponses REGEXP  'poids = "[0-9]{3}"';
+
+UPDATE depistage_diabete as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.id and
+r.date_reponse = dc.date 
+INNER  JOIN informed.inf79_reponses as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero 
+SET 
+dc.surpoids = 1 ,
+dc.dmaj = dc.dmaj 
+WHERE doc =  'depistage_diabete' AND 
+reponses REGEXP  "Risques = [^\)]+'imc'" ;
+
+UPDATE depistage_diabete as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.id and
+r.date_reponse = dc.date 
+INNER  JOIN informed.inf79_reponses as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero 
+SET 
+dc.parent_diabetique_type2 = 1 ,
+dc.dmaj = dc.dmaj 
+WHERE doc =  'depistage_diabete' AND 
+reponses REGEXP  "Risques = [^\)]+'hérédite'" ;
+
+UPDATE depistage_diabete as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.id and
+r.date_reponse = dc.date 
+INNER  JOIN informed.inf79_reponses as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero 
+SET 
+dc.ant_intolerance_glucose  = 1 ,
+dc.dmaj = dc.dmaj 
+WHERE doc =  'depistage_diabete' AND 
+reponses REGEXP  "Risques = [^\)]+'glucose'" ;
+
+UPDATE depistage_diabete as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.id and
+r.date_reponse = dc.date 
+INNER  JOIN informed.inf79_reponses as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero 
+SET 
+dc.hypertension_arterielle  = 1 ,
+dc.dmaj = dc.dmaj 
+WHERE doc =  'depistage_diabete' AND 
+reponses REGEXP  "Risques = [^\)]+'hta'" ;
+
+UPDATE depistage_diabete as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.id and
+r.date_reponse = dc.date 
+INNER  JOIN informed.inf79_reponses as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero 
+SET 
+dc.dyslipidemie_en_charge  = 1 ,
+dc.dmaj = dc.dmaj 
+WHERE doc =  'depistage_diabete' AND 
+reponses REGEXP  "Risques = [^\)]+'lipides'" ;
+
+UPDATE depistage_diabete as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.id and
+r.date_reponse = dc.date 
+INNER  JOIN informed.inf79_reponses as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero 
+SET 
+dc.hdl  = 1 ,
+dc.dmaj = dc.dmaj 
+WHERE doc =  'depistage_diabete' AND 
+reponses REGEXP  "Risques = [^\)]+'hdl'" ;
+
+UPDATE depistage_diabete as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.id and
+r.date_reponse = dc.date 
+INNER  JOIN informed.inf79_reponses as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero 
+SET 
+dc.bebe_sup_4kg = 1 ,
+dc.dmaj = dc.dmaj 
+WHERE doc =  'depistage_diabete' AND 
+reponses REGEXP  "Risques = [^\)]+'bébé'" ;
+
+UPDATE depistage_diabete as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.id and
+r.date_reponse = dc.date 
+INNER  JOIN informed.inf79_reponses as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero 
+SET 
+dc.ant_diabete_gestationnel  = 1 ,
+dc.dmaj = dc.dmaj 
+WHERE doc =  'depistage_diabete' AND 
+reponses REGEXP  "Risques = [^\)]+'gestation'" ;
+
+UPDATE depistage_diabete as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.id and
+r.date_reponse = dc.date 
+INNER  JOIN informed.inf79_reponses as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero 
+SET 
+dc.corticotherapie  = 1 ,
+dc.dmaj = dc.dmaj 
+WHERE doc =  'depistage_diabete' AND 
+reponses REGEXP  "Risques = [^\)]+'cortico'" ;
+
+UPDATE depistage_diabete as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.id and
+r.date_reponse = dc.date 
+INNER  JOIN informed.inf79_reponses as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero 
+SET 
+dc.infection= 1 ,
+dc.dmaj = dc.dmaj 
+WHERE doc =  'depistage_diabete' AND 
+reponses REGEXP  "Risques = [^\)]+'infection'" ;
+
+UPDATE depistage_diabete as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.id and
+r.date_reponse = dc.date 
+INNER  JOIN informed.inf79_reponses as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero 
+SET 
+dc.intervention_chirugicale = 1 ,
+dc.dmaj = dc.dmaj 
+WHERE doc =  'depistage_diabete' AND 
+reponses REGEXP  "Risques = [^\)]+'chirurgie'" ;
+
+UPDATE depistage_diabete as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.id and
+r.date_reponse = dc.date 
+INNER  JOIN informed.inf79_reponses as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero 
+SET 
+dc.autre  = 1 ,
+dc.dmaj = dc.dmaj 
+WHERE doc =  'depistage_diabete' AND 
+reponses REGEXP  "Risques = [^\)]+'transitoire'" ;
+
+UPDATE depistage_diabete as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.id and
+r.date_reponse = dc.date 
+INNER  JOIN informed.inf79_reponses as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero 
+SET 
+dc.surpoids = 1 ,
+dc.dmaj = dc.dmaj 
+WHERE doc =  'depistage_diabete' AND 
+reponses REGEXP  "Risques = [^\)]+'tourtaille'" ;
+
+UPDATE depistage_diabete as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.id and
+r.date_reponse = dc.date 
+INNER  JOIN informed.inf79_reponses as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero 
+SET 
+dc.derniere_gly_date = concat( 
+substring( reponses, locate('DateGly = "', reponses )  + 17, 4  ) , 
+substring( reponses, locate('DateGly = "', reponses )  + 14, 2  ) , 
+substring( reponses, locate('DateGly = "', reponses )  + 11, 2  )  
+),
+dc.dmaj = dc.dmaj 
+WHERE doc =  'depistage_diabete' AND 
+reponses REGEXP 'DateGly = "[0-9/]{10}"';
+
+UPDATE depistage_diabete as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.id and
+r.date_reponse = dc.date 
+INNER  JOIN informed.inf79_reponses as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero 
+SET 
+dc.derniere_gly_resultat = 
+substring( reponses, locate( 'ResGly', reponses ) + 10, 1 ),
+dc.dmaj = dc.dmaj 
+WHERE doc =  'depistage_diabete' AND 
+reponses REGEXP  'ResGly = "[0-9]{1}"' ;
+
+UPDATE depistage_diabete as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.id and
+r.date_reponse = dc.date 
+INNER  JOIN informed.inf79_reponses as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero 
+SET 
+dc.derniere_gly_resultat = 
+concat(substring( reponses, locate( 'ResGly', reponses ) + 10, 1 ), '.',
+substring( reponses, locate( 'ResGly', reponses ) + 12, 1 )),
+dc.dmaj = dc.dmaj 
+WHERE doc =  'depistage_diabete' AND 
+reponses REGEXP  'ResGly = "[0-9]{1}.[0-9]{1}"' ;
+
+UPDATE depistage_diabete as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.id and
+r.date_reponse = dc.date 
+INNER  JOIN informed.inf79_reponses as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero 
+SET 
+dc.derniere_gly_resultat = 
+concat(substring( reponses, locate( 'ResGly', reponses ) + 10, 1 ), '.',
+substring( reponses, locate( 'ResGly', reponses ) + 12, 2 )),
+dc.dmaj = dc.dmaj 
+WHERE doc =  'depistage_diabete' AND 
+reponses REGEXP 'ResGly = "[0-9]{1}.[0-9]{2}"' ;
+
+UPDATE depistage_diabete as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.id and
+r.date_reponse = dc.date 
+INNER  JOIN informed.inf79_reponses as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero 
+SET 
+dc.prescription_gly = 1,
+dc.dmaj = dc.dmaj 
+WHERE doc =  'depistage_diabete' AND 
+reponses REGEXP 'Gly2 = "oui"' ;
+
+UPDATE depistage_diabete as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.id and
+r.date_reponse = dc.date 
+INNER  JOIN informed.inf79_reponses as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero 
+SET 
+dc.nouvelle_gly_date = concat( 
+substring( reponses, locate('DateGly2 = "', reponses )  + 18, 4  ) , 
+substring( reponses, locate('DateGly2 = "', reponses )  + 15, 2  ) , 
+substring( reponses, locate('DateGly2 = "', reponses )  + 12, 2  )  
+),
+dc.dmaj = dc.dmaj 
+WHERE doc =  'depistage_diabete' AND 
+reponses REGEXP 'DateGly2 = "[0-9/]{10}"';
+
+UPDATE depistage_diabete as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.id and
+r.date_reponse = dc.date 
+INNER  JOIN informed.inf79_reponses as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero 
+SET 
+dc.nouvelle_gly_resultat = 
+substring( reponses, locate( 'ResGly2', reponses ) + 11, 1 ),
+dc.dmaj = dc.dmaj 
+WHERE doc =  'depistage_diabete' AND 
+reponses REGEXP  'ResGly2 = "[0-9]{1}"' ;
+
+UPDATE depistage_diabete as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.id and
+r.date_reponse = dc.date 
+INNER  JOIN informed.inf79_reponses as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero 
+SET 
+dc.nouvelle_gly_resultat = 
+concat(substring( reponses, locate( 'ResGly2', reponses ) + 11, 1 ), '.',
+substring( reponses, locate( 'ResGly2', reponses ) + 13, 1 )),
+dc.dmaj = dc.dmaj 
+WHERE doc =  'depistage_diabete' AND 
+reponses REGEXP  'ResGly2 = "[0-9]{1}.[0-9]{1}"' ;
+
+UPDATE depistage_diabete as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.id and
+r.date_reponse = dc.date 
+INNER  JOIN informed.inf79_reponses as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero 
+SET 
+dc.nouvelle_gly_resultat = 
+concat(substring( reponses, locate( 'ResGly2', reponses ) + 11, 1 ), '.',
+substring( reponses, locate( 'ResGly2', reponses ) + 13, 2 )),
+dc.dmaj = dc.dmaj 
+WHERE doc =  'depistage_diabete' AND 
+reponses REGEXP 'ResGly2 = "[0-9]{1}.[0-9]{2}"' ;
+
+UPDATE depistage_diabete as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.id and
+r.date_reponse = dc.date 
+INNER  JOIN informed.inf79_reponses as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero 
+SET 
+dc.note_gly = 
+substring( 
+  reponses, 
+  locate(  'PasGLy', reponses )  + 10, 
+  locate(
+     '"', 
+     substring( 
+       reponses, 
+       locate( 'PasGLy', reponses ) + 10
+     )
+  )  -1
+),
+dc.dmaj = dc.dmaj 
+WHERE doc =  'depistage_diabete' AND reponses
+REGEXP 'PasGLy = "[a-z]+' AND reponses NOT 
+REGEXP 'PasGLy = "non applicable' ;
+
+UPDATE depistage_diabete as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.id and
+r.date_reponse = dc.date 
+INNER  JOIN informed.inf79_reponses as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero 
+SET 
+dc.mesure_suivi_diabete = 1 ,
+dc.dmaj = dc.dmaj 
+WHERE doc =  'depistage_diabete' AND 
+reponses REGEXP '[^s]Diabete = "oui"' ;
+
+UPDATE depistage_diabete as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.id and
+r.date_reponse = dc.date 
+INNER  JOIN informed.inf79_reponses as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero 
+SET 
+dc.mesure_suivi_hygieno_dietetique = 1 ,
+dc.dmaj = dc.dmaj 
+WHERE doc =  'depistage_diabete' AND 
+reponses REGEXP 'HygDiet = "oui"' ;
+
+UPDATE depistage_diabete as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.id and
+r.date_reponse = dc.date 
+INNER  JOIN informed.inf79_reponses as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero 
+SET 
+dc.mesure_suivi_controle_annuel = 1 ,
+dc.dmaj = dc.dmaj 
+WHERE doc =  'depistage_diabete' AND 
+reponses REGEXP 'PasDiabete = "oui"' ;
+
+
+# table évaluation infirmière
+truncate table evaluation_infirmier;
+INSERT  INTO evaluation_infirmier(id, date, dmaj)
+SELECT d.id, r.date_reponse, r.dmaj
+FROM informed.inf79_reponses AS r
+INNER  JOIN dossier AS d ON 
+r.cabinet = d.cabinet AND 
+r.dossier = d.numero
+WHERE doc =  'evaluation_infirmier';
+
+UPDATE evaluation_infirmier as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.id and
+r.date_reponse = dc.date 
+INNER  JOIN informed.inf79_reponses as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero 
+SET 
+dc.degre_satisfaction = 
+   substring( reponses, 11, 1 )  ,
+dc.dmaj = dc.dmaj 
+WHERE doc =  'evaluation_infirmier' ;
+
+UPDATE evaluation_infirmier as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.id and
+r.date_reponse = dc.date 
+INNER  JOIN informed.inf79_reponses as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero 
+SET 
+dc.points_positifs = 
+  substring( 
+    reponses, 
+    locate( 'positif', reponses )  + 11, 
+    locate( '"', 
+      substring( reponses, 
+        locate( 'positif', reponses ) + 11 
+      )  
+    ) - 1 
+  ),
+dc.dmaj = dc.dmaj 
+WHERE doc =  'evaluation_infirmier' 
+AND reponses REGEXP 'positif = "' 
+and reponses not REGEXP 'positif = ""' ;
+
+UPDATE evaluation_infirmier as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.id and
+r.date_reponse = dc.date 
+INNER  JOIN informed.inf79_reponses as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero 
+SET 
+dc.points_ameliorations = 
+  substring( 
+    reponses, 
+    locate( 'ameliorer', reponses )  + 13, 
+    locate( '"', 
+      substring( reponses, 
+        locate( 'ameliorer', reponses ) + 13 
+      )  
+    ) - 1 
+  ),
+dc.dmaj = dc.dmaj 
+WHERE doc =  'evaluation_infirmier' 
+AND reponses REGEXP 'ameliorer = "' 
+and reponses not REGEXP 'ameliorer = ""' ;
+
+
+# table suivi diabete
+truncate table suivi_diabete;
+INSERT  INTO suivi_diabete( dossier_id, dsuivi, poids, Regime, InsulReq, ADO, TA_mode, TAsys, TADia, equilib, lipide, tension, suivi_type, hta, arte, neph, coro, reti, neur, risques, phys, hypl, taba, diet, mesure_hta, mesure_ado, insuline, dmaj ) 
+SELECT d.id, dsuivi, poids, 
+IF ( FIND_IN_SET(  'Regime', traitements )  > 0, 1,  NULL  ) as Regime, 
+IF ( FIND_IN_SET(  'InsulReq', traitements )  > 0, 1,  NULL  ) AS InsulReq, ADO, TA_mode, TaSys, TADia, 
+IF ( find_in_set(  'equilib', objectifs )  > 0, 1,  NULL  ) AS equilib, 
+IF ( find_in_set(  'lipide', objectifs )  > 0, 1,  NULL  ) AS lipide, 
+IF ( find_in_set(  'tension', objectifs )  > 0, 1,  NULL  ) AS tension, bilans AS suivi_type, 
+IF ( find_in_set(  'hta', pathologies )  > 0, 1,  NULL  ) AS hta, 
+IF ( find_in_set(  'arte', pathologies )  > 0, 1,  NULL  ) AS arte, 
+IF ( find_in_set(  'neph', pathologies )  > 0, 1,  NULL  ) AS neph, 
+IF ( find_in_set(  'coro', pathologies )  > 0, 1,  NULL  ) AS coro, 
+IF ( find_in_set(  'reti', pathologies )  > 0, 1,  NULL  ) AS reti, 
+IF ( find_in_set(  'neur', pathologies )  > 0, 1,  NULL  ) AS neur, 
+IF ( find_in_set(  'tabac', risques )  > 0, 1,  NULL  ) AS risques, 
+IF ( find_in_set(  'phys', mesures )  > 0, 1,  NULL  ) AS phys, 
+IF ( find_in_set(  'hypl', mesures )  > 0, 1,  NULL  ) AS hypl, 
+IF ( find_in_set(  'taba', mesures )  > 0, 1,  NULL  ) AS taba, 
+IF ( find_in_set(  'diet', mesures )  > 0, 1,  NULL  ) AS diet, 
+IF ( find_in_set(  'hta', mesures )  > 0, 1,  NULL  ) AS mesure_hta, 
+IF ( find_in_set(  'ADO', mesures )  > 0, 1,  NULL  ) AS mesure_ADO, 
+IF ( find_in_set(  'insuline', mesures )  > 0, 1,  NULL  ) AS insuline, s.dmaj
+FROM informed.inf79_suividiabete AS s
+INNER  JOIN dossier AS d ON 
+s.cabinet = d.cabinet AND s.dossier = d.numero;
+
+update suivi_diabete as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.dossier_id
+INNER  JOIN informed.inf79_suividiabete_bilan as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero and
+r.dsuivi = dc.dsuivi
+SET
+dc.dHBA = r.resultat
+Where r.test = 'dHBA' and r.resultat regexp '^[0-9]{8}$';
+
+update suivi_diabete as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.dossier_id
+INNER  JOIN informed.inf79_suividiabete_bilan as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero and
+r.dsuivi = dc.dsuivi
+SET
+dc.ResHBA = (REPLACE ( r.resultat,  ',',   '.' ) + 0 )
+WHERE test =  'ResHBA' AND resultat <>  "";
+
+update suivi_diabete as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.dossier_id
+INNER  JOIN informed.inf79_suividiabete_bilan as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero and
+r.dsuivi = dc.dsuivi
+SET
+dc.dexafil = r.resultat
+Where r.test = 'dexafil' and r.resultat regexp '^[0-9]{8}$';
+
+update suivi_diabete as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.dossier_id
+INNER  JOIN informed.inf79_suividiabete_bilan as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero and
+r.dsuivi = dc.dsuivi
+SET
+dc.exafil =  r.resultat
+WHERE test =  'exafil' AND resultat <>  "";
+
+update suivi_diabete as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.dossier_id
+INNER  JOIN informed.inf79_suividiabete_bilan as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero and
+r.dsuivi = dc.dsuivi
+SET
+dc.dexapieds = r.resultat
+Where r.test = 'dexapieds' and r.resultat regexp '^[0-9]{8}$';
+
+update suivi_diabete as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.dossier_id
+INNER  JOIN informed.inf79_suividiabete_bilan as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero and
+r.dsuivi = dc.dsuivi
+SET
+dc.exapieds =  r.resultat
+WHERE test =  'exapieds' AND resultat <>  "";
+
+update suivi_diabete as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.dossier_id
+INNER  JOIN informed.inf79_suividiabete_bilan as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero and
+r.dsuivi = dc.dsuivi
+SET
+dc.dchol = r.resultat
+Where r.test = 'dchol' and r.resultat regexp '^[0-9]{8}$';
+
+update suivi_diabete as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.dossier_id
+INNER  JOIN informed.inf79_suividiabete_bilan as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero and
+r.dsuivi = dc.dsuivi
+SET
+dc.ichol =  1
+WHERE test =  'ichol' AND resultat =  "on";
+
+update suivi_diabete as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.dossier_id
+INNER  JOIN informed.inf79_suividiabete_bilan as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero and
+r.dsuivi = dc.dsuivi
+SET
+dc.hdl =  (REPLACE ( r.resultat,  ',',   '.' ) + 0 )
+WHERE test =  'hdl' AND resultat <>  "" and resultat <>"0";
+
+update suivi_diabete as dc
+INNER JOIN dossier AS d ON 
+d.id = dc.dossier_id
+SET
+dc.hdlc =  if(d.sexe = 'M', 0.35 , 0.40) ;
+
+update suivi_diabete as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.dossier_id
+set 
+ichol = if(hdl < hdlc, 1, 0)
+WHERE ( hdl < hdlc AND ichol <> 1) OR 
+( hdl >= hdlc AND ( ichol = 1  or ichol is null) );
+
+update suivi_diabete as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.dossier_id
+INNER  JOIN informed.inf79_suividiabete_bilan as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero and
+r.dsuivi = dc.dsuivi
+SET
+dc.dldl = r.resultat
+Where r.test = 'dldl' and r.resultat regexp '^[0-9]{8}$';
+
+update suivi_diabete as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.dossier_id
+INNER  JOIN informed.inf79_suividiabete_bilan as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero and
+r.dsuivi = dc.dsuivi
+SET
+dc.ildl =  1
+WHERE test =  'ildl' AND resultat =  "on";
+
+update suivi_diabete as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.dossier_id
+INNER  JOIN informed.inf79_suividiabete_bilan as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero and
+r.dsuivi = dc.dsuivi
+SET
+dc.ldl =  (REPLACE ( r.resultat,  ',',   '.' ) + 0 )
+WHERE test =  'ldl' AND resultat <>  "" and resultat <>"0";
+
+update suivi_diabete 
+SET
+ldlc = if(coro = 1, 1, 1.3) ;
+
+update suivi_diabete as dc
+set 
+ildl = if(ldl > ldlc, 1, 0)
+WHERE ( ldl > ldlc AND ildl <> 1) OR 
+( ldl <= ldlc AND ( ildl = 1  or ildl is null) );
+
+update suivi_diabete as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.dossier_id
+INNER  JOIN informed.inf79_suividiabete_bilan as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero and
+r.dsuivi = dc.dsuivi
+SET
+dc.dcreat = r.resultat
+Where r.test = 'dcreat' and r.resultat regexp '^[0-9]{8}$';
+
+update suivi_diabete as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.dossier_id
+INNER  JOIN informed.inf79_suividiabete_bilan as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero and
+r.dsuivi = dc.dsuivi
+SET
+dc.icreat =  1
+WHERE test = 'icreat' AND resultat =  "on";
+
+update suivi_diabete as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.dossier_id
+INNER  JOIN informed.inf79_suividiabete_bilan as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero and
+r.dsuivi = dc.dsuivi
+SET
+dc.creat =  (REPLACE ( r.resultat,  ',',   '.' ) + 0 )
+WHERE test =  'creat' AND resultat <>  "" and resultat <>"0";
+
+update suivi_diabete as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.dossier_id
+INNER  JOIN informed.inf79_suividiabete_bilan as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero and
+r.dsuivi = dc.dsuivi
+SET
+dc.creatc =   r.resultat
+WHERE test =  'creatc' AND resultat <>  "" ;
+
+update suivi_diabete as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.dossier_id
+SET 
+dc.creatc = 
+round( IF ( sexe = "F", 0.85, 1 ) * 
+( 140 - floor( ( to_days( dcreat ) - to_days( dnaiss ) ) / 365.25 ) )
+* poids / ( 7.2 * Creat )
+)
+where 
+creat <> 0 and creat is not null and sexe is not null and
+poids > 0  and dcreat is not null and dnaiss is not null
+AND abs( creatc - 
+ round( IF ( sexe = "F", 0.85, 1 ) * 
+ ( 140 - floor( (to_days( dcreat ) - to_days( dnaiss ) ) / 365.25 ) )
+  * poids / ( 7.2 * Creat ) ) 
+  ) > 1;
+
+
+update suivi_diabete as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.dossier_id
+INNER  JOIN informed.inf79_suividiabete_bilan as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero and
+r.dsuivi = dc.dsuivi
+SET
+dc.dalbu = r.resultat
+Where r.test = 'dalbu' and r.resultat regexp '^[0-9]{8}$';
+
+update suivi_diabete as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.dossier_id
+INNER  JOIN informed.inf79_suividiabete_bilan as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero and
+r.dsuivi = dc.dsuivi
+SET
+dc.ialbu =  1
+WHERE test =  'ialbu' AND resultat =  "on";
+
+update suivi_diabete as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.dossier_id
+INNER  JOIN informed.inf79_suividiabete_bilan as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero and
+r.dsuivi = dc.dsuivi
+SET
+dc.dECG = r.resultat
+Where r.test = 'dECG' and r.resultat regexp '^[0-9]{8}$';
+
+update suivi_diabete as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.dossier_id
+INNER  JOIN informed.inf79_suividiabete_bilan as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero and
+r.dsuivi = dc.dsuivi
+SET
+dc.iECG =  1
+WHERE test =  'iECG' AND resultat =  "on";
+
+update suivi_diabete as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.dossier_id
+INNER  JOIN informed.inf79_suividiabete_bilan as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero and
+r.dsuivi = dc.dsuivi
+SET
+dc.dfond = r.resultat
+Where r.test = 'dfond' and r.resultat regexp '^[0-9]{8}$';
+
+update suivi_diabete as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.dossier_id
+INNER  JOIN informed.inf79_suividiabete_bilan as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero and
+r.dsuivi = dc.dsuivi
+SET
+dc.ifond =  1
+WHERE test =  'ifond' AND resultat =  "on";
+
+update suivi_diabete as dc
+set 
+suivi_type = REPLACE ( suivi_type, '4,', '')
+where suivi_type like '%4%' and (dhba is null or reshba is null);
+
+# update suivi_diabete as dc
+# set 
+# suivi_type = ''
+# where suivi_type = '4' and (dhba is null or reshba is null);
+
+update suivi_diabete as dc
+set 
+suivi_type = REPLACE ( suivi_type, 's,', '')
+WHERE suivi_type
+LIKE  '%s,%' AND dexafil IS  NULL AND dexapieds IS  NULL and 
+(exapieds ='nsp' or exapieds is null) and 
+(exafil = 'nsp' or exafil is null);
+
+update suivi_diabete as dc
+set 
+suivi_type = ''
+WHERE suivi_type
+= 's' AND dexafil IS  NULL AND dexapieds IS  NULL and 
+(exapieds ='nsp' or exapieds is null) and 
+(exafil = 'nsp' or exafil is null);
+
+update suivi_diabete as dc
+set 
+suivi_type = REPLACE (suivi_type, ',a', '' ) 
+WHERE suivi_type
+LIKE '%,a%' AND dldl IS NULL AND dchol IS NULL AND dcreat IS NULL 
+AND decg IS NULL AND dfond IS NULL AND dalbu IS NULL  ;
+
+update suivi_diabete as dc
+set 
+suivi_type = ''
+WHERE suivi_type
+= 'a' AND dldl IS NULL AND dchol IS NULL AND dcreat IS NULL 
+AND decg IS NULL AND dfond IS NULL AND dalbu IS NULL  ;
+
+update suivi_diabete as dc
+INNER  JOIN dossier AS d ON 
+d.id = dc.dossier_id
+INNER  JOIN informed.inf79_suividiabete as r ON 
+d.cabinet = r.cabinet AND 
+r.dossier = d.numero and
+r.dsuivi = dc.dsuivi
+SET dc.dmaj = r.dmaj ;
+
+
+# table account
+truncate table account;
+insert into account(cabinet, password)
+SELECT nom ,  mdpasse
+FROM  informed.inf79_cabinet
+where admin = 0;

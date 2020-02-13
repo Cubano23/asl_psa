@@ -1,0 +1,73 @@
+@charset "utf-8";
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	padding:0px; margin:0px;
+	background:#377eb8;
+}
+h1,h2,h3,h4,p,form,ul{margin:0px; padding:0px;}
+a{ text-decoration:none;}
+a:hover{ text-decoration:underline;}
+/** **/
+#conteneur{ width:980px; margin:10px auto;}
+#enteteHome{ width:960px; margin:0px auto;}
+#entete{ width:956px; margin:0px auto; background:url(../_img/header-page.png) no-repeat 0px 0px; height:106px;}
+#connect{ width:358px; border-right:2px solid #1f5a9b; border-bottom:2px solid #1f5a9b; margin:75px auto 30px auto;} 
+#connect h2{ background:url(../_img/header-connect.png) no-repeat 0px 0px; height:30px; line-height:30px; font-size:0.8em; color:#FFFFFF; padding-left:40px;}
+#connect .form{ border-right:1px solid #377eb8; border-bottom:1px solid #377eb8; background:#e7f0f6; padding:10px;}
+#connect h3{ color:#b7b9b9; font-size:0.7em; float:left;}
+#connect label.identifiant, #connect label.mdp { color:#377eb8; font-size:0.75em; float:left; width:100px; padding-left:25px; font-weight:bold;  margin:5px 0px 0px 0px;}
+#connect label.identifiant { background:url(../_img/pic_login.gif) no-repeat 0px 2px;}
+#connect label.mdp { background:url(../_img/pic_pass.gif) no-repeat 0px 2px;}
+input.texte{ font-size:0.7em; border:1px solid #377eb8; float:left; margin:5px 0px 0px 0px; line-height:20px;}
+#connect input.bouton { background:url(../_img/bt_ok.gif) no-repeat 0px 0px; float:left; border:none; width:35px; height:24px; margin:2px 5px 0px 15px; cursor:pointer;}
+#footer{ color:#FFFFFF; font-size:0.7em; text-align:center;} 
+#footer a { color:#FFFFFF;}
+/** **/
+.clr{ clear:both; font-size:1px; height:1px; line-height:1px;}
+/** **/
+ul#navigation{list-style:none; padding-top:71px; padding-left:174px;}
+ul#navigation li{height:35px; float:left; cursor:pointer;}
+
+#menuDeroul_menu img {	border:0px;}
+/* End general styles for this example page */
+/* General configuration CSS */	
+#menuDeroul_menu ul li ul {	display:none; 	/* Needed to display ok in Opera */}
+#menuDeroul_menu {	visibility:hidden; padding-top:71px; padding-left:174px;}
+#menuDeroul_menu ul {	margin:0px;	/* No indent */	padding:0px;	/* No indent */}
+#menuDeroul_menu li {	list-style-type:none;	/* No bullets */}
+#menuDeroul_menu a {	margin:0px;	padding:0px;}
+/* End general configuration CSS */
+	
+	
+/* Cosmetic */
+	
+/***********************************************************************
+CSS - MENU BLOCKS
+General rules for all menu blocks (group of sub items) 
+***********************************************************************/
+#menuDeroul_menu ul {	padding:0px; margin:0px;}
+#menuDeroul_menu ul.menuBlock1 {	/* Menu bar - main menu items */	border:0px;	padding:0px;	overflow:visible;	background:none;}
+#menuDeroul_menu ul.menuBlock2 {/* Menu bar - main menu items */	border:0px;	padding:0px;}
+/***********************************************************************
+CSS - MENU ITEMS
+Here, you could assign rules to the menu items at different depths.
+***********************************************************************/
+/* General rules for all menu items */
+#menuDeroul_menu a {	color: #000;	text-decoration:none;	padding-left:0px;	padding-right:0px;}
+/*	Main menu items */
+	
+#menuDeroul_menu .currentDepth1 {	padding-left:0px;	padding-right:0px;}
+#menuDeroul_menu .currentDepth1over {	padding-left:0px;	padding-right:0px;}
+#menuDeroul_menu .currentDepth1 a {	font-weight:bold;}
+#menuDeroul_menu .currentDepth1over a {	/* Text rules */	color:#FFF;	font-weight:bold;}
+/* Sub menu depth 1 */
+#menuDeroul_menu .currentDepth2 {	padding-right:2px; padding-left:2px; float:left; background:#0e4187; color:#FFFFFF; font-size:0.75em; line-height:25px; height:25px; display:block;}
+#menuDeroul_menu .currentDepth2 a{	color:#87b2d4; }
+#menuDeroul_menu .currentDepth2over {	padding-right:2px; padding-left:2px; float:left; background:#0e4187; color:#ffffff; font-size:0.75em; line-height:25px; height:25px; display:block;}
+#menuDeroul_menu .currentDepth2over a {	/* Text rules */	color:#ffffff;}
+/** **/
+#centre{ width:956px; margin:0px auto; background:url(../_img/bg_centre.gif) repeat-y 0px 0px;}
+#topCentre{ width:956px; margin:10px auto 0px auto; background:url(../_img/top_centre.gif) no-repeat 0px 0px; font-size:1px; height:10px;}
+#botCentre{ width:956px; margin:0px auto 0px auto; background:url(../_img/bot_centre.gif) no-repeat 0px 0px; font-size:1px; height:10px;}
+#footerPage{ background:url(../_img/bg_footer.gif) no-repeat 0px 0px; height:80px; width:946px; margin:0px auto; color:#FFFFFF; font-size:0.7em; text-align:right; padding:5px 10px 0px 0px;} 
+#footerPage a { color:#FFFFFF;}

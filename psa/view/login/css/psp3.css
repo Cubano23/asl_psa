@@ -1,0 +1,386 @@
+/******************************************************************/
+/***	PLACEMENT DES ELEMENTS DANS LA PAGE
+/******************************************************************/
+@import "psp_layout.css";
+
+/******************************************************************/
+/***	HABILLAGE DE LA PAGE
+/******************************************************************/
+body,td,th {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #999999;	/*009193*/
+}
+body {
+	background: #D9BFCC;
+	margin: 0 auto;
+	text-align: center;
+}
+a {
+	color: #EC9C0E;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+h1, h2, h3, h4, h5, h6, p, ul, li, dl, dt, dd, input, form {
+	margin: 0;
+	padding: 0;
+}
+
+/******************************************************************/
+/***	CONTENU
+/******************************************************************/
+#contenu .connexe {
+	float: left;
+	width: 295px;
+	margin-right: 3px;
+}
+
+/***	Login et Actualites	***/
+#contenu .connexe .login, #contenu .logOK {
+	padding: 10px 15px 10px 10px;
+	background: #FFE887;
+	color: #EC9C0E;
+	font-size: 9px;
+	line-height: 14px;
+	text-align: left;
+}
+#contenu .connexe .actus {
+	padding: 10px 15px 10px 10px;
+	background: #660033;
+	color: #F9E917;
+	font-size: 9px;
+	line-height: 14px;
+	text-align: justify;
+}
+#contenu .connexe .login h1, #contenu .connexe .actus h1, #contenu .logOK h1 {
+	font-size: 12px;
+}
+#contenu .connexe .login h2, #contenu .logOK h2 {
+	margin-top: 10px;
+	padding-left: 18px;
+	margin-bottom: 5px;
+	font-size: 10px;
+	color: #660033;
+}
+#contenu .connexe .login h3 {
+	background: url(../img/puces/profil_jaune.gif) 0px 50% no-repeat;
+	margin-left: 13px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	padding-left: 15px;
+	font-size: 11px;
+	color: #660033;
+}
+#contenu .connexe .login p, #contenu .logOK p {
+	padding-left: 18px;
+	margin-bottom: 5px;
+}
+#contenu .connexe .login label, #contenu .logOK label {
+	font-weight: bold;
+}
+#contenu .connexe .login .champs, #contenu .logOK .champs {
+	height: 15px;
+	width: 170px;
+	border: 1px solid #EC9C0E;
+	padding: 0 0 0 2px;
+	background: white;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #EC9C0E;
+}
+#contenu .connexe .login .valid, #contenu .logOK .valid {
+	float: right;
+	height: 41px;
+	width: 39px;
+	margin-top: 35px;
+}
+#contenu .connexe .login .aide {
+	background: url(../img/puces/aide_jaune.gif) 0px 50% no-repeat;
+	margin-left: 26px;
+	padding-left: 15px;
+}
+#contenu .connexe .login .nouveau {
+	background: url(../img/puces/nouveau_profil.gif) 0px 50% no-repeat;
+	margin-left: 26px;
+	padding-left: 15px;
+}
+#contenu .connexe .login .acces {
+	background: url(../img/puces/securite_jaune.gif) 0px 50% no-repeat;
+	margin-left: 25px;
+	padding-left: 16px;
+}
+#contenu .connexe .login .appel {
+	background: url(../img/puces/appel_jaune.gif) 0px 50% no-repeat;
+	margin-left: 26px;
+	padding-left: 15px;
+}
+#contenu .connexe .login .suggestion {
+	background: url(../img/puces/suggestion_jaune.gif) 0px 50% no-repeat;
+	margin-left: 26px;
+	padding-left: 15px;
+}
+#contenu .connexe .login .profil {
+	background: url(../img/puces/editer_jaune.gif) 0px 50% no-repeat;
+	margin-left: 23px;
+	padding-left: 18px;
+}
+#contenu .connexe .actus h2, #contenu .connexe .actus h2 a {
+	background: url(../img/puces/actu_fleche.gif) 0px 3px no-repeat;
+	margin-top: 10px;
+	margin-left: 8px;
+	padding-left: 10px;
+	font-size: 10px;
+	color: white;
+	text-align: left;
+}
+#contenu .connexe .actus p {
+	padding-left: 18px;
+}
+#contenu .connexe .actus a {
+	color: #F9E917;
+}
+#contenu .connexe .actus a:hover {
+	color: white;
+	text-decoration: underline;
+}
+
+/***	LogOK	***/
+#contenu .logOK h2 {
+	padding-left: 18px;
+	margin-bottom: 5px;
+	font-size: 10px;
+	color: #009193;
+}
+#contenu .logOK h3 {
+	display: inherit;
+	background: url(../img/puces/profil_jaune.gif) 0px 50% no-repeat;
+	padding-left: 15px;
+	font-size: 11px;
+	color: #009193;
+}
+#contenu .logOK .aide {
+	background: url(../img/puces/aide_jaune.gif) 0px 0px no-repeat;
+	padding-left: 15px;
+	font-size: 10px;
+	font-weight: normal;
+}
+#contenu .logOK .nouveau {
+	background: url(../img/puces/nouveau_profil.gif) 0px 0px no-repeat;
+	padding-left: 15px;
+	font-size: 10px;
+	font-weight: normal;
+}
+#contenu .logOK .acces {
+	background: url(../img/puces/securite_jaune.gif) 0px 0px no-repeat;
+	padding-left: 16px;
+	font-size: 10px;
+	font-weight: normal;
+}
+#contenu .logOK .appel {
+	background: url(../img/puces/appel_jaune.gif) 0px 0px no-repeat;
+	padding-left: 15px;
+	font-size: 10px;
+	font-weight: normal;
+}
+#contenu .logOK .suggestion {
+	background: url(../img/puces/suggestion_jaune.gif) 0px 0px no-repeat;
+	padding-left: 15px;
+	font-size: 10px;
+	font-weight: normal;
+}
+#contenu .logOK .profil {
+	background: url(../img/puces/editer_jaune.gif) 0px 0px no-repeat;
+	padding-left: 18px;
+	padding-bottom: 3px;
+	font-size: 10px;
+	font-weight: normal;
+}
+
+/***	Contenu principal	***/
+#contenu .mainlogin {
+	float: right;
+	width: 480px;
+	text-align: left;
+}
+#contenu .main {
+/*	background: url(../img/habillage/coin_ombre.gif) 0 0 no-repeat;*/
+	text-align: left;
+}
+#contenu .mainlogin h1, #contenu .main h1 {
+	margin: 10px;
+	font-size: 14px;
+	color: #EC9C0E;
+}
+#contenu .mainlogin h2, #contenu .main h2 {
+	margin: 10px;
+	font-size: 12px;
+	color: #EC9C0E;
+}
+#contenu .main h3 {
+	margin: 10px;
+	font-size: 12px;
+	color: #009193;
+}
+#contenu .main .article {
+	margin-left: 30px;
+	margin-bottom: 15px;
+	padding: 5px;
+	background: #BFE3E4;
+	color: #3E3E3E;
+	line-height: 16px;
+}
+#contenu .main .auteur {
+	font-size: 9px;
+	color: #009193;
+}
+#contenu .main .date {
+	font-size: 10px;
+	font-weight: normal;
+}
+#contenu .main p {
+	margin: 5px 10px 10px 10px;
+}
+
+/***	Alerte	***/
+#contenu .main .alerte {
+	padding-left: 18px;
+	background: url(../img/puces/alerte.gif) 0px 0px no-repeat;
+	color: #E02D2F;
+}
+#contenu #alerte {
+	width: auto;
+	margin: 5px 10px 10px 10px;
+	border: 1px solid #E02D2F;
+}
+#contenu #alerte td {
+	padding: 5px;
+}
+#contenu #alerte th {
+	padding: 3px;
+	background: #E02D2F;
+	text-align: left;
+	color: white;
+}
+#contenu #alerte .bis {
+	background: #EDEDED;
+}
+#contenu #alerte .modificateur {
+	font-weight: bold;
+}
+#contenu #alerte .intervention {
+	background: #FAC8C8;
+	font-weight: bold;
+	color: #E02D2F;
+}
+
+/***	Thesaurus	***/
+#contenu .main .thesaurus {
+	color: #EC9C0E;
+}
+#contenu #thesaurus {
+	width: auto;
+	margin: 5px 10px 10px 10px;
+	border: 1px solid #EC9C0E;
+}
+#contenu #thesaurus td {
+	padding: 5px;
+}
+#contenu #thesaurus th {
+	padding: 3px;
+	background: #EC9C0E;
+	text-align: left;
+	color: white;
+}
+#contenu #thesaurus .bis {
+	background: #EDEDED;
+}
+#contenu #thesaurus .modificateur {
+	font-weight: bold;
+	color: #EDB329;
+}
+#contenu #thesaurus .intervention {
+	background: #FFEFAC;
+	font-weight: bold;
+	color: #EC9C0E;
+}
+
+/***	Envoi de pieces	***/
+#contenu .main .envoi {
+	color: #EC9C0E;
+}
+#contenu #envoi {
+	width: auto;
+	margin: 5px 10px 10px 10px;
+	border: 1px solid #EC9C0E;
+}
+#contenu #envoi td {
+	padding: 5px;
+}
+#contenu #envoi th {
+	padding: 3px;
+	background: #FEDE58;
+	color: #EC9C0E;
+	text-align: left;
+}
+#contenu #envoi .bis {
+	background: #EDEDED;
+}
+#contenu #envoi .modificateur {
+	font-weight: bold;
+	color: #EDB329;
+}
+#contenu #envoi .intervention {
+	background: #FFEFAC;
+	font-weight: bold;
+	color: #EC9C0E;
+}
+.menu {
+	width: 200px;
+	border: 1px solid #EC9C0E;
+	padding: 2px;
+	background: #EC9C0E;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: white;
+}
+textarea {
+	width: 400px;
+	border: 1px solid #EC9C0E;
+	padding: 2px;
+	background: white;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #EC9C0E;
+}
+.bordure_orangeD {
+	float: right;
+	margin-bottom: 15px;
+	border: 1px solid #EC9C0E;
+}
+.bordure_orangeG {
+	margin: 5px;
+	border: 1px solid #EC9C0E;
+}
+
+/******************************************************************/
+/***	FOOTER
+/******************************************************************/
+#contenu .footer, #contenu .footer a {
+	font-size: 9px;
+	color: #999999;
+	text-align: center;
+}
+#contenu .footer a:hover {
+	color: #EC9C0E;
+}
+#contenu .footer span {
+	color: #EC9C0E;
+	font-size: 11px;
+}
+
+.hidden{
+	display:none;
+}
+

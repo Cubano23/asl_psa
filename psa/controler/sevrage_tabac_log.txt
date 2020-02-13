@@ -1,0 +1,8 @@
+
+ ###### START : AS
+ create sevrage_tabac : 2017-06-15 | 283 | zTest
+ sevrage->id : 7077
+ sevrageExist : 7077
+ evaluation not exist => create : 2017-06-15 | 283
+ diagnotic eductif exist => update
+ ###### END

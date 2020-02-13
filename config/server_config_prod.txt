@@ -1,0 +1,8 @@
+Alias /psa "/home/aslApps/asl_psa/psa"
+<Directory /home/aslApps/asl_psa/psa>
+    Options Indexes FollowSymLinks MultiViews
+        AllowOverride All
+        <RequireAll>
+        Require all granted
+        </RequireAll>
+</Directory>

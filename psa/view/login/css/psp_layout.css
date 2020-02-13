@@ -1,0 +1,38 @@
+/******************************************************************/
+/***	PLACEMENT DES ELEMENTS DANS LA PAGE
+/******************************************************************/
+/***	Page	***/
+#page {
+	position: relative;
+	width: 806px;
+	text-align: right;
+}
+
+/***	Header	***/
+#header {
+	position: relative;
+	width: 806px;
+	height: 130px;
+}
+
+/***	Navigation	***/
+#navigation {
+	position: relative;
+	width: 798px;
+	height: 63px;
+	margin-left: 8px;
+	text-align: left;
+}
+
+/***	Contenu	***/
+#contenu {
+	position: relative;
+	width: 798px;
+	margin-left: 8px;
+	text-align: right;
+}
+
+.hidden{
+	display:none;
+}
+

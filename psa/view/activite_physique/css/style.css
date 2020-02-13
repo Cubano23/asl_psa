@@ -1,0 +1,45 @@
+#input_fm_activite{
+   
+   display: flex;
+   justify-content: center;
+   align-items:center;
+   flex-direction:column;
+
+}
+.class_radio{
+ padding: 10px;
+
+}
+i{
+   color: #4C0013;
+}
+.btn_enregistrer{
+   background-color: #00ff99;
+   color: black;
+   padding: 10px;
+   border-radius: 5px;
+   width: 100px;
+}
+.btn_annuler{
+   background-color: #ff5050;
+   color: black;
+   padding: 10px;
+   border-radius: 5px;
+   width: 100px;
+}
+
+#sec_1 {
+   float: left;
+   margin-top: 0px;
+   
+}
+#sec_2 {
+   float: right;
+   margin-top: 0px;
+   
+}
+
+
+
+
+

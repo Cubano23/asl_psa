@@ -1,0 +1,39 @@
+<?php
+  
+  session_start();
+  include 'conn.php';
+
+ $where = " where encnir != '' and cabinet!='ztest' LIMIT 100";
+//error_log($where);
+
+	$result = array();
+
+	$sql = "select encnir from $table ";
+	
+	$sql = $sql.$where;
+	$rs = mysql_query($sql);
+	
+	$items = array();
+  $fp = fopen("asaleenirs.asc","w");
+  $rec=0;
+	while($row = mysql_fetch_object($rs))
+	{
+		$rows = (array)$row;
+		foreach( $rows as $key => $value)
+		{
+      if ($key=="encnir")
+      {
+              fwrite($fp, $value );
+              $rec++;
+      }
+            
+		}
+
+		
+	}
+	fclose($fp);
+	
+  
+		echo json_encode(array('msg'=>strval($rec)));
+	
+?>

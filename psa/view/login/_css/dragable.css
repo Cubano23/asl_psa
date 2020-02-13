@@ -1,0 +1,36 @@
+#mainContainer{		margin:0 auto;		text-align:left;		background-color:#FFF; margin-top:25px; width:680px;}
+	/* This is the box that is parent to the dragable items */
+	#dragableElementsParentBox{		/* Air */	}
+	
+	.smallArticle .article{		border:1px solid #377eb8; border-top:none; background:#FFFFFF;	padding:0px 0px 0px 0px;	}
+	.smallArticle  .article{		width:321px;}
+	.fondMediaOff{ background:#FFFFFF; cursor:pointer;}
+	.fondMediaOn{ background:#fdf6cd; cursor:pointer;}
+	.smallArticle  div.medias{ background:url(../_img/bg_media.gif) no-repeat 0px 0px; font-size:0.75em; color:#FFFFFF; font-weight:normal; line-height:2em; width:293px; display:block;  padding-left:30px; padding-top:3px;}
+	.smallArticle  div.pratique{ background:url(../_img/bg_pratique.gif) no-repeat 0px 0px; font-size:0.75em; color:#FFFFFF; font-weight:normal; line-height:2em; width:293px; display:block;  padding-left:30px; padding-top:3px;}
+	.smallArticle  div.production{ background:url(../_img/bg_production.gif) no-repeat 0px 0px; font-size:0.75em; color:#FFFFFF; font-weight:normal; line-height:2em; width:293px; display:block;  padding-left:30px; padding-top:3px;}
+	.smallArticle  div.carte{ background:url(../_img/bg_carte.gif) no-repeat 0px 0px; font-size:0.75em; color:#FFFFFF; font-weight:normal; line-height:2em; width:293px; display:block;  padding-left:30px; padding-top:3px;}
+	.smallArticle { width:337px; margin-bottom:10px;	}
+	.clear{		clear:both;	}
+	.smallArticle  h4{}
+	.handle{ display:block; width:260px; cursor:move; float:left; padding-bottom:0px;}
+	
+	/* END DEMO CSS */
+	
+	/* REQUIRED CSS */
+	.edition{ margin:0px;}
+	.botBloc{ background:#FFFFFF url(../_img/coin_bloc.gif) no-repeat 100% 100%;}
+	.botBloc2{ background:#87b1d4 url(../_img/coin_bloc2.gif) no-repeat 100% 100%;  color:#FFFFFF; font-size:0.75em; padding:2px; }
+	
+ul.sortablelist {
+  list-style-image:none;
+  list-style-type:none;
+  margin-top:5px;
+  margin:0px;
+  padding:0px;
+}
+ul.sortabledemo li {
+  padding:0px;
+  margin:0px;
+  display:block;
+}

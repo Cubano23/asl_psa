@@ -1,0 +1,1 @@
+php_value include_path = ".;C:\Program Files\Apache Group\Apache\htdocs\psa"

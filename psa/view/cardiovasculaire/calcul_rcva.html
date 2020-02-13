@@ -1,0 +1,205 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta content="text/html; charset=ISO-8859-15" http-equiv="content-type">
+<title>Calcul du RCVA</title>
+	<script language="JavaScript" type="text/javascript">
+function calculer()
+{
+	var age=document.getElementById("age");
+	var sexem=document.getElementById("sexem");
+	var sexef=document.getElementById("sexef");
+	var tabacoui=document.getElementById("tabacoui");
+	var tabacnon=document.getElementById("tabacnon");
+	var tension=document.getElementById("tension");
+	var choltot=document.getElementById("choltot");
+	var hdl=document.getElementById("hdl");
+	var diabeteoui=document.getElementById("diabeteoui");
+	var diabetenon=document.getElementById("diabetenon");
+	var ventriculeoui=document.getElementById("ventriculeoui");
+	var ventriculenon=document.getElementById("ventriculenon");
+	var horizon=document.getElementById("horizon");
+	var rcva=document.getElementById("rcva");
+
+	var ok='1';
+	
+	if(age.value==''){
+		alert("Veuillez saisir l'âge");
+		ok="0";
+	}
+	if((!sexef.checked)&&(!sexem.checked)){
+	    alert("Veuillez préciser le sexe");
+	    ok="0";
+	}
+	if((!tabacoui.checked)&&(!tabacnon.checked)){
+	    alert("Veuillez préciser si la personne fume");
+		ok="0";
+	}
+	if(tension.value==''){
+		alert("Veuillez saisir la tension");
+		ok="0";
+	}
+	if(choltot.value==''){
+		alert("Veuillez saisir la valeur du cholestérol total");
+		ok="0";
+	}
+	if(hdl.value==''){
+		alert("Veuillez saisir la valeur du HDL");
+		ok="0";
+	}
+	if((!diabeteoui.checked)&&(!diabetenon.checked)){
+	    alert("Veuillez préciser si la personne est diabétique");
+		ok="0";
+	}
+	if((!ventriculeoui.checked)&&(!ventriculenon.checked)){
+	    alert("Veuillez préciser si la personne a une hypertrophie ventriculaire gauche");
+		ok="0";
+	}
+	
+	if(horizon.value==''){
+	    alert("Veuillez préciser à quel horizon vous souhaitez calculer le risque");
+	    ok="0";
+	}
+	
+	if(ok=='0'){
+	    return false;
+	}
+
+
+
+var e1 = -0.9119;
+var e2 = -0.2767;
+var e3 = -0.7181;
+var e4 = -0.5865;
+var l = 11.1122;
+var m0 = 4.4181 ;
+var s0 = -0.3155 ;
+var s1 = -0.2784;
+var c1 = -1.4792 ;
+var c2 = -0.1759 ;
+var d1 = -5.8549;
+var d2 = 1.8515 ;
+var d3 = -0.3758 ;
+
+var pas=tension.value;
+var tabac=0;
+var hvg=0;
+var chol=choltot.value;
+var HDL=hdl.value;
+var diab=0;
+
+if(tabacoui.checked){
+	tabac=1;
+}
+if(ventriculeoui.checked){
+	hvg=1;
+}
+
+if(diabeteoui.checked){
+	diab=1;
+}
+
+var a = l + e1*Math.log(pas) + e2*tabac + e3*Math.log(chol/HDL) + e4*hvg;
+
+if(sexem.checked){
+	var m = a + c1*Math.log (age.value) + c2*diab;
+}
+if(sexef.checked){
+	var m = a + d1 + d2*Math.pow((Math.log (age.value/74)), 2) + d3*diab;
+}
+
+var m_calc = m0 + m;
+var s = Math.exp(s0 + s1*m);
+
+var u = (Math.log (horizon.value) - m_calc ) / s ;
+
+var pt = 1- Math.exp(-Math.exp(u));
+
+rcva.innerHTML=Math.round(pt*10000, 2)/100+"%";
+
+}
+
+  </script>
+</head>
+<body bgcolor='#FFE887' style="font-size:13pt;" >
+<div align='center'>
+<b>Calcul du RCVA</b>
+</div>
+<br><br>
+Le RCVA est la probabilité de survenue d'un événement cardio-vasculaire sur une période de temps donnée, chez un sujet
+ayant un ou plusieurs facteurs de risque. Le calcul du risque se fait à partir de l'équation de Framingham.<br><br>
+Le risque est faible si on a RCVA < 15%, moyen si le RCVA est compris entre 15% et 20%, et élevé si RCVA>20%.<br><br>
+<table border='0'>
+<tr>
+	<td valign='top' width='40%'>
+Il existe des facteurs de risques non modifiables :<br>
+- antécédents familiaux<br>
+- âge et sexe<br>
+<br>
+Des facteurs de risques modifiables : <br>
+- tabagisme actif<br>
+- l'HTA traitée ou non<br>
+- les dyslipidémies<br>
+- le diabète<br>
+- l'obésité<br>
+</td>
+<td>
+Entrez les caractéristiques de votre patient : Attention, saisir les décimales avec un point et non une virgule (par exemple 0.88 et non 0,88)
+<table border="1">
+<tr>
+	<td align='left'>Age du patient :  (valeurs comprises entre 30 et 74 ans)</td>
+	    <td align='left' colspan='2'><input type='text' id='age' size='3' name='age'></td>
+</tr>
+<tr>
+	<td align='left'>Sexe</td>
+	    <td align='left'><input type='radio' id='sexem' name='sexe' value='m'>Masculin</td>
+	        <td align='left'><input type='radio' id='sexef' name='sexe' value='f'>Féminin</Td>
+</tr>
+<tr>
+	<td align='left'>Tabagisme (dernière année)</Td>
+	    <td align='left'><input type='radio' id='tabacoui' name='tabac' value='oui'>Fumeur</td>
+	        <td align='left'><input type='radio' id='tabacnon' name='tabac' value='oui'>Non Fumeur</td>
+</tr>
+<tr>
+	<td align='left'>Pression artérielle systolique (mmHg) : (Bornes : 60-300mmHg)</td>
+	    <td align='left' colspan='2'><input type='text' name='tension' id='tension' size='4'></td>
+</Tr>
+<tr>
+	<td align='left'>Cholestérol total :  (Bornes : 3 - 25 en mmoles/l ; 1 - 10 en g/l)</td>
+	    <td align='left' colspan='2'><input type='text' name='choltot' id='choltot' size='4'></td>
+</tr>
+<tr>
+	<td align='left' colspan='2'>HDL cholestérol :  (Bornes : 0,5 - 7 en mmoles/l ; 0,2 - 3 en g/l)</td>
+	    <td align='left'><input type='text' name='hdl' id='hdl' size='4'></td>
+</Tr>
+<tr>
+	<td colspan='4'>(Respecter la même unité que pour le cholestérol total)</td>
+</Tr>
+<tr>
+	<td align='left'>Diabète : </Td>
+		<td align='left'><input type='radio' name='diabete' id='diabeteoui' value='oui'>diabétique</td>
+			<td align='left'><input type='radio' name='diabete' id='diabetenon' value='non'>non diabétique</Td>
+</tr>
+<tr>
+	<td align='left'>Hypertrophie ventriculaire gauche :</td>
+		<td align='left'><input type='radio' name='ventricule' id='ventriculeoui' value='oui'>oui</td>
+			<td align='left'><input type='radio' name='ventricule' id='ventriculenon' value='non'>non</Td>
+</tr>
+<tr>
+	<td align='left'>Horizon du risque (entre 4 et 10 ans) :</td>
+	    <td align='left' colspan='2'><input type='text' size='3' name='horizon' value='10' readonly id='horizon'></td>
+</tr>
+<tr>
+
+	<td align='left'>RCVA calculé : </td><td  colspan='2' id='rcva'>0%</td>
+</tr>
+<tr>
+	<td colspan='3' align='center'><input type='button' onclick='javascript:calculer();' value="Calculer le RCVA"></Td>
+</tr>
+</table>
+</td>
+</Tr>
+</Table>
+<a href='http://www.cybermed.jussieu.fr/cgi-bin/fram.pl' target='_blank'>Calcul du RCVA (lien externe)</a>
+</body>
+</html>

@@ -1,0 +1,9 @@
+ID	ID_DEMANDEUR	LOGIN_DEMANDEUR	DATE_FRAIS	NATURE	MOTIF	DISTANCE	TAUX_APPLIQUE	PUISSANCE	MONTANT	DERNIER_STATUS
+45290	510	arizk	2018-12-23	kilomètres	frais111111	0.00	0.000	3.00	80.00	Rejeté
+45280	510	arizk	2018-12-20	kilomètres	motif	60.00	0.595	10.00	35.70	Rejeté
+45206	510	arizk	2018-12-11	kilo	motif	0.00	0.000	3.00	100.00	Rejeté
+45289	510	arizk	2018-12-23	teste frais	motif	0.00	0.000	3.00	120.00	Rejeté
+45279	510	arizk	2018-12-20	kilomètres	frais	60.00	0.595	10.00	35.70	Rejeté
+45291	510	arizk	2018-12-08	kilomètres	fra	45.00	0.410	4.00	18.45	Rejeté
+45281	510	arizk	2018-12-19	kilomètres	motif	55.00	0.543	5.00	29.86	Rejeté
+45278	510	arizk	2018-12-05	kilomètres	frais	60.00	0.595	10.00	35.70	Rejeté

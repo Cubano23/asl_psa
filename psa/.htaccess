@@ -1,0 +1,8 @@
+php_value include_path ".:/php/includes:/home/aslApps/asl_psa/psa/"
+
+
+#set max post size
+php_value post_max_size 500M
+
+
+

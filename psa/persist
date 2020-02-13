@@ -1,0 +1,110 @@
+<?php 
+	require_once("SelfManagedMapper.php");
+	require_once("bean/EvaluationInfirmier.php");
+	
+	class EvaluationInfirmierMapper extends SelfManagedMapper{
+	
+		function getForeignKey(){
+			return "id";
+		}
+	
+		function getKeysMap(){
+			return array("id"=>"id","date"=>"date");
+		}
+		
+		function getTableName(){
+			return "evaluation_infirmier";
+		}
+	
+		function getLedgerName(){
+			return "EvaluationInfirmierMapper";
+		}
+	
+		function getObject(){
+			return new EvaluationInfirmier();
+		}
+		
+		function getFindListQuery($object){
+			$propertiesArray = get_object_vars($object);
+			if(is_null($propertiesArray)) return false;
+			return "select * from ".$this->getTableName()." where id=".$propertiesArray["id"];
+		}
+		
+	 	function getObjectsByCabinet($cabinet){
+			$query =  "select * from ".$this->getTableName().",dossier where cabinet='$cabinet' and ".
+					$this->getTableName().".".$this->getForeignKey()." = dossier.id";
+			$result = $this->findAnyRows($query);
+			
+			if($result == false) return false;
+			$rowsList = "";
+			$count = 0;
+			while($row = mysql_fetch_array($result, MYSQL_ASSOC)){
+				$rowsList[$count] = $row;
+				$count = $count + 1;
+			}
+
+			return $rowsList;
+		}
+
+		function getObjectsByCabinetAndDateDistinct($cabinet){// on affiche toutes les dates evaluation infirmiere(suivi hebdo temps suivi) des semaines commençant le lundi
+			
+			$query =  "SELECT SUBDATE(date, INTERVAL WEEKDAY(date) DAY ) as date, WEEKDAY(date) as 'Jour de la Semaine', WEEK(date) as Semaine FROM ".$this->getTableName().",dossier where cabinet='$cabinet' and ".
+					$this->getTableName().".".$this->getForeignKey()." = dossier.id AND date>'2012-07-01' GROUP BY WEEK(date) ORDER BY date DESC ";
+
+			$result = $this->findAnyRows($query);
+
+			if($result == false) return false;
+			$rowsList = "";
+			$count = 0;
+			while($row = mysql_fetch_array($result, MYSQL_ASSOC)){
+				$rowsList[$count] = $row;
+				$count = $count + 1;
+			}
+			
+			// if($rowsList[0]['Semaine']!= date('W')){
+			// 	$query = "INSERT INTO ".$this->getTableName()." (id, date) VALUES(".$this->getForeignKey().", ".date('Y-m-d').")";
+			// }
+			return $rowsList;
+		}
+
+		function getObjectsByCabinetAndDate($cabinet, $date){// on affiche toutes les consultations de chaque semaine en prenant le lundi comme référence
+			$query =  "select  * from ".$this->getTableName().",dossier where cabinet='$cabinet' and ".
+					$this->getTableName().".".$this->getForeignKey()." = dossier.id and ".
+					#"date='$date'";
+					"date >='$date' AND date < DATE_ADD('$date', INTERVAL 7 DAY)";
+			$result = $this->findAnyRows($query);
+			
+			if($result == false) return false;
+			$rowsList = "";
+			$count = 0;
+			while($row = mysql_fetch_array($result, MYSQL_ASSOC)){
+				$rowsList[$count] = $row;
+				$count = $count + 1;
+			}
+
+			return $rowsList;
+		}
+
+		function getObjectsByDate($cabinet, $date){
+			$query =  "select * from ".$this->getTableName()." where cabinet='$cabinet' and ".
+					 "date='$date'";
+			$result = $this->findAnyRows($query);
+
+			if($result == false) return false;
+			$rowsList = "";
+			$count = 0;
+			while($row = mysql_fetch_array($result, MYSQL_ASSOC)){
+				$rowsList[$count] = $row;
+				$count = $count + 1;
+			}
+
+			return $rowsList;
+	}
+		
+		function getFindDernierExamQuery($object){
+			return "select * from ".$this->getTableName()." where id ='$object->id' ORDER BY `date` DESC limit 0,1";
+
+		}		
+
+	}
+?>

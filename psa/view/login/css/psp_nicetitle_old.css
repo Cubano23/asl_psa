@@ -1,0 +1,30 @@
+/******************************************************************/
+/***	NICETITLE
+/******************************************************************/
+div.nicetitle {
+    position: absolute;
+    padding: 5px;
+	margin: 0px;
+    top: 0px;
+    left: 0px;
+    color: white;
+    font-size: 10px;
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+	width: 150px;
+    font-weight: bold;
+    background: url(../img/habillage/nicetitle_psp.png);
+    
+    /* Mozilla proprietary */
+    -moz-border-radius: 12px;
+}
+div.nicetitle p {
+    margin: 0; padding: 0 3px;
+	text-align: left;
+}
+div.nicetitle p.destination {
+	display: none;
+    font-size: 9px;
+	font-weight: normal;
+    text-align: left;
+    padding-top: 3px;
+}

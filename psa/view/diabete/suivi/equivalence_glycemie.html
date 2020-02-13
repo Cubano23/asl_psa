@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta content="text/html; charset=ISO-8859-15" http-equiv="content-type">
+<title>Equivalence µmol/mg pour la créatinine</title>
+	<script language="JavaScript" type="text/javascript">
+function calculer()
+{
+	var mmol=document.getElementById("mmol");
+	var mg=document.getElementById("mg");
+
+	mg.innerHTML=Math.round(mmol.value*1.80327);
+}
+
+  </script>
+</head>
+<body bgcolor='#FFE887'>
+<div align='center'>
+<b>CALCULER LES EQUIVALENCES mmol/l -> g/L POUR LA GLYCEMIE</b>
+<table border="0" rules="none">
+<tr><th>mmol/l</th><th>g/l</th></tr>
+<tr><td><input type='text' id='mmol' size='3' name='mmol'></td><td id='mg'></td></tr>
+<tr><td colspan='2'><input type='button' onclick='javascript:calculer();' value="Calculer l'équivalence">
+</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,233 @@
+# Host: localhost
+# Database: refinedisas
+# Table: 'account'
+# 
+CREATE TABLE `account` (
+  `cabinet` varchar(15) NOT NULL default '',
+  `password` varchar(15) default '',
+  PRIMARY KEY  (`cabinet`)
+) TYPE=MyISAM; 
+
+# Host: localhost
+# Database: refinedisas
+# Table: 'depistage_colon'
+# 
+CREATE TABLE `depistage_colon` (
+  `id` int(15) NOT NULL default '0',
+  `date` date NOT NULL default '0000-00-00',
+  `ant_pere_type` enum('none','polypes','cancer') default NULL,
+  `ant_pere_age` int(11) default NULL,
+  `ant_mere_type` enum('none','polypes','cancer') default NULL,
+  `ant_mere_age` int(11) default NULL,
+  `ant_fratrie_type` enum('none','polypes','cancer') default NULL,
+  `ant_fratrie_age` int(11) default NULL,
+  `ant_collat_type` enum('none','polypes','cancer') default NULL,
+  `ant_collat_age` int(11) default NULL,
+  `ant_enfants_type` enum('none','polypes','cancer') default NULL,
+  `ant_enfants_age` int(11) default NULL,
+  `just_ant_fam` tinyint(1) default NULL,
+  `just_ant_polype` tinyint(1) default NULL,
+  `just_ant_cr_colique` tinyint(1) default NULL,
+  `just_ant_sg_selles` tinyint(1) default NULL,
+  `colos_date` date default NULL,
+  `colos_polypes` tinyint(1) default NULL,
+  `colos_dysplasie` enum('none','low','high','cr_colon') default NULL,
+  `rappel_colos_period` int(11) default '0',
+  `dmaj` timestamp(14) NOT NULL,
+  PRIMARY KEY  (`id`,`date`)
+) TYPE=MyISAM; 
+
+# Host: localhost
+# Database: refinedisas
+# Table: 'depistage_diabete'
+# 
+CREATE TABLE `depistage_diabete` (
+  `id` int(15) NOT NULL default '0',
+  `date` date NOT NULL default '0000-00-00',
+  `poids` float NOT NULL default '0',
+  `parent_diabetique_type2` tinyint(1) default NULL,
+  `ant_intolerance_glucose` tinyint(1) default NULL,
+  `hypertension_arterielle` tinyint(1) default NULL,
+  `dyslipidemie_en_charge` tinyint(1) default NULL,
+  `hdl` tinyint(1) default NULL,
+  `bebe_sup_4kg` tinyint(1) default NULL,
+  `ant_diabete_gestationnel` tinyint(1) default NULL,
+  `corticotherapie` tinyint(1) default NULL,
+  `infection` tinyint(1) default NULL,
+  `intervention_chirugicale` tinyint(1) default NULL,
+  `autre` tinyint(1) default NULL,
+  `derniere_gly_date` date default NULL,
+  `derniere_gly_resultat` float default NULL,
+  `prescription_gly` tinyint(1) default NULL,
+  `nouvelle_gly_date` date default NULL,
+  `nouvelle_gly_resultat` float default NULL,
+  `note_gly` varchar(100) default NULL,
+  `mesure_suivi_diabete` tinyint(1) default NULL,
+  `mesure_suivi_hygieno_dietetique` tinyint(1) default NULL,
+  `mesure_suivi_controle_annuel` tinyint(1) default NULL,
+  `dmaj` timestamp(14) NOT NULL,
+  PRIMARY KEY  (`id`,`date`)
+) TYPE=MyISAM; 
+
+# Host: localhost
+# Database: refinedisas
+# Table: 'depistage_sein'
+# 
+CREATE TABLE `depistage_sein` (
+  `id` int(15) NOT NULL default '0',
+  `date` date NOT NULL default '0000-00-00',
+  `ant_fam_mere` tinyint(1) default NULL,
+  `ant_fam_soeur` tinyint(1) default NULL,
+  `ant_fam_tante` tinyint(1) default NULL,
+  `ant_fam_grandmere` tinyint(1) default NULL,
+  `dep_type` enum('indiv','coll') default NULL,
+  `mamograph_date` date default NULL,
+  `dmaj` timestamp(14) NOT NULL,
+  PRIMARY KEY  (`id`,`date`)
+) TYPE=MyISAM; 
+
+# Host: localhost
+# Database: refinedisas
+# Table: 'dossier'
+# 
+CREATE TABLE `dossier` (
+  `id` int(15) NOT NULL auto_increment,
+  `cabinet` varchar(15) NOT NULL default '',
+  `numero` varchar(10) NOT NULL default '',
+  `dnaiss` date default NULL,
+  `sexe` enum('M','F') default NULL,
+  `taille` smallint(4) unsigned default NULL,
+  `dmaj` timestamp(14) NOT NULL,
+  PRIMARY KEY  (`id`),
+  UNIQUE KEY `u_key` (`numero`,`cabinet`)
+) TYPE=MyISAM; 
+
+# Host: localhost
+# Database: refinedisas
+# Table: 'evaluation_infirmier'
+# 
+CREATE TABLE `evaluation_infirmier` (
+  `id` int(15) NOT NULL default '0',
+  `date` date NOT NULL default '0000-00-00',
+  `degre_satisfaction` enum('a+','a','b','c','d') default NULL,
+  `points_positifs` varchar(100) default NULL,
+  `points_ameliorations` varchar(100) default NULL,
+  `dmaj` timestamp(14) NOT NULL,
+  PRIMARY KEY  (`id`,`date`)
+) TYPE=MyISAM; 
+
+# Host: localhost
+# Database: refinedisas
+# Table: 'evaluation_medecin'
+# 
+CREATE TABLE `evaluation_medecin` (
+  `id` int(15) NOT NULL default '0',
+  `date` date NOT NULL default '0000-00-00',
+  `degre_satisfaction` enum('a+','a','b','c','d') default NULL,
+  `duree_freq_consult` varchar(100) default NULL,
+  `satisfaction_pat` varchar(100) default NULL,
+  `dmaj` timestamp(14) NOT NULL,
+  PRIMARY KEY  (`id`,`date`)
+) TYPE=MyISAM; 
+
+# Host: localhost
+# Database: refinedisas
+# Table: 'evaluation_patient'
+# 
+CREATE TABLE `evaluation_patient` (
+  `id` int(15) NOT NULL default '0',
+  `date` date NOT NULL default '0000-00-00',
+  `degre_satisfaction` enum('a+','a','b','c','d') default NULL,
+  `question_pat` varchar(100) default NULL,
+  `evol_recours_med` varchar(100) default NULL,
+  `dmaj` timestamp(14) NOT NULL,
+  PRIMARY KEY  (`id`,`date`)
+) TYPE=MyISAM; 
+
+# Host: localhost
+# Database: refinedisas
+# Table: 'suivi_diabete'
+# 
+CREATE TABLE `suivi_diabete` (
+  `dsuivi` date NOT NULL default '0000-00-00',
+  `dossier_id` int(15) NOT NULL default '0',
+  `dmaj` timestamp(14) NOT NULL,
+  `dHBA` date default NULL,
+  `ResHBA` varchar(15) default NULL,
+  `dExaFil` date default NULL,
+  `ExaFil` enum('oui','non','nsp') default NULL,
+  `dExaPieds` date default NULL,
+  `ExaPieds` enum('oui','non','nsp') default NULL,
+  `dChol` date default NULL,
+  `iChol` tinyint(1) default NULL,
+  `HDL` varchar(15) default NULL,
+  `HDLc` varchar(100) default NULL,
+  `dLDL` date default NULL,
+  `iLDL` tinyint(1) default NULL,
+  `LDLc` varchar(100) default NULL,
+  `LDL` varchar(15) default NULL,
+  `dCreat` date default NULL,
+  `Creat` varchar(15) default NULL,
+  `iCreat` tinyint(1) default NULL,
+  `dAlbu` date default NULL,
+  `iAlbu` tinyint(1) default NULL,
+  `dFond` date default NULL,
+  `iFond` tinyint(1) default NULL,
+  `dECG` date default NULL,
+  `iECG` tinyint(1) default NULL,
+  `suivi_type` set('4','s','a') default NULL,
+  `poids` varchar(15) default NULL,
+  `Regime` tinyint(1) default NULL,
+  `InsulReq` tinyint(1) default NULL,
+  `ADO` set('aucun','Pioglitazone chlorhydrate','Metformine','Gliclazide','Miglitol','Repaglinide','Carbutamide','Acarbose','Glimepiride','Rosiglitazone maleate','Glibenclamide',MetformineVildagliptine','MetformineSitagliptine') default 'aucun',
+  `TaSys` varchar(15) default NULL,
+  `TaDia` varchar(15) default NULL,
+  `TA_mode` enum('manuel','automatique','automesure') default NULL,
+  `risques` tinyint(1) default NULL,
+  `hta` tinyint(1) default NULL,
+  `arte` tinyint(1) default NULL,
+  `neph` tinyint(1) default NULL,
+  `coro` tinyint(1) default NULL,
+  `reti` tinyint(1) default NULL,
+  `neur` tinyint(1) default NULL,
+  `equilib` tinyint(1) default NULL,
+  `tension` tinyint(1) default NULL,
+  `lipide` tinyint(1) default NULL,
+  `mesure_ADO` tinyint(1) default NULL,
+  `insuline` tinyint(1) default NULL,
+  `mesure_hta` tinyint(1) default NULL,
+  `hypl` tinyint(1) default NULL,
+  `phys` tinyint(1) default NULL,
+  `diet` tinyint(1) default NULL,
+  `taba` tinyint(1) default NULL,
+  PRIMARY KEY  (`dossier_id`,`dsuivi`)
+) TYPE=MyISAM COMMENT='Suivis périodiques diabète systématique'; 
+
+# Host: localhost
+# Database: refinedisas
+# Table: 'suivi_hebdomadaire'
+# 
+CREATE TABLE `suivi_hebdomadaire` (
+  `id` int(15) NOT NULL default '0',
+  `date` date NOT NULL default '0000-00-00',
+  `travail_base_h` int(11) default NULL,
+  `consult_indiv_h` int(11) default NULL,
+  `consult_indiv_n` int(11) default NULL,
+  `prevention_diabete_h` int(11) default NULL,
+  `prevention_autre_h` int(11) default NULL,
+  `prevention_autre_note` varchar(100) default NULL,
+  `seance_diabete_h` int(11) default NULL,
+  `seance_autre_h` int(11) default NULL,
+  `seance_autre_note` varchar(100) default NULL,
+  `suivi_armoire_h` int(11) default NULL,
+  `suivi_armoire_n` int(11) default NULL,
+  `aide_telephone` int(11) default NULL,
+  `aide_prep_matos` int(11) default NULL,
+  `aide_examen_compl` int(11) default NULL,
+  `aide_soins` int(11) default NULL,
+  `aide_formation` int(11) default NULL,
+  `aide_autre` int(11) default NULL,
+  `dmaj` timestamp(14) NOT NULL,
+  PRIMARY KEY  (`date`,`id`)
+) TYPE=MyISAM; 
+

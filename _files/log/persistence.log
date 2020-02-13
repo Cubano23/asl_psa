@@ -1,0 +1,35 @@
+ 
+Fri, 11 Jan 2019 10:55:06 +0100 INFO AccountMapper Find Row Object class:Account
+Fri, 11 Jan 2019 10:55:06 +0100 INFO AccountMapper Find Row Object Properties:zTest
+Fri, 11 Jan 2019 10:55:06 +0100 INFO AccountMapper Find Row Lancer la requete:select * from account where cabinet='zTest' 
+Fri, 11 Jan 2019 10:55:06 +0100 INFO AccountMapper Populate Object Object Properties::zTest
+Fri, 11 Jan 2019 11:57:13 +0100 INFO AccountMapper Find Row Object class:Account
+Fri, 11 Jan 2019 11:57:13 +0100 INFO AccountMapper Find Row Object Properties:zTest
+Fri, 11 Jan 2019 11:57:13 +0100 INFO AccountMapper Find Row Lancer la requete:select * from account where cabinet='zTest' 
+Fri, 11 Jan 2019 11:57:13 +0100 INFO AccountMapper Populate Object Object Properties::zTest
+Thu, 24 Jan 2019 15:58:48 +0100 INFO DossierMapper Custom Find Rows Lancer la requeteselect * from dossier where cabinet='zTest' and numero ='1'
+Thu, 24 Jan 2019 15:58:48 +0100 INFO DossierMapper Populate Object Object Properties::283 zTest 1 1974-11-29 M 178 oui 2015-07-26
+Thu, 24 Jan 2019 16:16:24 +0100 INFO AccountMapper Find Row Object class:Account
+Thu, 24 Jan 2019 16:16:24 +0100 INFO AccountMapper Find Row Object Properties:zTest
+Thu, 24 Jan 2019 16:16:24 +0100 INFO AccountMapper Find Row Lancer la requete:select * from account where cabinet='zTest' 
+Thu, 24 Jan 2019 16:16:24 +0100 INFO AccountMapper Populate Object Object Properties::zTest
+Thu, 24 Jan 2019 16:16:42 +0100 INFO DossierMapper Custom Find Rows Lancer la requeteselect * from dossier where cabinet='zTest' and numero ='1'
+Thu, 24 Jan 2019 16:16:42 +0100 INFO DossierMapper Populate Object Object Properties::283 zTest 1 1974-11-29 M 178 oui 2015-07-26
+Thu, 24 Jan 2019 16:25:09 +0100 INFO DossierMapper Custom Find Rows Lancer la requeteselect * from dossier where cabinet='zTest' and numero ='1'
+Thu, 24 Jan 2019 16:25:09 +0100 INFO DossierMapper Populate Object Object Properties::283 zTest 1 1974-11-29 M 178 oui 2015-07-26
+Thu, 24 Jan 2019 16:50:01 +0100 INFO AccountMapper Find Row Object class:Account
+Thu, 24 Jan 2019 16:50:01 +0100 INFO AccountMapper Find Row Object Properties:zTest
+Thu, 24 Jan 2019 16:50:01 +0100 INFO AccountMapper Find Row Lancer la requete:select * from account where cabinet='zTest' 
+Thu, 24 Jan 2019 16:50:01 +0100 INFO AccountMapper Populate Object Object Properties::zTest
+Thu, 24 Jan 2019 16:50:09 +0100 INFO DossierMapper Custom Find Rows Lancer la requeteselect * from dossier where cabinet='zTest' and numero ='1'
+Thu, 24 Jan 2019 16:50:09 +0100 INFO DossierMapper Populate Object Object Properties::283 zTest 1 1974-11-29 M 178 oui 2015-07-26
+Thu, 24 Jan 2019 16:51:12 +0100 INFO DossierMapper Custom Find Rows Lancer la requeteselect * from dossier where cabinet='zTest' and numero ='1'
+Thu, 24 Jan 2019 16:51:12 +0100 INFO DossierMapper Populate Object Object Properties::283 zTest 1 1974-11-29 M 178 oui 2015-07-26
+Thu, 24 Jan 2019 16:55:44 +0100 INFO DossierMapper Custom Find Rows Lancer la requeteselect * from dossier where cabinet='zTest' and numero ='1'
+Thu, 24 Jan 2019 16:55:44 +0100 INFO DossierMapper Populate Object Object Properties::283 zTest 1 1974-11-29 M 178 oui 2015-07-26
+Thu, 24 Jan 2019 17:02:24 +0100 INFO DossierMapper Custom Find Rows Lancer la requeteselect * from dossier where cabinet='zTest' and numero ='1'
+Thu, 24 Jan 2019 17:02:24 +0100 INFO DossierMapper Populate Object Object Properties::283 zTest 1 1974-11-29 M 178 oui 2015-07-26
+Thu, 24 Jan 2019 17:09:30 +0100 INFO DossierMapper Custom Find Rows Lancer la requeteselect * from dossier where cabinet='zTest' and numero ='1'
+Thu, 24 Jan 2019 17:09:30 +0100 INFO DossierMapper Populate Object Object Properties::283 zTest 1 1974-11-29 M 178 oui 2015-07-26
+Thu, 24 Jan 2019 17:10:33 +0100 INFO DossierMapper Custom Find Rows Lancer la requeteselect * from dossier where cabinet='zTest' and numero ='1'
+Thu, 24 Jan 2019 17:10:33 +0100 INFO DossierMapper Populate Object Object Properties::283 zTest 1 1974-11-29 M 178 oui 2015-07-26

@@ -1,0 +1,175 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Tabac</title>
+<script src="../../controler/jquery_latest.js"></script>
+
+<style media="screen" type="text/css">
+li {
+  float:left;
+  width:200px;
+  margin-top:5px;
+  margin-bottom:20px;
+  list-style: none;
+  font-size: 11px;
+}
+h1{
+  font-size:20px;
+}
+
+h3 {
+  clear:left;
+  font-size:12px;
+}
+#sub{
+
+  margin: 20px auto;
+  width:100px;
+  position: relative;
+  display: block;
+}
+p{
+  font-size: 11px;
+}
+
+#reponse{
+  background-color: #efefef;
+  line-height: 20px;
+}
+
+#resultats{
+  margin:0 0 20px 0;
+
+}
+
+
+</style>
+
+</head>
+<body style='position:relative;font-family:verdana;'>
+
+
+<h1>Test de Fagerstr&ouml;m (d&eacute;pendance &agrave; la nicotine)</h1>
+
+<div id="colg">
+<form action="#" method="post" name="form">
+
+  <p>Calculez le niveau de d&eacute;pendance &agrave; la cigarette de votre patient en lui posant les six questions suivantes. Cliquez dans la case correspondant &agrave; chacune de ses r&eacute;ponses</p>
+    
+<h3>1. Le matin, combien de temps apr&egrave;s vous être r&eacute;veill&eacute;(e) fumez-vous votre premi&egrave;re cigarette ?</h3>
+  <ul>
+    <li><input type="radio" name="q1" value="3">Moins de 5 minutes</li>
+    <li><input type="radio" name="q1" value="2">6 &agrave; 30 minutes</li>
+    <li><input type="radio" name="q1" value="1">31 &agrave; 60 minutes</li>
+    <li><input type="radio" name="q1" value="0">apr&egrave;s 60 minutes</li>
+  </ul>
+
+    
+<h3>2. Trouvez-vous qu'il est difficile de vous abstenir de fumer dans les endroits o&ugrave; c'est interdit ? (ex : cin&eacute;ma, biblioth&egrave;que, …). </h3>
+    
+  <ul>
+    <li><input type="radio" name="q2" value="1">oui</li>
+    <li><input type="radio" name="q2" value="0">non</li>
+  </ul>  
+
+<h3>3. A quelle cigarette renonceriez-vous plus difficilement ?</h3>
+
+  <ul>
+    <li><input type="radio" name="q3" value="1">la premi&egrave;re</li>
+    <li><input type="radio" name="q3" value="0">une autre</li>
+  </ul>
+
+<h3>4. Combien de cigarettes fumez-vous par jour ?</h3>
+
+
+  <ul>
+    <li><input type="radio" name="q4" value="0">10 ou moins</li>
+    <li><input type="radio" name="q4" value="1">11 &agrave; 20</li>
+    <li><input type="radio" name="q4" value="2">21 &agrave; 30</li>
+    <li><input type="radio" name="q4" value="3">31 ou plus</li>
+  </ul>
+
+
+<h3>5. Fumez-vous à intervalles plus rapproch&eacute;s durant les premi&egrave;res heures de la matin&eacute;e que durant le reste de la journ&eacute;e ?</h3>
+
+  <ul>
+    <li><input type="radio" name="q5" value="1">oui</li>
+    <li><input type="radio" name="q5" value="0">non</li>
+  </ul>
+
+<h3>6. Fumez-vous lorsque vous êtes malade au point de devoir rester au lit presque toute la journ&eacute;e ?</h3>
+  
+  <ul>
+    <li><input type="radio" name="q6" value="1">oui</li>
+    <li><input type="radio" name="q6" value="0">non</li>
+  </ul>
+
+</form>
+</div>
+
+<div id="cold">
+
+        <div style="clear:left;">&nbsp;</div>
+          <div id="resultats" style="font-size:22px">
+            <div id="points"></div>
+            <div id="reponse"></div>
+          </div>
+        </div>  
+</div>
+
+<input type='submit' id='sub' value='R&eacute;sultat'/>
+
+
+
+<script language="javascript">
+
+  function giveResponse(score){
+    if (score < 3) {
+      var reponse = "<p><b>Pas de d&eacute;pendance</b></p>"; // de 0 &agrave; 2
+    }
+    if (score > 2 && score < 5){
+      var reponse = "<p><b>D&eacute;pendance faible</b></p>"; // de 3 &agrave; 4
+    }
+    if (score > 4 && score < 7){
+      var reponse = "<p><b>D&eacute;pendance moyenne :</b> <br/>vous aurez vraisemblablement besoin d’utiliser un traitement m&eacute;dicamenteux ou de substitution nicotinique (timbre ou gomme &agrave; mâcher)</p>"; // de 5 &agrave; 6
+    }
+    if (score > 6) {
+      var reponse = "<p><b>D&eacute;pendance forte ou tr&egrave;s forte  :</b><br/> vous aurez vraisemblablement besoin d’utiliser un traitement m&eacute;dicamenteux ou de substitution nicotinique (timbre ou gomme &agrave; mâcher)</p>"; // plus de 7
+    }
+  
+  $("#reponse").html(reponse);
+  $("#points").html('Votre score :' + score);
+
+  }
+
+$(document).ready(function (){
+
+  $('#sub').click(function (){
+
+    t1 = $('input[type=radio][name=q1]:checked').attr('value');
+    t2 = $('input[type=radio][name=q2]:checked').attr('value');
+    t3 = $('input[type=radio][name=q3]:checked').attr('value');
+    t4 = $('input[type=radio][name=q4]:checked').attr('value');
+    t5 = $('input[type=radio][name=q5]:checked').attr('value');
+    t6 = $('input[type=radio][name=q6]:checked').attr('value');
+    if(isNaN(t1)){t1=0;}
+    if(isNaN(t2)){t2=0;}
+    if(isNaN(t3)){t3=0;}
+    if(isNaN(t4)){t4=0;}
+    if(isNaN(t5)){t5=0;}
+    if(isNaN(t6)){t6=0;}
+    total = parseInt(t1) + parseInt(t2) + parseInt(t3) + parseInt(t4) + parseInt(t5) + parseInt(t6);
+
+    
+    giveResponse(total);
+    
+  });
+
+});
+
+  
+
+</script>
+</body><!-- InstanceEnd --></html>

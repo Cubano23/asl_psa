@@ -1,0 +1,1 @@
+ALTER TABLE `competences_infirmier` ADD `retinographie` SMALLINT NOT NULL AFTER `coord_geronto`;

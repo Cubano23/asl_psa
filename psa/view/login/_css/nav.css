@@ -1,0 +1,41 @@
+#entBlank{ line-height:74px; width:956px;}
+
+#menuDeroul_menu img {	border:0px;}
+/* End general styles for this example page */
+/* General configuration CSS */	
+#menuDeroul_menu ul li ul {	display:none; 	/* Needed to display ok in Opera */}
+#menuDeroul_menu {	visibility:hidden; padding-left:254px;}
+#menuDeroul_menu ul {	margin:0px;	/* No indent */	padding:0px;	/* No indent */}
+#menuDeroul_menu li {	list-style-type:none;	/* No bullets */}
+#menuDeroul_menu a {	margin:0px;	padding:0px;}
+/* End general configuration CSS */
+	
+	
+/* Cosmetic */
+	
+/***********************************************************************
+CSS - MENU BLOCKS
+General rules for all menu blocks (group of sub items) 
+***********************************************************************/
+#menuDeroul_menu ul {	padding:0px; margin:0px 0px 0px 0px;}
+#menuDeroul_menu ul li{ float:left;}
+#menuDeroul_menu ul.menuBlock1 {	/* Menu bar - main menu items */	border:0px;	padding:0px;	overflow:visible;	background:none; float:none;}
+#menuDeroul_menu ul.menuBlock2 {/* Menu bar - main menu items */	border:0px;	padding:0px; position:absolute; display:block; margin-top:-8px;}
+/***********************************************************************
+
+CSS - MENU ITEMS
+Here, you could assign rules to the menu items at different depths.
+***********************************************************************/
+/* General rules for all menu items */
+#menuDeroul_menu a {	color: #000;	text-decoration:none;	padding-left:0px;	padding-right:0px;}
+/*	Main menu items */
+	
+#menuDeroul_menu .currentDepth1 {	padding-left:0px;	padding-right:0px;}
+#menuDeroul_menu .currentDepth1over {	padding-left:0px;	padding-right:0px;}
+#menuDeroul_menu .currentDepth1 a {	font-weight:bold;}
+#menuDeroul_menu .currentDepth1over a {	/* Text rules */	color:#FFF;	font-weight:bold;}
+/* Sub menu depth 1 */
+#menuDeroul_menu .currentDepth2 {	padding-right:5px; padding-left:5px; float:none; background:#0e4187; color:#FFFFFF; font-size:0.75em; line-height:25px; height:25px; display:block; width:200px;  border-bottom:1px solid #87b2d4;}
+#menuDeroul_menu .currentDepth2 a{	color:#87b2d4; width:180px; display:block; }
+#menuDeroul_menu .currentDepth2over {	padding-right:5px; padding-left:5px; float:none; background:#0e4187; color:#ffffff; font-size:0.75em; line-height:25px; height:25px; display:block;  border-bottom:1px solid #87b2d4; width:200px;}
+#menuDeroul_menu .currentDepth2over a {	/* Text rules */	color:#ffffff; width:200px; display:block;}

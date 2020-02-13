@@ -1,0 +1,89 @@
+body {
+	background-color: #FFE887;
+}
+
+body, td, th {
+	color: #660033;//#330033;
+}
+
+
+
+h1 {
+	color: #660033;//#333333;
+}
+
+h2 {
+	color: #660033;//#666699;
+}
+
+h3 {
+	color: #660033;//#993399;
+}
+
+h6 {
+	color: #660033;//#333366;
+}
+
+a:link{
+ color:#660033;
+}
+
+a:visited{
+ color:#660033;
+}
+
+
+.hidden{
+	display:none;
+}
+
+.visible{
+}
+
+.headerTitle{
+	font-size: 25px;
+	font-weight: bold;
+/*	font-style: italic;*/
+}
+
+.bodyTitle{
+	font-size: 18px;
+	font-weight: bold;
+	font-style: italic;
+	text-align: center;
+}
+
+table caption {
+	font-size: 18px;
+	font-style: normal;
+	font-weight: bold;
+	font-variant: normal;
+}
+
+.errorMessage{
+	color: #FF0000;
+	text-decoration: underline blink;
+	font-size: 18px;
+}
+
+.listcount {
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+}
+
+button {
+	width:110px;
+	cursor:pointer;
+	text-transform:capitalize;
+}
+
+.bouton7 {
+	border-radius:12px 0 12px 0;
+	background: #f5f5f5;
+	border:none;
+	color:#555;
+	font:bold 12px Verdana;
+	padding:6px 0 6px 0;
+	border:1px solid #ccc;
+}
